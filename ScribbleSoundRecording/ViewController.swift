@@ -8,18 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UIScrollViewDelegate{
+    
+    @IBOutlet weak var btnSetting: UIButton!
+    @IBOutlet weak var btnList: UIButton!
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func swipeUpGesture(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "CustomCameraVC") as! CustomCameraVC
+        let transition = CATransition()
+        transition.duration = 0.7
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromTop
+        transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+        present(vc, animated: false, completion: nil)
+    }
+    
+    @IBAction func btnListAction(_ sender: UIButton) {
+       
+    }
 
 
 }
 
+
+	

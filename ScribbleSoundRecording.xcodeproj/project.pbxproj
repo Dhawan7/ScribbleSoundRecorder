@@ -13,6 +13,39 @@
 		180B576D214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180B576B214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld */; };
 		180B576F214CCAAF00196181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B576E214CCAAF00196181 /* Assets.xcassets */; };
 		180B5772214CCAAF00196181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180B5770214CCAAF00196181 /* LaunchScreen.storyboard */; };
+		180B5784214CE9B300196181 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B577A214CE9B200196181 /* UIButtonX.swift */; };
+		180B5785214CE9B300196181 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B577B214CE9B200196181 /* UIImageViewX.swift */; };
+		180B5786214CE9B300196181 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B577C214CE9B300196181 /* UIViewX.swift */; };
+		180B5787214CE9B300196181 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B577D214CE9B300196181 /* UIViewControllerX.swift */; };
+		180B5788214CE9B300196181 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B577E214CE9B300196181 /* UIViewAnchorPoint.swift */; };
+		180B5789214CE9B300196181 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B577F214CE9B300196181 /* UITextFieldX.swift */; };
+		180B578A214CE9B300196181 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B5780214CE9B300196181 /* UILabelX.swift */; };
+		180B578B214CE9B300196181 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B5781214CE9B300196181 /* UISliderX.swift */; };
+		180B578C214CE9B300196181 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B5782214CE9B300196181 /* UIViewXRadialGradient.swift */; };
+		180B578D214CE9B300196181 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B5783214CE9B300196181 /* UIVisualEffectViewX.swift */; };
+		1838E5AA2158AA40007013BC /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E5A92158AA40007013BC /* PageVC.swift */; };
+		1838E5AC2158AFD4007013BC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E5AB2158AFD4007013BC /* MainVC.swift */; };
+		1838E5AE2158D0A9007013BC /* CustomCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E5AD2158D0A9007013BC /* CustomCameraVC.swift */; };
+		1838E5B021590D58007013BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E5AF21590D58007013BC /* Utils.swift */; };
+		1838E5B221591666007013BC /* CustomCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E5B121591666007013BC /* CustomCamera.swift */; };
+		18D17C642159EA4A00F7F75F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D17C632159EA4A00F7F75F /* SearchVC.swift */; };
+		18D17C662159EA7900F7F75F /* RecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D17C652159EA7800F7F75F /* RecorderVC.swift */; };
+		18FB2FF72154BF9D0057E338 /* SiriWaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB2FF62154BF9D0057E338 /* SiriWaveForm.swift */; };
+		18FB30062154F6EE0057E338 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB30052154F6EE0057E338 /* PlayerVC.swift */; };
+		18FB30082154F7A50057E338 /* PlayerCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB30072154F7A50057E338 /* PlayerCVC.swift */; };
+		18FD2046214F751E0052A8A4 /* RecordingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD2045214F751E0052A8A4 /* RecordingsVC.swift */; };
+		18FD204B214F77B80052A8A4 /* RecordingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD204A214F77B80052A8A4 /* RecordingCVC.swift */; };
+		18FD204D214F77D60052A8A4 /* RecordingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD204C214F77D60052A8A4 /* RecordingTVC.swift */; };
+		18FD2050214F9B260052A8A4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD204F214F9B260052A8A4 /* SettingsVC.swift */; };
+		787B403B7D0DB631AF8143E1 /* Pods_ScribbleSoundRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D89389D17E9258FCF301D1 /* Pods_ScribbleSoundRecording.framework */; };
+		7C158B59215CA17F002BBB0A /* test1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C158B58215CA17F002BBB0A /* test1.mp3 */; };
+		7C158B5B215CBA38002BBB0A /* test2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7C158B5A215CBA37002BBB0A /* test2.mp3 */; };
+		7C158B5D215CBDD1002BBB0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C158B5C215CBDD1002BBB0A /* AVFoundation.framework */; };
+		7C208A42215DFA6F001A4F42 /* TabBarDesignVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C208A41215DFA6F001A4F42 /* TabBarDesignVc.swift */; };
+		7C208A45215DFD80001A4F42 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C208A43215DFD7D001A4F42 /* Nexa Light.otf */; };
+		7C208A46215DFD80001A4F42 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */; };
+		7C21E8B621637BC6001590DA /* SaveEditSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */; };
+		7C2CCFD52164AEF60050BC43 /* NoImageTrimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +57,41 @@
 		180B576E214CCAAF00196181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180B5771214CCAAF00196181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180B5773214CCAAF00196181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180B577A214CE9B200196181 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		180B577B214CE9B200196181 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		180B577C214CE9B300196181 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		180B577D214CE9B300196181 /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		180B577E214CE9B300196181 /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		180B577F214CE9B300196181 /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		180B5780214CE9B300196181 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		180B5781214CE9B300196181 /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		180B5782214CE9B300196181 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		180B5783214CE9B300196181 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		1838E5A92158AA40007013BC /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		1838E5AB2158AFD4007013BC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1838E5AD2158D0A9007013BC /* CustomCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraVC.swift; sourceTree = "<group>"; };
+		1838E5AF21590D58007013BC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1838E5B121591666007013BC /* CustomCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamera.swift; sourceTree = "<group>"; };
+		18D17C632159EA4A00F7F75F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		18D17C652159EA7800F7F75F /* RecorderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderVC.swift; sourceTree = "<group>"; };
+		18FB2FF62154BF9D0057E338 /* SiriWaveForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriWaveForm.swift; sourceTree = "<group>"; };
+		18FB30052154F6EE0057E338 /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		18FB30072154F7A50057E338 /* PlayerCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCVC.swift; sourceTree = "<group>"; };
+		18FD2045214F751E0052A8A4 /* RecordingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsVC.swift; sourceTree = "<group>"; };
+		18FD204A214F77B80052A8A4 /* RecordingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingCVC.swift; sourceTree = "<group>"; };
+		18FD204C214F77D60052A8A4 /* RecordingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingTVC.swift; sourceTree = "<group>"; };
+		18FD204F214F9B260052A8A4 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		1C7B71E8021E277D9ABC0B8E /* Pods-ScribbleSoundRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScribbleSoundRecording.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScribbleSoundRecording/Pods-ScribbleSoundRecording.release.xcconfig"; sourceTree = "<group>"; };
+		33DD0981EC5C6A53D8309818 /* Pods-ScribbleSoundRecording.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScribbleSoundRecording.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScribbleSoundRecording/Pods-ScribbleSoundRecording.debug.xcconfig"; sourceTree = "<group>"; };
+		7C158B58215CA17F002BBB0A /* test1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test1.mp3; sourceTree = "<group>"; };
+		7C158B5A215CBA37002BBB0A /* test2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test2.mp3; sourceTree = "<group>"; };
+		7C158B5C215CBDD1002BBB0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7C208A41215DFA6F001A4F42 /* TabBarDesignVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDesignVc.swift; sourceTree = "<group>"; };
+		7C208A43215DFD7D001A4F42 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
+		7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
+		7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveEditSoundVC.swift; sourceTree = "<group>"; };
+		7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoImageTrimVC.swift; sourceTree = "<group>"; };
+		B4D89389D17E9258FCF301D1 /* Pods_ScribbleSoundRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScribbleSoundRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C158B5D215CBDD1002BBB0A /* AVFoundation.framework in Frameworks */,
+				787B403B7D0DB631AF8143E1 /* Pods_ScribbleSoundRecording.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +112,8 @@
 			children = (
 				180B5763214CCA9C00196181 /* ScribbleSoundRecording */,
 				180B5762214CCA9C00196181 /* Products */,
+				9839D0FC1BFA80E0EB5EB5D0 /* Pods */,
+				BDAFCFB7D475119925455EF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +128,168 @@
 		180B5763214CCA9C00196181 /* ScribbleSoundRecording */ = {
 			isa = PBXGroup;
 			children = (
+				18FD2047214F77780052A8A4 /* Cells */,
+				18FD2043214F74E90052A8A4 /* Controllers */,
+				180B5779214CD44000196181 /* Designables */,
 				180B5764214CCA9C00196181 /* AppDelegate.swift */,
 				180B5766214CCA9C00196181 /* ViewController.swift */,
 				180B5768214CCA9C00196181 /* Main.storyboard */,
+				7C158B58215CA17F002BBB0A /* test1.mp3 */,
+				7C158B5A215CBA37002BBB0A /* test2.mp3 */,
+				7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */,
+				7C208A43215DFD7D001A4F42 /* Nexa Light.otf */,
 				180B576E214CCAAF00196181 /* Assets.xcassets */,
 				180B5770214CCAAF00196181 /* LaunchScreen.storyboard */,
 				180B5773214CCAAF00196181 /* Info.plist */,
 				180B576B214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld */,
+				1838E5AF21590D58007013BC /* Utils.swift */,
+				18FB2FF62154BF9D0057E338 /* SiriWaveForm.swift */,
+				1838E5A92158AA40007013BC /* PageVC.swift */,
+				1838E5AB2158AFD4007013BC /* MainVC.swift */,
+				1838E5AD2158D0A9007013BC /* CustomCameraVC.swift */,
+				1838E5B121591666007013BC /* CustomCamera.swift */,
 			);
 			path = ScribbleSoundRecording;
+			sourceTree = "<group>";
+		};
+		180B5779214CD44000196181 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				180B577A214CE9B200196181 /* UIButtonX.swift */,
+				180B577B214CE9B200196181 /* UIImageViewX.swift */,
+				180B5780214CE9B300196181 /* UILabelX.swift */,
+				180B5781214CE9B300196181 /* UISliderX.swift */,
+				180B577F214CE9B300196181 /* UITextFieldX.swift */,
+				180B577E214CE9B300196181 /* UIViewAnchorPoint.swift */,
+				180B577D214CE9B300196181 /* UIViewControllerX.swift */,
+				180B577C214CE9B300196181 /* UIViewX.swift */,
+				180B5782214CE9B300196181 /* UIViewXRadialGradient.swift */,
+				180B5783214CE9B300196181 /* UIVisualEffectViewX.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		18D17C602159E9E700F7F75F /* PlayerVC */ = {
+			isa = PBXGroup;
+			children = (
+				18FB30052154F6EE0057E338 /* PlayerVC.swift */,
+			);
+			path = PlayerVC;
+			sourceTree = "<group>";
+		};
+		18D17C612159E9F100F7F75F /* RecorderVC */ = {
+			isa = PBXGroup;
+			children = (
+				18D17C652159EA7800F7F75F /* RecorderVC.swift */,
+			);
+			path = RecorderVC;
+			sourceTree = "<group>";
+		};
+		18D17C622159EA1300F7F75F /* SearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				18D17C632159EA4A00F7F75F /* SearchVC.swift */,
+			);
+			path = SearchVC;
+			sourceTree = "<group>";
+		};
+		18FD2043214F74E90052A8A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C21E8B421637B79001590DA /* SaveEditSoundVC */,
+				7C208A40215DFA3B001A4F42 /* TabBarDesign */,
+				18D17C622159EA1300F7F75F /* SearchVC */,
+				18D17C612159E9F100F7F75F /* RecorderVC */,
+				18D17C602159E9E700F7F75F /* PlayerVC */,
+				18FD204E214F9ACC0052A8A4 /* SettingsVC */,
+				18FD2044214F74FA0052A8A4 /* RecordingsVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18FD2044214F74FA0052A8A4 /* RecordingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				18FD2045214F751E0052A8A4 /* RecordingsVC.swift */,
+			);
+			path = RecordingsVC;
+			sourceTree = "<group>";
+		};
+		18FD2047214F77780052A8A4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C2CCFD32164AEDB0050BC43 /* NoImageTrimVC */,
+				18FD2049214F77920052A8A4 /* CollectionCell */,
+				18FD2048214F77870052A8A4 /* TableCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18FD2048214F77870052A8A4 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				18FD204C214F77D60052A8A4 /* RecordingTVC.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		18FD2049214F77920052A8A4 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				18FD204A214F77B80052A8A4 /* RecordingCVC.swift */,
+				18FB30072154F7A50057E338 /* PlayerCVC.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		18FD204E214F9ACC0052A8A4 /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				18FD204F214F9B260052A8A4 /* SettingsVC.swift */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
+		7C208A40215DFA3B001A4F42 /* TabBarDesign */ = {
+			isa = PBXGroup;
+			children = (
+				7C208A41215DFA6F001A4F42 /* TabBarDesignVc.swift */,
+			);
+			path = TabBarDesign;
+			sourceTree = "<group>";
+		};
+		7C21E8B421637B79001590DA /* SaveEditSoundVC */ = {
+			isa = PBXGroup;
+			children = (
+				7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */,
+			);
+			path = SaveEditSoundVC;
+			sourceTree = "<group>";
+		};
+		7C2CCFD32164AEDB0050BC43 /* NoImageTrimVC */ = {
+			isa = PBXGroup;
+			children = (
+				7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */,
+			);
+			path = NoImageTrimVC;
+			sourceTree = "<group>";
+		};
+		9839D0FC1BFA80E0EB5EB5D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33DD0981EC5C6A53D8309818 /* Pods-ScribbleSoundRecording.debug.xcconfig */,
+				1C7B71E8021E277D9ABC0B8E /* Pods-ScribbleSoundRecording.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDAFCFB7D475119925455EF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C158B5C215CBDD1002BBB0A /* AVFoundation.framework */,
+				B4D89389D17E9258FCF301D1 /* Pods_ScribbleSoundRecording.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180B5776214CCAAF00196181 /* Build configuration list for PBXNativeTarget "ScribbleSoundRecording" */;
 			buildPhases = (
+				531380BD37CADB45F779AB50 /* [CP] Check Pods Manifest.lock */,
 				180B575D214CCA9C00196181 /* Sources */,
 				180B575E214CCA9C00196181 /* Frameworks */,
 				180B575F214CCA9C00196181 /* Resources */,
+				E829FC75AAE5412DE7BD63FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +352,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C158B59215CA17F002BBB0A /* test1.mp3 in Resources */,
 				180B5772214CCAAF00196181 /* LaunchScreen.storyboard in Resources */,
 				180B576F214CCAAF00196181 /* Assets.xcassets in Resources */,
 				180B576A214CCA9C00196181 /* Main.storyboard in Resources */,
+				7C158B5B215CBA38002BBB0A /* test2.mp3 in Resources */,
+				7C208A45215DFD80001A4F42 /* Nexa Light.otf in Resources */,
+				7C208A46215DFD80001A4F42 /* Nexa Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		531380BD37CADB45F779AB50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScribbleSoundRecording-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E829FC75AAE5412DE7BD63FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScribbleSoundRecording/Pods-ScribbleSoundRecording-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScribbleSoundRecording/Pods-ScribbleSoundRecording-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		180B575D214CCA9C00196181 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1838E5AA2158AA40007013BC /* PageVC.swift in Sources */,
+				180B578D214CE9B300196181 /* UIVisualEffectViewX.swift in Sources */,
+				1838E5B021590D58007013BC /* Utils.swift in Sources */,
+				7C2CCFD52164AEF60050BC43 /* NoImageTrimVC.swift in Sources */,
+				7C208A42215DFA6F001A4F42 /* TabBarDesignVc.swift in Sources */,
+				180B5788214CE9B300196181 /* UIViewAnchorPoint.swift in Sources */,
+				180B5784214CE9B300196181 /* UIButtonX.swift in Sources */,
+				180B578C214CE9B300196181 /* UIViewXRadialGradient.swift in Sources */,
+				7C21E8B621637BC6001590DA /* SaveEditSoundVC.swift in Sources */,
+				180B5785214CE9B300196181 /* UIImageViewX.swift in Sources */,
+				18FD204D214F77D60052A8A4 /* RecordingTVC.swift in Sources */,
+				18FD204B214F77B80052A8A4 /* RecordingCVC.swift in Sources */,
+				180B5789214CE9B300196181 /* UITextFieldX.swift in Sources */,
+				18D17C642159EA4A00F7F75F /* SearchVC.swift in Sources */,
+				180B5787214CE9B300196181 /* UIViewControllerX.swift in Sources */,
 				180B5767214CCA9C00196181 /* ViewController.swift in Sources */,
 				180B576D214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld in Sources */,
+				18FD2046214F751E0052A8A4 /* RecordingsVC.swift in Sources */,
+				180B578B214CE9B300196181 /* UISliderX.swift in Sources */,
+				180B578A214CE9B300196181 /* UILabelX.swift in Sources */,
 				180B5765214CCA9C00196181 /* AppDelegate.swift in Sources */,
+				18FB2FF72154BF9D0057E338 /* SiriWaveForm.swift in Sources */,
+				18FB30082154F7A50057E338 /* PlayerCVC.swift in Sources */,
+				18D17C662159EA7900F7F75F /* RecorderVC.swift in Sources */,
+				1838E5AE2158D0A9007013BC /* CustomCameraVC.swift in Sources */,
+				18FB30062154F6EE0057E338 /* PlayerVC.swift in Sources */,
+				180B5786214CE9B300196181 /* UIViewX.swift in Sources */,
+				18FD2050214F9B260052A8A4 /* SettingsVC.swift in Sources */,
+				1838E5B221591666007013BC /* CustomCamera.swift in Sources */,
+				1838E5AC2158AFD4007013BC /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +579,21 @@
 		};
 		180B5777214CCAAF00196181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DD0981EC5C6A53D8309818 /* Pods-ScribbleSoundRecording.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XHRZA2VH3G;
 				INFOPLIST_FILE = ScribbleSoundRecording/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachtech.ScribbleSoundRecording;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachtech.ScribbleSoundRecording.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11736ec3-01b8-4a38-9040-3a236ac8e244";
+				PROVISIONING_PROFILE_SPECIFIER = "Scribble Sound Recording";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +601,21 @@
 		};
 		180B5778214CCAAF00196181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C7B71E8021E277D9ABC0B8E /* Pods-ScribbleSoundRecording.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XHRZA2VH3G;
 				INFOPLIST_FILE = ScribbleSoundRecording/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachtech.ScribbleSoundRecording;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachtech.ScribbleSoundRecording.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11736ec3-01b8-4a38-9040-3a236ac8e244";
+				PROVISIONING_PROFILE_SPECIFIER = "Scribble Sound Recording";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
