@@ -16,6 +16,8 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var lblTotalTrackTime: UILabel!
     @IBOutlet weak var lblCurrentAudioTime: UILabel!
+    @IBOutlet weak var lblNotes: UILabel!
+    @IBOutlet weak var btnAddBookmark: UIButton!
     
     
     
@@ -26,6 +28,7 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     var updater : CADisplayLink! = nil
     var audioLength:Float = 0.0
     var messagePlaybackTimer: CADisplayLink?
+    var isBookmark:Bool = false
     
     
     override func viewDidLoad() {
@@ -38,10 +41,11 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-     //  btnPlay.setBackgroundImage(#imageLiteral(resourceName: "paly-right"), for: .normal)
         self.navigationController?.navigationBar.isHidden = false
         progressBar.progress = 0.0
+        
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         audioPlayer.stop()
@@ -52,6 +56,7 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         super.viewWillLayoutSubviews()
         updateCellsLayout()
     }
+    
     
     func audioPlayer(songIndex: String){
     self.messagePlaybackTimer?.isPaused = true
@@ -166,6 +171,10 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
             
             btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
             audioPlayer?.play()
+            UIView.animate(withDuration: 12.0, delay: 1, options: ([.curveLinear, .repeat]), animations: {() -> Void in
+                self.lblNotes.center = CGPoint(x: 0 - self.lblNotes.bounds.size.width / 2, y: self.lblNotes.center.y)
+            }, completion:  { _ in })
+            
         //    self.messagePlaybackTimer?.isPaused = true
             print("play")
             updater = CADisplayLink(target: self, selector: #selector(trackAudio))
@@ -187,6 +196,26 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         let popup = UIActivityViewController(activityItems: shareText, applicationActivities: nil)
         present(popup, animated: true, completion: nil)
     }
+    
+    @IBAction func btnBookmarks(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            
+            let vc =  UINavigationController.init(rootViewController: self.storyboard?.instantiateViewController(withIdentifier: "BookmarkVC") as! BookmarkVC)
+            vc.modalPresentationStyle = .overCurrentContext
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func btnAddBookmark(_ sender: UIButton) {
+        if isBookmark{
+            btnAddBookmark.setImage(#imageLiteral(resourceName: "bookmark"), for: .normal)
+            isBookmark = false
+        } else{
+            btnAddBookmark.setImage(#imageLiteral(resourceName: "26bookmark"), for: .normal)
+            isBookmark = true
+        }
+    }
+    
     
     
     @objc func trackAudio() {

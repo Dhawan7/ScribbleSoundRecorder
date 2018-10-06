@@ -1,4 +1,5 @@
-//
+//  Memory Management
+//  Garbedge Collection
 //  RecorderVC.swift
 //  ScribbleSoundRecording
 //
@@ -28,14 +29,25 @@ class RecorderVC: UIViewController {
     var isPause: Bool = false
     var timer:Timer?
     var change:CGFloat = 0.01
+    var popUpView: CustomPopUp!
+    var dateStr = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.waveAudioView.density = 1.0
+        dateString()
+    }
+    
+    func dateString(){
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MMM-yyyy"
+        dateStr = dateFormatter.string(from: date)
+        print(dateStr)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        viewDismissSave.alpha = 0.0
+        //viewDismissSave.alpha = 0.0
         setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageRecord: #imageLiteral(resourceName: "record"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 0.0, labelSave: 0.0, pauseButton: 0.0, saveButton: 0.0)
         self.tabBarController?.tabBar.isHidden = false
         navigationController?.setNavigationBarHidden(true, animated: true)
@@ -43,7 +55,6 @@ class RecorderVC: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
         stopWave()
     }
     
@@ -51,8 +62,6 @@ class RecorderVC: UIViewController {
         if self.waveAudioView.amplitude <= self.waveAudioView.idleAmplitude || self.waveAudioView.amplitude > 1.0 {
             self.change *= -1.0
         }
-        
-        // Simply set the amplitude to whatever you need and the view will update itself.
         self.waveAudioView.amplitude += self.change
     }
     
@@ -80,7 +89,7 @@ class RecorderVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIView.animate(withDuration: 0.4) {
-           self.viewDismissSave.alpha = 0.0
+        //   self.viewDismissSave.alpha = 0.0
             self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageRecord: #imageLiteral(resourceName: "record"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
             self.isPause = false
             self.isRecording = false
@@ -95,7 +104,7 @@ class RecorderVC: UIViewController {
         isPause = false
         isSave = false
         UIView.animate(withDuration: 0.3) {
-            self.viewDismissSave.alpha = 0.0
+          //  self.viewDismissSave.alpha = 0.0
         if self.isRecording{
             self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageRecord: #imageLiteral(resourceName: "record"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 0.0, labelSave: 0.0, pauseButton: 0.0, saveButton: 0.0)
             self.stopWave()
@@ -115,14 +124,24 @@ class RecorderVC: UIViewController {
          UIView.animate(withDuration: 0.2) {
             if self.isSave{
             self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageRecord: #imageLiteral(resourceName: "record"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
-                self.viewDismissSave.alpha = 0.0
+               // self.viewDismissSave.alpha = 0.0
                 self.stopWave()
                 self.isSave = false
         } else{
            
                 self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageRecord: #imageLiteral(resourceName: "record"), imageStop: #imageLiteral(resourceName: "save-color"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
                 //DispatchQueue.main.asyncAfter(deadline: .now() + 0.02, execute: {
-                    self.viewDismissSave.alpha = 1.0
+             //  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CustomPopUp") as! CustomPopUp
+            //   vc.modalPresentationStyle = .currentContext
+            //    vc.modalPresentationStyle = .overCurrentContext
+            //    self.navigationController?.present(vc, animated: true, completion: nil)
+                let vc =  UINavigationController.init(rootViewController: self.storyboard?.instantiateViewController(withIdentifier: "CustomPopUp") as! CustomPopUp)
+                vc.modalPresentationStyle = .overCurrentContext
+                UIView.animate(withDuration: 0.3, animations: {
+                     self.present(vc, animated: true, completion: nil)
+                })
+               
+                  //  self.viewDismissSave.alpha = 1.0
               //  })
                 self.stopWave()
                 self.isSave = true
@@ -137,7 +156,7 @@ class RecorderVC: UIViewController {
         isSave = false
         
         UIView.animate(withDuration: 0.2) {
-            self.viewDismissSave.alpha = 0.0
+          //  self.viewDismissSave.alpha = 0.0
             if self.isPause{
                 self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageRecord: #imageLiteral(resourceName: "record"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
                 self.stopWave()
@@ -153,7 +172,7 @@ class RecorderVC: UIViewController {
     
     @IBAction func btnNoPopUp(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
-            self.viewDismissSave.alpha = 0.0
+           // self.viewDismissSave.alpha = 0.0
             self.isPause = false
             self.isRecording = false
             self.isSave = false

@@ -36,10 +36,14 @@ class SettingsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     @IBAction func btnSoundFormatAction(_ sender: UIButton) {
         isSoundFormat = true 
         isOnStart = false
@@ -72,6 +76,18 @@ class SettingsVC: UIViewController {
         toolbar.isHidden = true
         pickerTopLine.isHidden = true
    }
+    
+    @IBAction func btnHelp(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "HelpVC") as! HelpVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func btnAbout(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
+        navigationController?.pushViewController(vc, animated: true)
+    
+    }
     
 }
 

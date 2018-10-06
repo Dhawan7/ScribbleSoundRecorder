@@ -46,6 +46,11 @@
 		7C208A46215DFD80001A4F42 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */; };
 		7C21E8B621637BC6001590DA /* SaveEditSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */; };
 		7C2CCFD52164AEF60050BC43 /* NoImageTrimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */; };
+		7CDB5A7C2167440400A83FB7 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB5A7B2167440400A83FB7 /* BookmarkVC.swift */; };
+		7CDB5A7F2167444000A83FB7 /* BookmarkTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB5A7E2167444000A83FB7 /* BookmarkTVC.swift */; };
+		7CDF67352165F1F8000505D6 /* CustomPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF67342165F1F8000505D6 /* CustomPopUp.swift */; };
+		7CDF673821662118000505D6 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF673721662118000505D6 /* HelpVC.swift */; };
+		7CDF673B21662A4D000505D6 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF673A21662A4D000505D6 /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +96,11 @@
 		7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
 		7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveEditSoundVC.swift; sourceTree = "<group>"; };
 		7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoImageTrimVC.swift; sourceTree = "<group>"; };
+		7CDB5A7B2167440400A83FB7 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
+		7CDB5A7E2167444000A83FB7 /* BookmarkTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTVC.swift; sourceTree = "<group>"; };
+		7CDF67342165F1F8000505D6 /* CustomPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUp.swift; sourceTree = "<group>"; };
+		7CDF673721662118000505D6 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		7CDF673A21662A4D000505D6 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		B4D89389D17E9258FCF301D1 /* Pods_ScribbleSoundRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScribbleSoundRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,21 +138,16 @@
 		180B5763214CCA9C00196181 /* ScribbleSoundRecording */ = {
 			isa = PBXGroup;
 			children = (
+				180B5779214CD44000196181 /* Designables */,
 				18FD2047214F77780052A8A4 /* Cells */,
 				18FD2043214F74E90052A8A4 /* Controllers */,
-				180B5779214CD44000196181 /* Designables */,
-				180B5764214CCA9C00196181 /* AppDelegate.swift */,
-				180B5766214CCA9C00196181 /* ViewController.swift */,
-				180B5768214CCA9C00196181 /* Main.storyboard */,
-				7C158B58215CA17F002BBB0A /* test1.mp3 */,
-				7C158B5A215CBA37002BBB0A /* test2.mp3 */,
-				7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */,
-				7C208A43215DFD7D001A4F42 /* Nexa Light.otf */,
+				7CDF67232165D449000505D6 /* Audios */,
+				7CDF67212165D3BB000505D6 /* UI */,
 				180B576E214CCAAF00196181 /* Assets.xcassets */,
-				180B5770214CCAAF00196181 /* LaunchScreen.storyboard */,
+				7C208A43215DFD7D001A4F42 /* Nexa Light.otf */,
+				7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */,
 				180B5773214CCAAF00196181 /* Info.plist */,
 				180B576B214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld */,
-				1838E5AF21590D58007013BC /* Utils.swift */,
 				18FB2FF62154BF9D0057E338 /* SiriWaveForm.swift */,
 				1838E5A92158AA40007013BC /* PageVC.swift */,
 				1838E5AB2158AFD4007013BC /* MainVC.swift */,
@@ -196,6 +201,14 @@
 		18FD2043214F74E90052A8A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7CDB5A7A2167438200A83FB7 /* BookmarkVC */,
+				7CDF673921662A36000505D6 /* AboutVC */,
+				7CDF6736216620FB000505D6 /* HelpVC */,
+				7CDF67332165F1DB000505D6 /* CustomPopUp */,
+				180B5764214CCA9C00196181 /* AppDelegate.swift */,
+				1838E5AF21590D58007013BC /* Utils.swift */,
+				180B5766214CCA9C00196181 /* ViewController.swift */,
+				7CDF67222165D418000505D6 /* Font */,
 				7C21E8B421637B79001590DA /* SaveEditSoundVC */,
 				7C208A40215DFA3B001A4F42 /* TabBarDesign */,
 				18D17C622159EA1300F7F75F /* SearchVC */,
@@ -272,6 +285,72 @@
 				7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */,
 			);
 			path = NoImageTrimVC;
+			sourceTree = "<group>";
+		};
+		7CDB5A7A2167438200A83FB7 /* BookmarkVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CDB5A7D2167442C00A83FB7 /* BookmarkTVC */,
+				7CDB5A7B2167440400A83FB7 /* BookmarkVC.swift */,
+			);
+			path = BookmarkVC;
+			sourceTree = "<group>";
+		};
+		7CDB5A7D2167442C00A83FB7 /* BookmarkTVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CDB5A7E2167444000A83FB7 /* BookmarkTVC.swift */,
+			);
+			path = BookmarkTVC;
+			sourceTree = "<group>";
+		};
+		7CDF67212165D3BB000505D6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				180B5768214CCA9C00196181 /* Main.storyboard */,
+				180B5770214CCAAF00196181 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7CDF67222165D418000505D6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7CDF67232165D449000505D6 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				7C158B58215CA17F002BBB0A /* test1.mp3 */,
+				7C158B5A215CBA37002BBB0A /* test2.mp3 */,
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
+		7CDF67332165F1DB000505D6 /* CustomPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				7CDF67342165F1F8000505D6 /* CustomPopUp.swift */,
+			);
+			path = CustomPopUp;
+			sourceTree = "<group>";
+		};
+		7CDF6736216620FB000505D6 /* HelpVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CDF673721662118000505D6 /* HelpVC.swift */,
+			);
+			path = HelpVC;
+			sourceTree = "<group>";
+		};
+		7CDF673921662A36000505D6 /* AboutVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CDF673A21662A4D000505D6 /* AboutVC.swift */,
+			);
+			path = AboutVC;
 			sourceTree = "<group>";
 		};
 		9839D0FC1BFA80E0EB5EB5D0 /* Pods */ = {
@@ -417,18 +496,23 @@
 				180B5784214CE9B300196181 /* UIButtonX.swift in Sources */,
 				180B578C214CE9B300196181 /* UIViewXRadialGradient.swift in Sources */,
 				7C21E8B621637BC6001590DA /* SaveEditSoundVC.swift in Sources */,
+				7CDF673821662118000505D6 /* HelpVC.swift in Sources */,
 				180B5785214CE9B300196181 /* UIImageViewX.swift in Sources */,
+				7CDF67352165F1F8000505D6 /* CustomPopUp.swift in Sources */,
 				18FD204D214F77D60052A8A4 /* RecordingTVC.swift in Sources */,
 				18FD204B214F77B80052A8A4 /* RecordingCVC.swift in Sources */,
 				180B5789214CE9B300196181 /* UITextFieldX.swift in Sources */,
 				18D17C642159EA4A00F7F75F /* SearchVC.swift in Sources */,
+				7CDB5A7F2167444000A83FB7 /* BookmarkTVC.swift in Sources */,
 				180B5787214CE9B300196181 /* UIViewControllerX.swift in Sources */,
 				180B5767214CCA9C00196181 /* ViewController.swift in Sources */,
 				180B576D214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld in Sources */,
 				18FD2046214F751E0052A8A4 /* RecordingsVC.swift in Sources */,
+				7CDF673B21662A4D000505D6 /* AboutVC.swift in Sources */,
 				180B578B214CE9B300196181 /* UISliderX.swift in Sources */,
 				180B578A214CE9B300196181 /* UILabelX.swift in Sources */,
 				180B5765214CCA9C00196181 /* AppDelegate.swift in Sources */,
+				7CDB5A7C2167440400A83FB7 /* BookmarkVC.swift in Sources */,
 				18FB2FF72154BF9D0057E338 /* SiriWaveForm.swift in Sources */,
 				18FB30082154F7A50057E338 /* PlayerCVC.swift in Sources */,
 				18D17C662159EA7900F7F75F /* RecorderVC.swift in Sources */,

@@ -41,4 +41,15 @@ class CustomCameraVC: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
+//        func pushTransition(duration:CFTimeInterval) {
+//            let animation:CATransition = CATransition()
+//            animation.timingFunction = CAMediaTimingFunction(name:
+//                kCAMediaTimingFunctionEaseInEaseOut)
+//            animation.type = kCATransitionMoveIn
+//            animation.subtype = kCATransitionFromLeft
+//            animation.duration = duration
+//            animation.repeatCount = 99
+//            self.view.addAnimation(animation, forKey: kCATransitionPush)
+//        }
+    
 }
