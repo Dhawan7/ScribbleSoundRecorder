@@ -27,6 +27,12 @@ class RecordingsVC: UIViewController {
     var isGridView:Bool!
     var numArr:[Int] = [Int]()
     var filterBtn:Bool = false
+    var nameArr:[String] = ["Recording1", "Recording2", "Recording3", "Recording4", "Recording5", "Recording6", "Recording7", "Recording8", "Recording9", "Recording10", "Recording11", "Recording12"]
+    var dateArr:[String] = ["25 Jun, 2016", "30 Jun, 2016", "28 Jun, 2016", "2 Jul, 2016", "22 Jan, 2015", "2 Apr, 2017", "21 Jun, 2016", "30 Aug, 2016", "8 Sep, 2016", "24 Jul, 2016", "17 Jan, 2015", "9 Apr, 2017"]
+    var convertDateArray:[Date] = []
+    var isAssending:Bool = false
+    
+    
     
     //MARK:- Defualt Class methods
     override func viewDidLoad() {
@@ -39,6 +45,7 @@ class RecordingsVC: UIViewController {
         recordingTableView.estimatedRowHeight = 70
         recordingTableView.rowHeight = UITableViewAutomaticDimension
         recordingCollectionView.isHidden = true
+        dateFormat()
         
         
         // Do any additional setup after loading the view.
@@ -52,7 +59,29 @@ class RecordingsVC: UIViewController {
         
     }
     
-   
+    func dateFormat(){
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "dd MM, yyyy"
+        
+        for dateToSort in dateArr{
+            let date = dateFormater.date(from: dateToSort)
+            if let date = date {
+                convertDateArray.append(date)
+            }
+        }
+    }
+    
+    func dateToString(newDateArr:[Date]){
+        dateArr.removeAll()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MM, yyyy"
+        for dateToStore in newDateArr{
+            let dateStr = dateFormatter.string(from: dateToStore)
+            dateArr.append(dateStr)
+        }
+        
+        
+    }
     
     //MARK:- Button Actions
     @IBAction func btnGridListToggleAction(_ sender: UIButton) {
@@ -122,6 +151,47 @@ class RecordingsVC: UIViewController {
         dismiss(animated: false, completion: nil)
     }
     
+    @IBAction func btnSortByDate(_ sender: UIButton) {
+        if isAssending{
+            let valueDesending = convertDateArray.sorted(by: { $0.compare($1) == .orderedAscending })
+            dateToString(newDateArr: valueDesending)
+            isAssending = false
+        } else{
+            let valueAssending = convertDateArray.sorted(by: { $0.compare($1) == .orderedDescending})
+            dateToString(newDateArr: valueAssending)
+            isAssending = true
+        }
+       
+            self.recordingTableView.reloadData()
+            self.recordingCollectionView.reloadData()
+            self.filterOuterView.alpha = 0.0
+       
+    }
+
+    @IBAction func btnSortByName(_ sender: UIButton) {
+        
+        if isAssending{
+            let sortDecending = nameArr.sorted{ $0.localizedCaseInsensitiveCompare($1) == .orderedDescending }
+            self.nameArr = sortDecending
+            isAssending = false
+            
+        } else{
+            let sortAssending = nameArr.sorted { $0.localizedCaseInsensitiveCompare($1) == .orderedAscending }
+            self.nameArr = sortAssending
+            isAssending = true
+        }
+        
+        self.recordingTableView.reloadData()
+        self.recordingCollectionView.reloadData()
+        self.filterOuterView.alpha = 0.0
+    }
+    
+    @IBAction func btnSortBySize(_ sender: UIButton) {
+        
+    }
+    
+    
+    
     //MARK:- Custom User-Defined functions
     func toggleListGridView(){
         if isGridView{
@@ -182,13 +252,16 @@ class RecordingsVC: UIViewController {
 //MARK:- TableView Delegate methods
 extension RecordingsVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 14
+        return nameArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! RecordingTVC
         cell.imageViewAlbumArt.image = #imageLiteral(resourceName: "1")
-        cell.lblTrackTitle.text = "Recording \(indexPath.row + 1)"
+      //  cell.lblTrackTitle.text = "Recording \(indexPath.row + 1)"
+        //self.nameArr.append("Recording \(indexPath.row + 1)")
+        cell.lblTrackTitle.text = nameArr[indexPath.row]
+        cell.lblTime.text = dateArr[indexPath.row]
         cell.lblTrackLength.text = "00:00"
         return cell
     }

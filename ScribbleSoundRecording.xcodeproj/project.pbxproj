@@ -45,12 +45,16 @@
 		7C208A45215DFD80001A4F42 /* Nexa Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C208A43215DFD7D001A4F42 /* Nexa Light.otf */; };
 		7C208A46215DFD80001A4F42 /* Nexa Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */; };
 		7C21E8B621637BC6001590DA /* SaveEditSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */; };
+		7C2A7CB921705DFD00051CB3 /* ObjectRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A7CB821705DFD00051CB3 /* ObjectRecognitionVC.swift */; };
+		7C2A7CBC2170735D00051CB3 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A7CBB2170735D00051CB3 /* BaseVC.swift */; };
+		7C2A7CD92170C6F400051CB3 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A7CD82170C6F300051CB3 /* Resnet50.mlmodel */; };
 		7C2CCFD52164AEF60050BC43 /* NoImageTrimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */; };
 		7CDB5A7C2167440400A83FB7 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB5A7B2167440400A83FB7 /* BookmarkVC.swift */; };
 		7CDB5A7F2167444000A83FB7 /* BookmarkTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB5A7E2167444000A83FB7 /* BookmarkTVC.swift */; };
 		7CDF67352165F1F8000505D6 /* CustomPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF67342165F1F8000505D6 /* CustomPopUp.swift */; };
 		7CDF673821662118000505D6 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF673721662118000505D6 /* HelpVC.swift */; };
 		7CDF673B21662A4D000505D6 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF673A21662A4D000505D6 /* AboutVC.swift */; };
+		7CED0894216F573C008525C5 /* AudioTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0893216F573C008525C5 /* AudioTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,12 +99,17 @@
 		7C208A43215DFD7D001A4F42 /* Nexa Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Light.otf"; sourceTree = "<group>"; };
 		7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa Bold.otf"; sourceTree = "<group>"; };
 		7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveEditSoundVC.swift; sourceTree = "<group>"; };
+		7C2A7CB821705DFD00051CB3 /* ObjectRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectRecognitionVC.swift; sourceTree = "<group>"; };
+		7C2A7CBB2170735D00051CB3 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		7C2A7CD82170C6F300051CB3 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		7C2A7CDA2170C8BD00051CB3 /* ScribbleSoundRecording-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScribbleSoundRecording-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C2CCFD42164AEF60050BC43 /* NoImageTrimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoImageTrimVC.swift; sourceTree = "<group>"; };
 		7CDB5A7B2167440400A83FB7 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 		7CDB5A7E2167444000A83FB7 /* BookmarkTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTVC.swift; sourceTree = "<group>"; };
 		7CDF67342165F1F8000505D6 /* CustomPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUp.swift; sourceTree = "<group>"; };
 		7CDF673721662118000505D6 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		7CDF673A21662A4D000505D6 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		7CED0893216F573C008525C5 /* AudioTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTest.swift; sourceTree = "<group>"; };
 		B4D89389D17E9258FCF301D1 /* Pods_ScribbleSoundRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScribbleSoundRecording.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,9 +150,14 @@
 				180B5779214CD44000196181 /* Designables */,
 				18FD2047214F77780052A8A4 /* Cells */,
 				18FD2043214F74E90052A8A4 /* Controllers */,
+				7C2A7CBA2170734C00051CB3 /* BaseVC */,
+				180B5764214CCA9C00196181 /* AppDelegate.swift */,
+				1838E5AF21590D58007013BC /* Utils.swift */,
+				180B5766214CCA9C00196181 /* ViewController.swift */,
 				7CDF67232165D449000505D6 /* Audios */,
 				7CDF67212165D3BB000505D6 /* UI */,
 				180B576E214CCAAF00196181 /* Assets.xcassets */,
+				7C2A7CD82170C6F300051CB3 /* Resnet50.mlmodel */,
 				7C208A43215DFD7D001A4F42 /* Nexa Light.otf */,
 				7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */,
 				180B5773214CCAAF00196181 /* Info.plist */,
@@ -153,6 +167,7 @@
 				1838E5AB2158AFD4007013BC /* MainVC.swift */,
 				1838E5AD2158D0A9007013BC /* CustomCameraVC.swift */,
 				1838E5B121591666007013BC /* CustomCamera.swift */,
+				7C2A7CDA2170C8BD00051CB3 /* ScribbleSoundRecording-Bridging-Header.h */,
 			);
 			path = ScribbleSoundRecording;
 			sourceTree = "<group>";
@@ -201,13 +216,13 @@
 		18FD2043214F74E90052A8A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C2CCFD32164AEDB0050BC43 /* NoImageTrimVC */,
+				7C2A7CB721705D9100051CB3 /* ObjectRecognitionVC */,
+				7CED0890216F5604008525C5 /* AudioTestVC */,
 				7CDB5A7A2167438200A83FB7 /* BookmarkVC */,
 				7CDF673921662A36000505D6 /* AboutVC */,
 				7CDF6736216620FB000505D6 /* HelpVC */,
 				7CDF67332165F1DB000505D6 /* CustomPopUp */,
-				180B5764214CCA9C00196181 /* AppDelegate.swift */,
-				1838E5AF21590D58007013BC /* Utils.swift */,
-				180B5766214CCA9C00196181 /* ViewController.swift */,
 				7CDF67222165D418000505D6 /* Font */,
 				7C21E8B421637B79001590DA /* SaveEditSoundVC */,
 				7C208A40215DFA3B001A4F42 /* TabBarDesign */,
@@ -231,7 +246,6 @@
 		18FD2047214F77780052A8A4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7C2CCFD32164AEDB0050BC43 /* NoImageTrimVC */,
 				18FD2049214F77920052A8A4 /* CollectionCell */,
 				18FD2048214F77870052A8A4 /* TableCell */,
 			);
@@ -277,6 +291,22 @@
 				7C21E8B521637BC6001590DA /* SaveEditSoundVC.swift */,
 			);
 			path = SaveEditSoundVC;
+			sourceTree = "<group>";
+		};
+		7C2A7CB721705D9100051CB3 /* ObjectRecognitionVC */ = {
+			isa = PBXGroup;
+			children = (
+				7C2A7CB821705DFD00051CB3 /* ObjectRecognitionVC.swift */,
+			);
+			path = ObjectRecognitionVC;
+			sourceTree = "<group>";
+		};
+		7C2A7CBA2170734C00051CB3 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				7C2A7CBB2170735D00051CB3 /* BaseVC.swift */,
+			);
+			path = BaseVC;
 			sourceTree = "<group>";
 		};
 		7C2CCFD32164AEDB0050BC43 /* NoImageTrimVC */ = {
@@ -353,6 +383,14 @@
 			path = AboutVC;
 			sourceTree = "<group>";
 		};
+		7CED0890216F5604008525C5 /* AudioTestVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CED0893216F573C008525C5 /* AudioTest.swift */,
+			);
+			path = AudioTestVC;
+			sourceTree = "<group>";
+		};
 		9839D0FC1BFA80E0EB5EB5D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +443,7 @@
 				TargetAttributes = {
 					180B5760214CCA9C00196181 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -503,16 +542,20 @@
 				18FD204B214F77B80052A8A4 /* RecordingCVC.swift in Sources */,
 				180B5789214CE9B300196181 /* UITextFieldX.swift in Sources */,
 				18D17C642159EA4A00F7F75F /* SearchVC.swift in Sources */,
+				7CED0894216F573C008525C5 /* AudioTest.swift in Sources */,
 				7CDB5A7F2167444000A83FB7 /* BookmarkTVC.swift in Sources */,
 				180B5787214CE9B300196181 /* UIViewControllerX.swift in Sources */,
 				180B5767214CCA9C00196181 /* ViewController.swift in Sources */,
 				180B576D214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld in Sources */,
 				18FD2046214F751E0052A8A4 /* RecordingsVC.swift in Sources */,
+				7C2A7CB921705DFD00051CB3 /* ObjectRecognitionVC.swift in Sources */,
+				7C2A7CBC2170735D00051CB3 /* BaseVC.swift in Sources */,
 				7CDF673B21662A4D000505D6 /* AboutVC.swift in Sources */,
 				180B578B214CE9B300196181 /* UISliderX.swift in Sources */,
 				180B578A214CE9B300196181 /* UILabelX.swift in Sources */,
 				180B5765214CCA9C00196181 /* AppDelegate.swift in Sources */,
 				7CDB5A7C2167440400A83FB7 /* BookmarkVC.swift in Sources */,
+				7C2A7CD92170C6F400051CB3 /* Resnet50.mlmodel in Sources */,
 				18FB2FF72154BF9D0057E338 /* SiriWaveForm.swift in Sources */,
 				18FB30082154F7A50057E338 /* PlayerCVC.swift in Sources */,
 				18D17C662159EA7900F7F75F /* RecorderVC.swift in Sources */,
@@ -666,10 +709,12 @@
 			baseConfigurationReference = 33DD0981EC5C6A53D8309818 /* Pods-ScribbleSoundRecording.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XHRZA2VH3G;
 				INFOPLIST_FILE = ScribbleSoundRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,6 +723,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "11736ec3-01b8-4a38-9040-3a236ac8e244";
 				PROVISIONING_PROFILE_SPECIFIER = "Scribble Sound Recording";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScribbleSoundRecording/ScribbleSoundRecording-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,10 +735,12 @@
 			baseConfigurationReference = 1C7B71E8021E277D9ABC0B8E /* Pods-ScribbleSoundRecording.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XHRZA2VH3G;
 				INFOPLIST_FILE = ScribbleSoundRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,6 +749,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "11736ec3-01b8-4a38-9040-3a236ac8e244";
 				PROVISIONING_PROFILE_SPECIFIER = "Scribble Sound Recording";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScribbleSoundRecording/ScribbleSoundRecording-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

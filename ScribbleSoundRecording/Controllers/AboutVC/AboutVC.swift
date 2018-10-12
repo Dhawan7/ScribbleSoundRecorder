@@ -13,6 +13,7 @@ class AboutVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(false, animated: true)
+       
         navigationItem.title = "About"
     }
 

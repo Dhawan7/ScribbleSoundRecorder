@@ -10,4 +10,7 @@ import UIKit
 
 class PlayerCVC: UICollectionViewCell {
     
+    @IBOutlet weak var imgPlay: UIImageViewX!
+    
+    
 }

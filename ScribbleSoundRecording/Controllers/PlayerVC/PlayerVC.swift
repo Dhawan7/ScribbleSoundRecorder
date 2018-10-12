@@ -18,6 +18,7 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var lblCurrentAudioTime: UILabel!
     @IBOutlet weak var lblNotes: UILabel!
     @IBOutlet weak var btnAddBookmark: UIButton!
+    @IBOutlet weak var imgMusicPlayer: UIImageView!
     
     
     
@@ -29,11 +30,17 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     var audioLength:Float = 0.0
     var messagePlaybackTimer: CADisplayLink?
     var isBookmark:Bool = false
-    
+    var imgFromSearch:UIImage = #imageLiteral(resourceName: "background")
+    var isFromSearch:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if !isFromSearch{
         navigationItem.setHidesBackButton(false, animated: true)
+        } else{
+            navigationItem.setHidesBackButton(true, animated: true)
+        }
+     //   navigationController?.setNavigationBarHidden(false, animated: true		)
         collectionViewPlaylist.delegate = self
         collectionViewPlaylist.dataSource = self
         audioPlayer(songIndex: track[currentTrackIndex])
@@ -232,7 +239,7 @@ extension PlayerVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewPlaylist.dequeueReusableCell(withReuseIdentifier: "playerCell", for: indexPath) as! PlayerCVC
-        
+            cell.imgPlay.image = imgFromSearch
         return cell
     }
     

@@ -20,6 +20,7 @@ class CustomPopUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 148/255, green: 23/255, blue: 81/255, alpha: 1.0)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
