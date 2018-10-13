@@ -53,8 +53,10 @@ class RecorderVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         //viewDismissSave.alpha = 0.0
-        setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 0.0, labelSave: 0.0, pauseButton: 0.0, saveButton: 0.0)
+       // setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 0.0, labelSave: 0.0, pauseButton: 0.0, saveButton: 0.0)
         self.redRecordButton()
+        lblSave.alpha = 0.0
+        lblPause.alpha = 0.0
         self.tabBarController?.tabBar.isHidden = false
         navigationController?.setNavigationBarHidden(true, animated: true)
         
@@ -62,6 +64,10 @@ class RecorderVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         stopWave()
+        btnPause.alpha = 0.0
+        btnStopSave.alpha = 0.0
+        lblSave.alpha = 0.0
+        lblPause.alpha = 0.0
     }
     
     @objc internal func refreshAudioView(_:Timer) {
@@ -103,12 +109,28 @@ class RecorderVC: UIViewController {
         self.btnRecord.backgroundColor = UIColor(displayP3Red: 170/255, green: 170/255, blue: 170/255, alpha: 1.0)
     }
     
+    func redPauseButton(){
+        self.btnPause.backgroundColor = UIColor(displayP3Red: 148/255, green: 23/255, blue: 81/255, alpha: 1.0)
+    }
+    
+    func grayPauseButton(){
+        self.btnPause.backgroundColor = UIColor(displayP3Red: 170/255, green: 170/255, blue: 170/255, alpha: 1.0)
+    }
+    
+    func redSaveButton(){
+        self.btnStopSave.backgroundColor = UIColor(displayP3Red: 148/255, green: 23/255, blue: 81/255, alpha: 1.0)
+    }
+    
+    func grayStopButton(){
+        self.btnStopSave.backgroundColor = UIColor(displayP3Red: 170/255, green: 170/255, blue: 170/255, alpha: 1.0)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIView.animate(withDuration: 0.4) {
         //   self.viewDismissSave.alpha = 0.0
-            self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+           // self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
             self.isPause = false
-            self.isRecording = false
+            //self.isRecording = false
             self.isSave = false
             self.stopWave()
         }
@@ -122,14 +144,19 @@ class RecorderVC: UIViewController {
         UIView.animate(withDuration: 0.3) {
           //  self.viewDismissSave.alpha = 0.0
         if self.isRecording{
+            
 //            self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 0.0, labelSave: 0.0, pauseButton: 0.0, saveButton: 0.0)
 //            self.finishRecording(success: true)
 //            self.stopWave()
 //            self.isRecording = false
 //            self.waveAudioView.amplitude = 0.0
         } else{
-            self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"),  imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+            //self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"),  imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+            self.lblPause.alpha = 1.0
+            self.lblSave.alpha = 1.0
             self.redRecordButton()
+            self.grayStopButton()
+            self.grayPauseButton()
             self.startRecording()
             self.showWave()
             self.isRecording = true
@@ -146,16 +173,21 @@ class RecorderVC: UIViewController {
         isRecording = false
          UIView.animate(withDuration: 0.2) {
             if self.isSave{
-            self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
-               self.grayRecordButton()
-               // self.viewDismissSave.alpha = 0.0
-                self.stopWave()
+           // self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+               self.redRecordButton()
+               self.grayPauseButton()
+                self.grayStopButton()
+                self.showWave()
                 self.isSave = false
+                self.isRecording = true
         } else{
            
-                self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save-color"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
-                self.redRecordButton()
+              //  self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save-color"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+                self.redSaveButton()
+                self.grayRecordButton()
+                self.grayPauseButton()
                 self.audioRecorder.stop()
+                self.isRecording = true
                 //DispatchQueue.main.asyncAfter(deadline: .now() + 0.02, execute: {
              //  let vc = self.storyboard?.instantiateViewController(withIdentifier: "CustomPopUp") as! CustomPopUp
             //   vc.modalPresentationStyle = .currentContext
@@ -184,18 +216,23 @@ class RecorderVC: UIViewController {
         UIView.animate(withDuration: 0.2) {
           //  self.viewDismissSave.alpha = 0.0
             if self.isPause{
-                self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+               // self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+                self.redRecordButton()
+                self.grayPauseButton()
+                self.grayStopButton()
                 self.showWave()
                 self.audioRecorder.record()
-                self.redRecordButton()
                 self.isPause = false
+                self.isRecording = true
             } else{
-                self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-color"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
-                
+             //   self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-color"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+                self.redPauseButton()
                 self.grayRecordButton()
+                self.grayStopButton()
                 self.stopWave()
                 self.audioRecorder.pause()
                 self.isPause = true
+                self.isRecording = true
             }
         }
     }
@@ -204,7 +241,10 @@ class RecorderVC: UIViewController {
     @IBAction func btnNoPopUp(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
            // self.viewDismissSave.alpha = 0.0
-            self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save-color"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+            //self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save-color"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
+            self.redRecordButton()
+            self.grayPauseButton()
+            self.grayStopButton()
             self.showWave()
             self.isPause = false
             self.isRecording = false
