@@ -11,6 +11,16 @@ import UIKit
 class NoImageTrimVC: BaseVC {
     
     @IBOutlet weak var imgToSave: UIImageViewX!
+    @IBOutlet weak var tfTitle: UITextField!
+    @IBOutlet weak var tfNotes: UITextField!
+    @IBOutlet weak var imgBackground: UIImageView!
+    
+    
+    //Mark: let, var
+    var urlFromCustomPopUP: URL!
+    let context = CoreDataStack.sharedInstance.getContext()
+    var imageData:Data = Data()
+    let imageObservationData = MLkitImageProcessing()
     
 
     override func viewDidLoad() {
@@ -21,19 +31,36 @@ class NoImageTrimVC: BaseVC {
     @IBAction func btnPickImage(_ sender: UIButtonX) {
         showAlert()
     }
-    
 
     @IBAction func btnSave(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SaveEditSoundVC") as! SaveEditSoundVC
-        navigationController?.pushViewController(vc, animated: true)
+        let objName = imageObservationData.observationData
+        let entity = RecordingData.insertRequest(context: context)
+
+        if (tfTitle.text?.isEmpty)!{
+            if (tfNotes.text?.isEmpty)!{
+                entity.setData(urlD: urlFromCustomPopUP, imageD: (imgToSave.image?.jpeg)!, dateD: Date(), nameD: tfTitle.text!, notesD: tfNotes.text!, objectNameD: objName)
+            }
+        }
     }
-    
 }
 
 extension NoImageTrimVC {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagerPicker.dismiss(animated: true, completion: nil)
-        imgToSave.image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let imageToDisplay = info[UIImagePickerControllerOriginalImage] as! UIImage
+        self.imageObservationData.classifyImage(image: imageToDisplay)
+        imgToSave.image = imageToDisplay
+        imgBackground.image = imageToDisplay
+        
     }
-
 }
+
+extension UIImage {
+    var jpeg: Data? {
+        return UIImageJPEGRepresentation(self, 1)
+    }
+    var png: Data? {
+        return UIImagePNGRepresentation(self)
+    }
+}
+
