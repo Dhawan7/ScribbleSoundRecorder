@@ -14,12 +14,12 @@ public class RecordingData: NSManagedObject {
     static let share = RecordingData()
     
     func setData(urlD:URL, imageD:Data, dateD:Date, nameD:String, notesD:String, objectNameD:String){
-        url = urlD
-        image = imageD
-        date = dateD
-        name = nameD
-        note = notesD
-        objectName = objectNameD
+        self.url = urlD
+        self.image = imageD
+        self.date = dateD
+        self.name = nameD
+        self.note = notesD
+        self.objectName = objectNameD
         
     }
     

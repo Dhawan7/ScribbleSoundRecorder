@@ -21,7 +21,8 @@ class RecorderVC: UIViewController {
     @IBOutlet weak var lblSave: UILabel!
     @IBOutlet weak var viewDismissSave: UIView!
     @IBOutlet weak var waveAudioView: SwiftSiriWaveformView!
-    
+    @IBOutlet weak var viewPopUP: UIView!
+    @IBOutlet weak var btnDelete: UIButtonX!
     
     
     //Mark: let, var
@@ -32,6 +33,7 @@ class RecorderVC: UIViewController {
     var change: CGFloat = 0.01
     var popUpView: CustomPopUp!
     var dateStr = ""
+    var totalAudioDuration = 3600
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioUrl: URL!
@@ -44,7 +46,7 @@ class RecorderVC: UIViewController {
         super.viewDidLoad()
         self.waveAudioView.density = 1.0
         dateString()
-       // userPermission()
+        viewPopUP.alpha = 0.0
         
     }
     
@@ -58,7 +60,8 @@ class RecorderVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        self.redRecordButton()
+        self.grayRecordButton()
+        isRecording = false
         lblSave.alpha = 0.0
         lblPause.alpha = 0.0
         self.tabBarController?.tabBar.isHidden = false
@@ -72,6 +75,7 @@ class RecorderVC: UIViewController {
         btnStopSave.alpha = 0.0
         lblSave.alpha = 0.0
         lblPause.alpha = 0.0
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @objc internal func refreshAudioView(_:Timer) {
@@ -82,7 +86,7 @@ class RecorderVC: UIViewController {
     }
     
     func stopWave(){
-        
+            audioRecorder.pause()
            timer?.invalidate()
             timer = nil
     }
@@ -103,8 +107,6 @@ class RecorderVC: UIViewController {
         btnPause.alpha = 1.0
         btnRecord.alpha = 1.0
         btnStopSave.alpha = 1.0
-        
-    
     }
     
    
@@ -135,14 +137,17 @@ class RecorderVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIView.animate(withDuration: 0.4) {
-       
-            self.isPause = false
-            //self.isRecording = false
-            self.isSave = false
-            self.stopWave()
+            UIView.animate(withDuration: 0.3, animations: {
+                self.viewPopUP.alpha = 0.0
+            })
         }
        
     }
+    
+    func showWave(){
+        self.timer = Timer.scheduledTimer(timeInterval: 0.06, target: self, selector: #selector(RecorderVC.refreshAudioView(_:)), userInfo: nil, repeats: true)
+    }
+
     
     
     @IBAction func btnStartRecord(_ sender: UIButton) {
@@ -151,31 +156,26 @@ class RecorderVC: UIViewController {
         UIView.animate(withDuration: 0.3) {
          
         if self.isRecording{
-            self.finishRecording(success: true)
+            //self.finishRecording(success: true)
 
         } else{
-          
-           
-            
             self.lblPause.alpha = 1.0
             self.lblSave.alpha = 1.0
-            self.redRecordButton()
+            self.btnPause.alpha = 1.0
+            self.btnStopSave.alpha = 1.0
             self.grayStopButton()
             self.grayPauseButton()
+            self.redRecordButton()
             self.startRecording()
-            self.showWave()
             self.isRecording = true
         }
         }
     }
     
-    func showWave(){
-         self.timer = Timer.scheduledTimer(timeInterval: 0.06, target: self, selector: #selector(RecorderVC.refreshAudioView(_:)), userInfo: nil, repeats: true)
-    }
+   
     
     @IBAction func btnSaveStop(_ sender: UIButton) {
         isPause = false
-        isRecording = false
          UIView.animate(withDuration: 0.2) {
             if self.isSave{
           
@@ -186,25 +186,16 @@ class RecorderVC: UIViewController {
                 self.isSave = false
                 self.isRecording = true
         } else{
-           
+                self.btnDelete.isHidden = false
                 self.redSaveButton()
                 self.grayRecordButton()
                 self.grayPauseButton()
-                self.audioRecorder.stop()
-                self.isRecording = true
-                
-                let storyBord = self.storyboard?.instantiateViewController(withIdentifier: "CustomPopUp") as! CustomPopUp
-                
-                let vc =  UINavigationController.init(rootViewController: storyBord)
-                
-                storyBord.audioURLFromHome = self.getDocumentsDirectory()
-                
-                vc.modalPresentationStyle = .overCurrentContext
-                UIView.animate(withDuration: 0.3, animations: {
-                     self.present(vc, animated: true, completion: nil)
-                })
+                self.audioRecorder.pause()
                 self.stopWave()
                 self.isSave = true
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.viewPopUP.alpha = 1.0
+                })
             }
         }
        
@@ -212,28 +203,25 @@ class RecorderVC: UIViewController {
     }
     
     @IBAction func btnPauseAct(_ sender: UIButton) {
-        isRecording = false
+       
         isSave = false
         
         UIView.animate(withDuration: 0.2) {
-          //  self.viewDismissSave.alpha = 0.0
+    
             if self.isPause{
-               // self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
                 self.redRecordButton()
                 self.grayPauseButton()
                 self.grayStopButton()
-                self.showWave()
                 self.audioRecorder.record()
+                self.showWave()
                 self.isPause = false
-                self.isRecording = true
             } else{
                 self.redPauseButton()
                 self.grayRecordButton()
                 self.grayStopButton()
-                self.stopWave()
                 self.audioRecorder.pause()
+                self.stopWave()
                 self.isPause = true
-                self.isRecording = true
             }
         }
     }
@@ -241,24 +229,27 @@ class RecorderVC: UIViewController {
     
     @IBAction func btnNoPopUp(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
-           // self.viewDismissSave.alpha = 0.0
-            //self.setButtonData(imagePause: #imageLiteral(resourceName: "pause-1"), imageStop: #imageLiteral(resourceName: "save-color"), labelPause: 1.0, labelSave: 1.0, pauseButton: 1.0, saveButton: 1.0)
-            self.redRecordButton()
+            self.viewPopUP.alpha = 0.0
+            self.grayRecordButton()
             self.grayPauseButton()
-            self.grayStopButton()
-            self.showWave()
-            self.isPause = false
-            self.isRecording = false
-            self.isSave = false
+            self.redSaveButton()
+            self.stopWave()
+            self.isSave = true
         }
        
     }
     
     @IBAction func btnYesPopUP(_ sender: UIButton) {
+        self.audioRecorder.stop()
         let vc = storyboard?.instantiateViewController(withIdentifier: "NoImageTrimVC") as! NoImageTrimVC
-      vc.urlFromCustomPopUP = audioUrl
+      vc.audioURL = audioUrl
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func btnDelete(_ sender: UIButton) {
+        self.btnDelete.isHidden = true
+    }
+    
     
    
     
@@ -299,6 +290,7 @@ extension RecorderVC: AVAudioRecorderDelegate {
             audioRecorder = try AVAudioRecorder(url: audioFileName, settings: setting)
             audioRecorder.delegate = self
             audioRecorder.record()
+            self.showWave()
         } catch {
             finishRecording(success: false)
         }
@@ -315,7 +307,7 @@ extension RecorderVC: AVAudioRecorderDelegate {
         audioRecorder = nil
         
         if success {
-           
+           self.stopWave()
           
         } else {
     

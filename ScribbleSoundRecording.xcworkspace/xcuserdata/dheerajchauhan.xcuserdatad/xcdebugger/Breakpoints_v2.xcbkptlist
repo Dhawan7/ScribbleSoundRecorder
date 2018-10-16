@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ScribbleSoundRecording/Controllers/NoImageTrimVC/NoImageTrimVC.swift"
-            timestampString = "561298205.9235359"
+            filePath = "ScribbleSoundRecording/Controllers/RecorderVC/RecorderVC.swift"
+            timestampString = "561388418.304654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "btnSave(_:)"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "btnPauseAct(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -13,11 +13,11 @@ import CoreData
 extension RecordingData {
     
     @nonobjc public class func fetchRequest() -> NSFetchRequest<RecordingData> {
-        return NSFetchRequest<RecordingData>(entityName: "RecodingData")
+        return NSFetchRequest<RecordingData>(entityName: "ScribbleEntities")
     }
     
     @nonobjc public class func insertRequest(context:NSManagedObjectContext) -> RecordingData {
-        return NSEntityDescription.insertNewObject(forEntityName: "RecodingData", into:context ) as! RecordingData
+        return NSEntityDescription.insertNewObject(forEntityName: "ScribbleEntities", into:context ) as! RecordingData
     }
     
     @NSManaged public var url: URL?

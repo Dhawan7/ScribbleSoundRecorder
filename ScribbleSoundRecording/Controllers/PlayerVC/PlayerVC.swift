@@ -40,7 +40,7 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         } else{
             navigationItem.setHidesBackButton(true, animated: true)
         }
-     //   navigationController?.setNavigationBarHidden(false, animated: true		)
+     // navigationController?.setNavigationBarHidden(false, animated: true)
         collectionViewPlaylist.delegate = self
         collectionViewPlaylist.dataSource = self
         audioPlayer(songIndex: track[currentTrackIndex])
@@ -95,7 +95,6 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
             scrollToNextCell(isNext: false)
             self.btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
             audioPlayer.play()
-            
         } else{
             
         }

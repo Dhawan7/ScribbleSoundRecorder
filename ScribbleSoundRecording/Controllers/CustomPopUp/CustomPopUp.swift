@@ -42,7 +42,7 @@ class CustomPopUp: UIViewController {
     
     @IBAction func btnYes(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "NoImageTrimVC") as! NoImageTrimVC
-        vc.urlFromCustomPopUP = audioURLFromHome
+     //   vc.urlFromCustomPopUP = audioURLFromHome
         navigationController?.pushViewController(vc, animated: true)
     }
     

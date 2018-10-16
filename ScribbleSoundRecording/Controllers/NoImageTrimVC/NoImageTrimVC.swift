@@ -17,7 +17,7 @@ class NoImageTrimVC: BaseVC {
     
     
     //Mark: let, var
-    var urlFromCustomPopUP: URL!
+    var audioURL: URL!
     let context = CoreDataStack.sharedInstance.getContext()
     var imageData:Data = Data()
     let imageObservationData = MLkitImageProcessing()
@@ -25,7 +25,7 @@ class NoImageTrimVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.setHidesBackButton(false, animated: true)
+        
     }
     
     @IBAction func btnPickImage(_ sender: UIButtonX) {
@@ -35,10 +35,16 @@ class NoImageTrimVC: BaseVC {
     @IBAction func btnSave(_ sender: UIButton) {
         let objName = imageObservationData.observationData
         let entity = RecordingData.insertRequest(context: context)
-
-        if (tfTitle.text?.isEmpty)!{
-            if (tfNotes.text?.isEmpty)!{
-                entity.setData(urlD: urlFromCustomPopUP, imageD: (imgToSave.image?.jpeg)!, dateD: Date(), nameD: tfTitle.text!, notesD: tfNotes.text!, objectNameD: objName)
+        if !(tfTitle.text?.isEmpty)!{
+            if !(tfNotes.text?.isEmpty)!{
+                entity.setData(urlD: audioURL, imageD: (imgToSave.image?.jpeg) ?? #imageLiteral(resourceName: "background").jpeg!, dateD: Date(), nameD: tfTitle.text!, notesD: tfNotes.text!, objectNameD: objName)
+                do {
+                    try context.save()
+                } catch let error {
+                    print(error)
+                }
+            } else{
+               
             }
         }
     }

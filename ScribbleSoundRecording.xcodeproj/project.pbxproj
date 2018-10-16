@@ -55,6 +55,7 @@
 		7CDF67352165F1F8000505D6 /* CustomPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF67342165F1F8000505D6 /* CustomPopUp.swift */; };
 		7CDF673821662118000505D6 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF673721662118000505D6 /* HelpVC.swift */; };
 		7CDF673B21662A4D000505D6 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF673A21662A4D000505D6 /* AboutVC.swift */; };
+		7CEC5C6621761A7A008D97A5 /* ScribbleData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC5C6421761A7A008D97A5 /* ScribbleData.xcdatamodeld */; };
 		7CED0894216F573C008525C5 /* AudioTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0893216F573C008525C5 /* AudioTest.swift */; };
 		7CFD35A12171D7B6003619B6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD35A02171D7B5003619B6 /* CoreDataStack.swift */; };
 		7CFD35A92171F145003619B6 /* RecordingData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD35A82171F145003619B6 /* RecordingData+CoreDataClass.swift */; };
@@ -114,6 +115,7 @@
 		7CDF67342165F1F8000505D6 /* CustomPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUp.swift; sourceTree = "<group>"; };
 		7CDF673721662118000505D6 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		7CDF673A21662A4D000505D6 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		7CEC5C6521761A7A008D97A5 /* ScribbleData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScribbleData.xcdatamodel; sourceTree = "<group>"; };
 		7CED0893216F573C008525C5 /* AudioTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTest.swift; sourceTree = "<group>"; };
 		7CFD35A02171D7B5003619B6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		7CFD35A82171F145003619B6 /* RecordingData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordingData+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				7C208A43215DFD7D001A4F42 /* Nexa Light.otf */,
 				7C208A44215DFD7E001A4F42 /* Nexa Bold.otf */,
 				180B5773214CCAAF00196181 /* Info.plist */,
+				7CEC5C6421761A7A008D97A5 /* ScribbleData.xcdatamodeld */,
 				180B576B214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodeld */,
 				18FB2FF62154BF9D0057E338 /* SiriWaveForm.swift */,
 				1838E5A92158AA40007013BC /* PageVC.swift */,
@@ -555,6 +558,7 @@
 				180B5789214CE9B300196181 /* UITextFieldX.swift in Sources */,
 				7CFD35A12171D7B6003619B6 /* CoreDataStack.swift in Sources */,
 				18D17C642159EA4A00F7F75F /* SearchVC.swift in Sources */,
+				7CEC5C6621761A7A008D97A5 /* ScribbleData.xcdatamodeld in Sources */,
 				7CED0894216F573C008525C5 /* AudioTest.swift in Sources */,
 				7CDB5A7F2167444000A83FB7 /* BookmarkTVC.swift in Sources */,
 				180B5787214CE9B300196181 /* UIViewControllerX.swift in Sources */,
@@ -802,6 +806,16 @@
 			);
 			currentVersion = 180B576C214CCA9C00196181 /* ScribbleSoundRecording.xcdatamodel */;
 			path = ScribbleSoundRecording.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		7CEC5C6421761A7A008D97A5 /* ScribbleData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7CEC5C6521761A7A008D97A5 /* ScribbleData.xcdatamodel */,
+			);
+			currentVersion = 7CEC5C6521761A7A008D97A5 /* ScribbleData.xcdatamodel */;
+			path = ScribbleData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

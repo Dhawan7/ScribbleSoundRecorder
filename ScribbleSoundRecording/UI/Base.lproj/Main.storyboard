@@ -136,7 +136,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-ec-LEG">
-                                <rect key="frame" x="92.5" y="80" width="135" height="76"/>
+                                <rect key="frame" x="93" y="80.5" width="134.5" height="75.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="65"/>
                                 <color key="textColor" red="0.58039215686274503" green="0.090196078431372548" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -159,6 +159,154 @@
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxq-9H-1xU">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-ak-8Zl" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="143" width="280.5" height="170"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-K0-z5y">
+                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="170"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO SAVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-EV-IUo">
+                                                <rect key="frame" x="16" y="20" width="248.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                                <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-nF-0aq">
+                                                <rect key="frame" x="19.5" y="70" width="241" height="32"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-Of-i7v" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                                        <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                                        <state key="normal" title="NO">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnNoPopUp:" destination="IzT-OE-8ut" eventType="touchUpInside" id="sxe-z6-DeC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWi-Zh-r5e" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                                        <rect key="frame" x="160" y="0.0" width="80" height="32"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="7Wm-SH-TDO"/>
+                                                            <constraint firstAttribute="width" constant="80" id="mHR-4u-7XS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                                        <state key="normal" title="YES">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnYesPopUP:" destination="IzT-OE-8ut" eventType="touchUpInside" id="CTz-Pd-4Pk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="kWi-Zh-r5e" secondAttribute="trailing" constant="1" id="8hN-gm-tYF"/>
+                                                    <constraint firstItem="aaw-Of-i7v" firstAttribute="leading" secondItem="V5X-nF-0aq" secondAttribute="leading" id="C0M-xk-pYe"/>
+                                                    <constraint firstItem="kWi-Zh-r5e" firstAttribute="width" secondItem="aaw-Of-i7v" secondAttribute="width" id="EHT-yo-3bB"/>
+                                                    <constraint firstItem="kWi-Zh-r5e" firstAttribute="top" secondItem="V5X-nF-0aq" secondAttribute="top" id="KoE-1z-PId"/>
+                                                    <constraint firstItem="kWi-Zh-r5e" firstAttribute="leading" secondItem="aaw-Of-i7v" secondAttribute="trailing" constant="80" id="dvE-g5-9BC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kWi-Zh-r5e" secondAttribute="bottom" id="eLH-z0-eun"/>
+                                                    <constraint firstItem="kWi-Zh-r5e" firstAttribute="centerY" secondItem="aaw-Of-i7v" secondAttribute="centerY" id="eti-sl-WZM"/>
+                                                    <constraint firstItem="kWi-Zh-r5e" firstAttribute="height" secondItem="aaw-Of-i7v" secondAttribute="height" id="u5U-Gx-p2O"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jU2-dm-aOQ">
+                                                <rect key="frame" x="100" y="122" width="80" height="32"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-Gk-Qkx" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="13"/>
+                                                        <state key="normal" title="DELETE">
+                                                            <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnDelete:" destination="IzT-OE-8ut" eventType="touchUpInside" id="XnQ-fR-BLo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="jU2-dm-aOQ" secondAttribute="bottom" constant="16" id="0My-nL-oG1"/>
+                                            <constraint firstItem="kWi-Zh-r5e" firstAttribute="height" secondItem="6E5-Gk-Qkx" secondAttribute="height" id="105-xc-oks"/>
+                                            <constraint firstItem="MNm-EV-IUo" firstAttribute="leading" secondItem="lbl-ak-8Zl" secondAttribute="leading" constant="16" id="7v2-lG-agE"/>
+                                            <constraint firstItem="jDr-K0-z5y" firstAttribute="top" secondItem="lbl-ak-8Zl" secondAttribute="top" id="9XH-cn-foS"/>
+                                            <constraint firstItem="kWi-Zh-r5e" firstAttribute="width" secondItem="6E5-Gk-Qkx" secondAttribute="width" id="BPe-gg-O16"/>
+                                            <constraint firstItem="V5X-nF-0aq" firstAttribute="centerX" secondItem="MNm-EV-IUo" secondAttribute="centerX" id="Fto-Lp-wBa"/>
+                                            <constraint firstItem="jU2-dm-aOQ" firstAttribute="top" secondItem="V5X-nF-0aq" secondAttribute="bottom" constant="20" id="Gma-Ck-ZJ1"/>
+                                            <constraint firstItem="jDr-K0-z5y" firstAttribute="leading" secondItem="lbl-ak-8Zl" secondAttribute="leading" id="SH4-al-xE3"/>
+                                            <constraint firstAttribute="bottom" secondItem="jDr-K0-z5y" secondAttribute="bottom" id="TgQ-AI-tV1"/>
+                                            <constraint firstAttribute="trailing" secondItem="MNm-EV-IUo" secondAttribute="trailing" constant="16" id="Ujn-Kd-xI0"/>
+                                            <constraint firstItem="MNm-EV-IUo" firstAttribute="top" secondItem="lbl-ak-8Zl" secondAttribute="top" constant="20" id="YRi-4R-Zs5"/>
+                                            <constraint firstItem="V5X-nF-0aq" firstAttribute="top" secondItem="MNm-EV-IUo" secondAttribute="bottom" constant="30" id="f0c-pp-CMB"/>
+                                            <constraint firstAttribute="trailing" secondItem="jDr-K0-z5y" secondAttribute="trailing" id="gGv-P4-5IS"/>
+                                            <constraint firstItem="jU2-dm-aOQ" firstAttribute="centerX" secondItem="V5X-nF-0aq" secondAttribute="centerX" id="zxy-ct-uXP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.53000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lbl-ak-8Zl" firstAttribute="width" secondItem="dxq-9H-1xU" secondAttribute="width" multiplier="0.9" constant="-7.1999999999999886" id="2vv-o5-idm"/>
+                                    <constraint firstItem="lbl-ak-8Zl" firstAttribute="centerX" secondItem="dxq-9H-1xU" secondAttribute="centerX" id="H52-H1-sHz"/>
+                                    <constraint firstItem="lbl-ak-8Zl" firstAttribute="centerY" secondItem="dxq-9H-1xU" secondAttribute="centerY" id="Pnd-ku-k0Y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -166,7 +314,10 @@
                             <constraint firstItem="Ee3-2o-hBV" firstAttribute="top" secondItem="0aN-jv-9cg" secondAttribute="bottom" constant="8" id="10N-81-wRu"/>
                             <constraint firstItem="aq1-Fc-lyQ" firstAttribute="leading" secondItem="q9r-cc-6Ry" secondAttribute="leading" constant="20" id="4g0-cP-UB3"/>
                             <constraint firstItem="5mJ-ge-pss" firstAttribute="centerX" secondItem="f2s-zo-Sb1" secondAttribute="centerX" id="4h6-sf-96P"/>
+                            <constraint firstItem="q9r-cc-6Ry" firstAttribute="trailing" secondItem="dxq-9H-1xU" secondAttribute="trailing" id="8uf-e5-iC3"/>
                             <constraint firstItem="q9r-cc-6Ry" firstAttribute="bottom" secondItem="hSN-or-VAU" secondAttribute="bottom" constant="80" id="BO3-Yx-ab0"/>
+                            <constraint firstItem="dxq-9H-1xU" firstAttribute="bottom" secondItem="q9r-cc-6Ry" secondAttribute="bottom" id="Dcl-Kz-K4i"/>
+                            <constraint firstItem="q9r-cc-6Ry" firstAttribute="top" secondItem="dxq-9H-1xU" secondAttribute="top" id="Dmg-8j-e4a"/>
                             <constraint firstItem="0aN-jv-9cg" firstAttribute="centerY" secondItem="hSN-or-VAU" secondAttribute="centerY" constant="6" id="LNG-oP-jqz"/>
                             <constraint firstItem="Ee3-2o-hBV" firstAttribute="centerX" secondItem="0aN-jv-9cg" secondAttribute="centerX" id="M1k-dS-b3B"/>
                             <constraint firstItem="hSN-or-VAU" firstAttribute="leading" secondItem="0aN-jv-9cg" secondAttribute="trailing" constant="32" id="M2j-QZ-tGx"/>
@@ -179,6 +330,7 @@
                             <constraint firstItem="hSN-or-VAU" firstAttribute="top" secondItem="aq1-Fc-lyQ" secondAttribute="bottom" constant="20" id="lUt-z6-5JS"/>
                             <constraint firstItem="f2s-zo-Sb1" firstAttribute="leading" secondItem="hSN-or-VAU" secondAttribute="trailing" constant="32" id="lvx-Nh-Mqj"/>
                             <constraint firstItem="q9r-cc-6Ry" firstAttribute="trailing" secondItem="aq1-Fc-lyQ" secondAttribute="trailing" constant="20" id="q7X-vT-hRe"/>
+                            <constraint firstItem="q9r-cc-6Ry" firstAttribute="leading" secondItem="dxq-9H-1xU" secondAttribute="leading" id="r0X-9y-xuH"/>
                             <constraint firstItem="5mJ-ge-pss" firstAttribute="top" secondItem="f2s-zo-Sb1" secondAttribute="bottom" constant="8" id="ueL-C3-Y9d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q9r-cc-6Ry"/>
@@ -188,18 +340,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="V1H-vx-ZUu"/>
                     <connections>
+                        <outlet property="btnDelete" destination="6E5-Gk-Qkx" id="Zey-ic-2dH"/>
                         <outlet property="btnPause" destination="0aN-jv-9cg" id="hyh-xT-irp"/>
                         <outlet property="btnRecord" destination="hSN-or-VAU" id="rDZ-CJ-Dh0"/>
                         <outlet property="btnStopSave" destination="f2s-zo-Sb1" id="1kp-ZR-wBk"/>
                         <outlet property="lblPause" destination="Ee3-2o-hBV" id="ULt-BX-hhn"/>
                         <outlet property="lblSave" destination="5mJ-ge-pss" id="gYZ-Bo-xGK"/>
+                        <outlet property="viewPopUP" destination="dxq-9H-1xU" id="Hsz-1z-m2c"/>
                         <outlet property="waveAudioView" destination="aq1-Fc-lyQ" id="wZ4-J8-k3a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3IQ-Kv-YC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="pgU-VC-cZo"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="3848"/>
+            <point key="canvasLocation" x="-578" y="3826"/>
         </scene>
         <!--Custom Pop Up-->
         <scene sceneID="Ci9-li-G0P">
@@ -271,10 +425,6 @@
                                                                 <real key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="btnYes:" destination="ErD-Ju-vgw" eventType="touchUpInside" id="3aI-mo-0UR"/>
-                                                            <action selector="btnYesPopUP:" destination="IzT-OE-8ut" eventType="touchUpInside" id="lmx-LH-IyY"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -376,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0L-yV-vNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184.80000000000001" y="3844.2278860569718"/>
+            <point key="canvasLocation" x="392" y="3827"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="Ckx-dG-FYB">
@@ -1020,7 +1170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ib9-zq-FVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1224" y="4592"/>
+            <point key="canvasLocation" x="1388" y="4592"/>
         </scene>
         <!--BookmarkVC-->
         <scene sceneID="2fQ-Of-Vc1">
@@ -1165,7 +1315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXs-kb-alS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107.5" y="4591.9014084507044"/>
+            <point key="canvasLocation" x="2224" y="4592"/>
         </scene>
         <!--HelpVC-->
         <scene sceneID="jcN-ss-VBe">
@@ -1262,7 +1412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esx-pb-HoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="3830"/>
+            <point key="canvasLocation" x="3266" y="3828"/>
         </scene>
         <!--AboutVC-->
         <scene sceneID="q49-7x-lRP">
@@ -1498,7 +1648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RrP-1k-oT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4000.8000000000002" y="3843.3283358320841"/>
+            <point key="canvasLocation" x="4155" y="3829"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ee7-ik-7Lu">
@@ -1513,7 +1663,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikE-dQ-3yo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389" y="3847"/>
+            <point key="canvasLocation" x="1389" y="3828"/>
         </scene>
         <!--RecordingsVC-->
         <scene sceneID="Hcz-lA-tyg">
@@ -1880,7 +2030,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcA-xk-GvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="5lX-DX-JPU"/>
             </objects>
-            <point key="canvasLocation" x="2223.75" y="3842.9577464788731"/>
+            <point key="canvasLocation" x="2224" y="3828"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="OKB-nH-v1R">
@@ -2103,7 +2253,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZlO-XL-RCO">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2287,7 +2437,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty4-BM-u0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="4607"/>
+            <point key="canvasLocation" x="-578" y="4592"/>
         </scene>
         <!--Settings-->
         <scene sceneID="IoX-sm-4bN">
