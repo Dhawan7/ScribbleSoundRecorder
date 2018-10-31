@@ -95,7 +95,7 @@ class CoreDataStack:NSObject{
     }
     
     func clearCoreData(){
-        deleteAllRecords(entityName: "ScribbleEntities")
+        deleteAllRecords(entityName: "RecodingData")
     }
     
     func clearEntity(name:String){

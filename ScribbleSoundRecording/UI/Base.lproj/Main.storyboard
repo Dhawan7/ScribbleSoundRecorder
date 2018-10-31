@@ -19,16 +19,16 @@
         </array>
     </customFonts>
     <scenes>
-        <!--RecorderVC-->
+        <!--Home RecorderVC-->
         <scene sceneID="GvI-8x-OzD">
             <objects>
-                <viewController storyboardIdentifier="RecorderVC" id="IzT-OE-8ut" customClass="RecorderVC" customModule="ScribbleSoundRecording" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeRecorderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IzT-OE-8ut" customClass="HomeRecorderVC" customModule="ScribbleSoundRecording" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="72W-IM-ITM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSN-or-VAU" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                <rect key="frame" x="123" y="364" width="75" height="75"/>
+                                <rect key="frame" x="122.5" y="364" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="1ZR-MD-Pxm"/>
@@ -51,7 +51,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnStartRecord:" destination="IzT-OE-8ut" eventType="touchUpInside" id="eez-xl-05B"/>
+                                    <action selector="btnRecordPauseAct:" destination="IzT-OE-8ut" eventType="touchUpInside" id="t6X-fS-pPX"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aq1-Fc-lyQ" customClass="SwiftSiriWaveformView" customModule="ScribbleSoundRecording" customModuleProvider="target">
@@ -82,7 +82,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aN-jv-9cg" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                <rect key="frame" x="31" y="377" width="60" height="60"/>
+                                <rect key="frame" x="30.5" y="377.5" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Wz6-zj-dSI"/>
@@ -105,11 +105,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnPauseAct:" destination="IzT-OE-8ut" eventType="touchUpInside" id="S3o-Bl-f8m"/>
+                                    <action selector="btnPauseRecord:" destination="IzT-OE-8ut" eventType="touchUpInside" id="Zeb-hz-uuc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-zo-Sb1" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                <rect key="frame" x="230" y="376.5" width="60" height="60"/>
+                                <rect key="frame" x="229.5" y="377.5" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="h3j-m9-Pxw"/>
@@ -132,7 +132,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnSaveStop:" destination="IzT-OE-8ut" eventType="touchUpInside" id="FGv-qR-bWA"/>
+                                    <action selector="btnSaveStop:" destination="IzT-OE-8ut" eventType="touchUpInside" id="pHF-Sk-koM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-ec-LEG">
@@ -148,13 +148,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAUSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee3-2o-hBV">
-                                <rect key="frame" x="45.5" y="445" width="32.5" height="10"/>
+                                <rect key="frame" x="44.5" y="445.5" width="32.5" height="10"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="10"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOP/SAVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mJ-ge-pss">
-                                <rect key="frame" x="232" y="444.5" width="56.5" height="10"/>
+                                <rect key="frame" x="231.5" y="445.5" width="56.5" height="10"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="10"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -163,19 +163,19 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-ak-8Zl" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="143" width="280.5" height="170"/>
+                                        <rect key="frame" x="19.5" y="142.5" width="281" height="170"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-K0-z5y">
-                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="170"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO SAVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-EV-IUo">
-                                                <rect key="frame" x="16" y="20" width="248.5" height="20"/>
+                                                <rect key="frame" x="16" y="20" width="249" height="20"/>
                                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-nF-0aq">
-                                                <rect key="frame" x="19.5" y="70" width="241" height="32"/>
+                                                <rect key="frame" x="20" y="70" width="241" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-Of-i7v" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -196,7 +196,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="btnNoPopUp:" destination="IzT-OE-8ut" eventType="touchUpInside" id="sxe-z6-DeC"/>
+                                                            <action selector="btnNo:" destination="IzT-OE-8ut" eventType="touchUpInside" id="OYS-Ex-JIE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWi-Zh-r5e" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
@@ -222,7 +222,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="btnYesPopUP:" destination="IzT-OE-8ut" eventType="touchUpInside" id="CTz-Pd-4Pk"/>
+                                                            <action selector="btnYes:" destination="IzT-OE-8ut" eventType="touchUpInside" id="fb9-pS-QQl"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -239,7 +239,7 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jU2-dm-aOQ">
-                                                <rect key="frame" x="100" y="122" width="80" height="32"/>
+                                                <rect key="frame" x="100.5" y="122" width="80" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-Gk-Qkx" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -257,7 +257,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="btnDelete:" destination="IzT-OE-8ut" eventType="touchUpInside" id="XnQ-fR-BLo"/>
+                                                            <action selector="btnDelete:" destination="IzT-OE-8ut" eventType="touchUpInside" id="Spi-KJ-omX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -307,6 +307,124 @@
                                     <constraint firstItem="lbl-ak-8Zl" firstAttribute="centerY" secondItem="dxq-9H-1xU" secondAttribute="centerY" id="Pnd-ku-k0Y"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-uV-pqQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em9-kl-3XZ" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                        <rect key="frame" x="19.5" y="167.5" width="281" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEr-re-Fds">
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="30"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO DELETE?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wM-8a-Qwf">
+                                                <rect key="frame" x="16" y="20" width="249" height="18"/>
+                                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
+                                                <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-id-gcW">
+                                                <rect key="frame" x="20" y="68" width="241" height="32"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xM-b5-OKS" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                                        <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                                        <state key="normal" title="NO">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnDeleteNo:" destination="IzT-OE-8ut" eventType="touchUpInside" id="vNt-E1-wur"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PL-Qv-551" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
+                                                        <rect key="frame" x="160" y="0.0" width="80" height="32"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="Gyq-2S-dbi"/>
+                                                            <constraint firstAttribute="width" constant="80" id="Ua5-IP-aDo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                                        <state key="normal" title="YES">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnDeleteYes:" destination="IzT-OE-8ut" eventType="touchUpInside" id="62L-Uk-FQ3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="1PL-Qv-551" secondAttribute="bottom" id="1BY-AR-God"/>
+                                                    <constraint firstItem="1PL-Qv-551" firstAttribute="leading" secondItem="4xM-b5-OKS" secondAttribute="trailing" constant="80" id="2Z5-Dq-289"/>
+                                                    <constraint firstItem="1PL-Qv-551" firstAttribute="width" secondItem="4xM-b5-OKS" secondAttribute="width" id="4hO-NR-xhz"/>
+                                                    <constraint firstItem="1PL-Qv-551" firstAttribute="top" secondItem="KN1-id-gcW" secondAttribute="top" id="MpO-hW-Uu4"/>
+                                                    <constraint firstItem="1PL-Qv-551" firstAttribute="height" secondItem="4xM-b5-OKS" secondAttribute="height" id="Ur0-SG-Ude"/>
+                                                    <constraint firstItem="4xM-b5-OKS" firstAttribute="leading" secondItem="KN1-id-gcW" secondAttribute="leading" id="bKL-TI-4t1"/>
+                                                    <constraint firstItem="1PL-Qv-551" firstAttribute="centerY" secondItem="4xM-b5-OKS" secondAttribute="centerY" id="mKf-KG-1Vb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1PL-Qv-551" secondAttribute="trailing" constant="1" id="roA-Z0-e99"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="KN1-id-gcW" firstAttribute="top" secondItem="6wM-8a-Qwf" secondAttribute="bottom" constant="30" id="77o-rb-bvy"/>
+                                            <constraint firstAttribute="bottom" secondItem="KN1-id-gcW" secondAttribute="bottom" constant="20" id="9kq-1u-NWt"/>
+                                            <constraint firstItem="6wM-8a-Qwf" firstAttribute="top" secondItem="em9-kl-3XZ" secondAttribute="top" constant="20" id="DLR-Pd-6Tm"/>
+                                            <constraint firstItem="HEr-re-Fds" firstAttribute="top" secondItem="em9-kl-3XZ" secondAttribute="top" id="Pja-qM-pzU"/>
+                                            <constraint firstAttribute="trailing" secondItem="HEr-re-Fds" secondAttribute="trailing" id="S6W-FL-3tE"/>
+                                            <constraint firstItem="HEr-re-Fds" firstAttribute="leading" secondItem="em9-kl-3XZ" secondAttribute="leading" id="WBq-aV-iKU"/>
+                                            <constraint firstAttribute="trailing" secondItem="6wM-8a-Qwf" secondAttribute="trailing" constant="16" id="aK9-jP-mII"/>
+                                            <constraint firstItem="6wM-8a-Qwf" firstAttribute="leading" secondItem="em9-kl-3XZ" secondAttribute="leading" constant="16" id="d3H-dM-RF0"/>
+                                            <constraint firstItem="KN1-id-gcW" firstAttribute="centerX" secondItem="6wM-8a-Qwf" secondAttribute="centerX" id="dab-0C-EMB"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.53000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.37034460619999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="em9-kl-3XZ" firstAttribute="width" secondItem="l2a-uV-pqQ" secondAttribute="width" multiplier="0.9" constant="-7.1999999999999886" id="OaT-mc-Sus"/>
+                                    <constraint firstItem="em9-kl-3XZ" firstAttribute="centerY" secondItem="l2a-uV-pqQ" secondAttribute="centerY" id="T9c-cb-vVa"/>
+                                    <constraint firstItem="em9-kl-3XZ" firstAttribute="centerX" secondItem="l2a-uV-pqQ" secondAttribute="centerX" id="fCG-lp-2ZK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -324,14 +442,18 @@
                             <constraint firstItem="aq1-Fc-lyQ" firstAttribute="top" secondItem="rDb-ec-LEG" secondAttribute="bottom" constant="60" id="NoU-Kt-5Am"/>
                             <constraint firstItem="f2s-zo-Sb1" firstAttribute="centerY" secondItem="0aN-jv-9cg" secondAttribute="centerY" id="Og8-YT-r67"/>
                             <constraint firstItem="jXo-I7-WYx" firstAttribute="centerX" secondItem="hSN-or-VAU" secondAttribute="centerX" id="PCh-Pi-EMw"/>
+                            <constraint firstItem="l2a-uV-pqQ" firstAttribute="trailing" secondItem="dxq-9H-1xU" secondAttribute="trailing" id="Rdh-Uc-lvl"/>
                             <constraint firstItem="hSN-or-VAU" firstAttribute="centerX" secondItem="q9r-cc-6Ry" secondAttribute="centerX" id="S7H-JW-71j"/>
+                            <constraint firstItem="l2a-uV-pqQ" firstAttribute="bottom" secondItem="dxq-9H-1xU" secondAttribute="bottom" id="VSf-3r-IWk"/>
                             <constraint firstItem="jXo-I7-WYx" firstAttribute="top" secondItem="hSN-or-VAU" secondAttribute="bottom" constant="8" id="XhW-cA-eFB"/>
                             <constraint firstItem="rDb-ec-LEG" firstAttribute="centerX" secondItem="q9r-cc-6Ry" secondAttribute="centerX" id="d2r-BW-ohR"/>
                             <constraint firstItem="hSN-or-VAU" firstAttribute="top" secondItem="aq1-Fc-lyQ" secondAttribute="bottom" constant="20" id="lUt-z6-5JS"/>
                             <constraint firstItem="f2s-zo-Sb1" firstAttribute="leading" secondItem="hSN-or-VAU" secondAttribute="trailing" constant="32" id="lvx-Nh-Mqj"/>
                             <constraint firstItem="q9r-cc-6Ry" firstAttribute="trailing" secondItem="aq1-Fc-lyQ" secondAttribute="trailing" constant="20" id="q7X-vT-hRe"/>
                             <constraint firstItem="q9r-cc-6Ry" firstAttribute="leading" secondItem="dxq-9H-1xU" secondAttribute="leading" id="r0X-9y-xuH"/>
+                            <constraint firstItem="l2a-uV-pqQ" firstAttribute="leading" secondItem="dxq-9H-1xU" secondAttribute="leading" id="rfD-7u-c0a"/>
                             <constraint firstItem="5mJ-ge-pss" firstAttribute="top" secondItem="f2s-zo-Sb1" secondAttribute="bottom" constant="8" id="ueL-C3-Y9d"/>
+                            <constraint firstItem="l2a-uV-pqQ" firstAttribute="top" secondItem="dxq-9H-1xU" secondAttribute="top" id="vo9-wY-QCC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q9r-cc-6Ry"/>
                         <connections>
@@ -340,14 +462,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="V1H-vx-ZUu"/>
                     <connections>
-                        <outlet property="btnDelete" destination="6E5-Gk-Qkx" id="Zey-ic-2dH"/>
-                        <outlet property="btnPause" destination="0aN-jv-9cg" id="hyh-xT-irp"/>
-                        <outlet property="btnRecord" destination="hSN-or-VAU" id="rDZ-CJ-Dh0"/>
-                        <outlet property="btnStopSave" destination="f2s-zo-Sb1" id="1kp-ZR-wBk"/>
-                        <outlet property="lblPause" destination="Ee3-2o-hBV" id="ULt-BX-hhn"/>
-                        <outlet property="lblSave" destination="5mJ-ge-pss" id="gYZ-Bo-xGK"/>
-                        <outlet property="viewPopUP" destination="dxq-9H-1xU" id="Hsz-1z-m2c"/>
-                        <outlet property="waveAudioView" destination="aq1-Fc-lyQ" id="wZ4-J8-k3a"/>
+                        <outlet property="btnPause" destination="0aN-jv-9cg" id="xkA-GO-Mdz"/>
+                        <outlet property="btnRecord" destination="hSN-or-VAU" id="Nof-Fa-HAb"/>
+                        <outlet property="btnSave" destination="f2s-zo-Sb1" id="kSB-ds-ogm"/>
+                        <outlet property="lblPause" destination="Ee3-2o-hBV" id="ilb-4q-wge"/>
+                        <outlet property="lblRecordDuration" destination="rDb-ec-LEG" id="hqn-Fx-kyd"/>
+                        <outlet property="lblSave" destination="5mJ-ge-pss" id="TgL-Ba-04G"/>
+                        <outlet property="viewDeletePopUp" destination="l2a-uV-pqQ" id="eZO-63-OJf"/>
+                        <outlet property="viewPopUP" destination="dxq-9H-1xU" id="nKk-lM-RMK"/>
+                        <outlet property="waveAudioView" destination="aq1-Fc-lyQ" id="FAO-6a-Zsl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3IQ-Kv-YC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -367,19 +490,19 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJS-bU-jTK" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="189.5" width="280.5" height="170"/>
+                                        <rect key="frame" x="19.5" y="213" width="281" height="122"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-0G-XG8">
-                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="30"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO SAVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcT-kA-h64">
-                                                <rect key="frame" x="16" y="20" width="248.5" height="20"/>
+                                                <rect key="frame" x="16" y="20" width="249" height="20"/>
                                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orE-PZ-8N0">
-                                                <rect key="frame" x="19.5" y="70" width="241" height="32"/>
+                                                <rect key="frame" x="20" y="70" width="241" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wz-VV-xw5" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -425,6 +548,9 @@
                                                                 <real key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnYes:" destination="ErD-Ju-vgw" eventType="touchUpInside" id="D7K-29-3Tn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -439,46 +565,16 @@
                                                     <constraint firstItem="zER-63-RWn" firstAttribute="leading" secondItem="9wz-VV-xw5" secondAttribute="trailing" constant="80" id="z6B-ss-Y0x"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VPA-Io-hCJ">
-                                                <rect key="frame" x="100" y="122" width="80" height="32"/>
-                                                <subviews>
-                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-Ac-NeI" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="13"/>
-                                                        <state key="normal" title="DELETE">
-                                                            <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="7"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="btnDelete:" destination="ErD-Ju-vgw" eventType="touchUpInside" id="oGT-pd-Vgl"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="GcT-kA-h64" secondAttribute="trailing" constant="16" id="3eM-i6-YlO"/>
-                                            <constraint firstAttribute="bottom" secondItem="VRh-0G-XG8" secondAttribute="bottom" id="6Sh-7u-DS5"/>
-                                            <constraint firstItem="VPA-Io-hCJ" firstAttribute="centerX" secondItem="orE-PZ-8N0" secondAttribute="centerX" id="EFE-6V-hIo"/>
                                             <constraint firstItem="VRh-0G-XG8" firstAttribute="top" secondItem="pJS-bU-jTK" secondAttribute="top" id="Ioj-aS-0aG"/>
                                             <constraint firstItem="orE-PZ-8N0" firstAttribute="top" secondItem="GcT-kA-h64" secondAttribute="bottom" constant="30" id="N8o-Sc-r8Q"/>
-                                            <constraint firstItem="zER-63-RWn" firstAttribute="width" secondItem="h0X-Ac-NeI" secondAttribute="width" id="WCB-ki-oWl"/>
-                                            <constraint firstAttribute="bottom" secondItem="VPA-Io-hCJ" secondAttribute="bottom" constant="16" id="egs-vO-H3P"/>
                                             <constraint firstItem="GcT-kA-h64" firstAttribute="top" secondItem="pJS-bU-jTK" secondAttribute="top" constant="20" id="etV-ws-YaM"/>
+                                            <constraint firstAttribute="bottom" secondItem="orE-PZ-8N0" secondAttribute="bottom" constant="20" id="hwm-Xs-s8W"/>
                                             <constraint firstAttribute="trailing" secondItem="VRh-0G-XG8" secondAttribute="trailing" id="mD9-Ow-RoQ"/>
-                                            <constraint firstItem="zER-63-RWn" firstAttribute="height" secondItem="h0X-Ac-NeI" secondAttribute="height" id="uFN-ag-dCP"/>
                                             <constraint firstItem="GcT-kA-h64" firstAttribute="leading" secondItem="pJS-bU-jTK" secondAttribute="leading" constant="16" id="uH8-sp-Cm2"/>
-                                            <constraint firstItem="VPA-Io-hCJ" firstAttribute="top" secondItem="orE-PZ-8N0" secondAttribute="bottom" constant="20" id="uyy-nZ-KoC"/>
                                             <constraint firstItem="orE-PZ-8N0" firstAttribute="centerX" secondItem="GcT-kA-h64" secondAttribute="centerX" id="wDd-YC-nc5"/>
                                             <constraint firstItem="VRh-0G-XG8" firstAttribute="leading" secondItem="pJS-bU-jTK" secondAttribute="leading" id="ytR-5M-vIe"/>
                                         </constraints>
@@ -501,7 +597,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.37034460616438358" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="pJS-bU-jTK" firstAttribute="centerX" secondItem="e10-fZ-yiL" secondAttribute="centerX" id="jQ0-xf-52c"/>
                                     <constraint firstItem="pJS-bU-jTK" firstAttribute="width" secondItem="e10-fZ-yiL" secondAttribute="width" multiplier="0.9" constant="-7.1999999999999886" id="jlL-wP-pd6"/>
@@ -519,14 +615,13 @@
                         <viewLayoutGuide key="safeArea" id="4jz-2n-wKC"/>
                     </view>
                     <connections>
-                        <outlet property="btnDeletetOutlet" destination="h0X-Ac-NeI" id="6ua-lc-Gem"/>
                         <outlet property="btnNoDismiss" destination="9wz-VV-xw5" id="L6r-Gu-aMs"/>
                         <outlet property="lblTitlePopup" destination="GcT-kA-h64" id="bnR-Dc-FiT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0L-yV-vNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="3827"/>
+            <point key="canvasLocation" x="391.875" y="3826.0563380281692"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="Ckx-dG-FYB">
@@ -552,7 +647,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z1-5x-DzU">
-                                                        <rect key="frame" x="16" y="15" width="115.5" height="16"/>
+                                                        <rect key="frame" x="16" y="14.5" width="115.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -586,7 +681,7 @@
                                                 <rect key="frame" x="0.0" y="65" width="300" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hse-Cy-YYb">
-                                                        <rect key="frame" x="16" y="15" width="112" height="16"/>
+                                                        <rect key="frame" x="16" y="14.5" width="112" height="16"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -620,7 +715,7 @@
                                                 <rect key="frame" x="0.0" y="130" width="300" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record On Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szv-aL-0fd">
-                                                        <rect key="frame" x="16" y="15" width="124" height="16"/>
+                                                        <rect key="frame" x="16" y="14.5" width="124" height="16"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -654,7 +749,7 @@
                                                 <rect key="frame" x="0.0" y="195" width="300" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKz-WV-wfV">
-                                                        <rect key="frame" x="16" y="15" width="34" height="16"/>
+                                                        <rect key="frame" x="16" y="14.5" width="34" height="16"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -693,7 +788,7 @@
                                                 <rect key="frame" x="0.0" y="260" width="300" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCm-Xf-ENh">
-                                                        <rect key="frame" x="16" y="15" width="46.5" height="16"/>
+                                                        <rect key="frame" x="16" y="14.5" width="46.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -831,7 +926,36 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgV-0K-GOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="2161"/>
+            <point key="canvasLocation" x="1388" y="1980"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="try-Sr-npB">
+            <objects>
+                <viewController id="iAQ-XU-YmH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hdf-VN-mTb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcX-Xn-JZr" customClass="RETrimControl">
+                                <rect key="frame" x="40" y="230" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1dB-f4-RqN"/>
+                                    <constraint firstAttribute="height" constant="128" id="6fA-zk-CRK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UcX-Xn-JZr" firstAttribute="centerX" secondItem="JWt-rr-gfH" secondAttribute="centerX" id="5Ow-Yh-MBX"/>
+                            <constraint firstItem="UcX-Xn-JZr" firstAttribute="centerY" secondItem="JWt-rr-gfH" secondAttribute="centerY" id="f2p-bh-Hji"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JWt-rr-gfH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbV-if-qSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="5354"/>
         </scene>
         <!--PlayerVC-->
         <scene sceneID="F6R-TH-n3L">
@@ -871,7 +995,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Q2t-JN-r9B" customClass="UIImageViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                                            <rect key="frame" x="25" y="19" width="120" height="120"/>
+                                                            <rect key="frame" x="25" y="19.5" width="120" height="120"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="120" id="baS-Cc-FD7"/>
                                                                 <constraint firstAttribute="width" constant="120" id="t3D-wD-Ecs"/>
@@ -907,19 +1031,19 @@
                                         </cells>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-zH-Beq">
-                                        <rect key="frame" x="141" y="205.5" width="39" height="17"/>
+                                        <rect key="frame" x="140.5" y="205.5" width="39" height="17"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
                                         <color key="textColor" red="0.58039215686274503" green="0.090196078431372548" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yir-Gx-OBj">
-                                        <rect key="frame" x="241" y="230.5" width="28" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yir-Gx-OBj">
+                                        <rect key="frame" x="212.5" y="230.5" width="38.5" height="12"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                         <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-81-qZy">
-                                        <rect key="frame" x="273" y="230.5" width="15" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-81-qZy">
+                                        <rect key="frame" x="255" y="230.5" width="33" height="12"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                         <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -933,7 +1057,7 @@
                                         <rect key="frame" x="0.0" y="267.5" width="320" height="67"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR3-w9-Tb1" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                                <rect key="frame" x="133" y="6" width="55" height="55"/>
+                                                <rect key="frame" x="132.5" y="6" width="55" height="55"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="d7A-kv-5lu"/>
@@ -963,7 +1087,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-Nh-V1s" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                                <rect key="frame" x="248" y="18" width="30" height="30"/>
+                                                <rect key="frame" x="247.5" y="18.5" width="30" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="AJj-PY-ZHH"/>
@@ -993,7 +1117,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-0L-6pW" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                                <rect key="frame" x="43" y="18" width="30" height="30"/>
+                                                <rect key="frame" x="42.5" y="18.5" width="30" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="8" minY="8" maxX="10" maxY="7"/>
                                                 <state key="normal" image="paly-left"/>
@@ -1037,7 +1161,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPE-vZ-44a">
                                                 <rect key="frame" x="8" y="8" width="76" height="24"/>
-                                                <state key="normal" image="bookmark"/>
+                                                <state key="normal" image="Bookmark Grey"/>
                                                 <connections>
                                                     <action selector="btnAddBookmark:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="YRs-rm-NYG"/>
                                                 </connections>
@@ -1046,36 +1170,16 @@
                                                 <rect key="frame" x="84" y="8" width="76" height="24"/>
                                                 <state key="normal" image="leftarrow1"/>
                                                 <connections>
-                                                    <action selector="btnSpeedMinus:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="7cf-yM-rLR"/>
+                                                    <action selector="btnSpeedPlus:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="90q-vc-l1k"/>
                                                 </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="geB-qb-B3h">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLz-aI-sxN">
                                                 <rect key="frame" x="160" y="8" width="76" height="24"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WvQ-sz-MtC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="24"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-av-XFa">
-                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="24"/>
-                                                                <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jGc-pp-DZ7">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="24"/>
-                                                                        <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLz-aI-sxN">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="24"/>
-                                                                                <state key="normal" image="rightarrow1"/>
-                                                                                <connections>
-                                                                                    <action selector="btnSpeedMinus:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="hSv-Ov-BA5"/>
-                                                                                </connections>
-                                                                            </button>
-                                                                        </subviews>
-                                                                    </stackView>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
+                                                <state key="normal" image="rightarrow1"/>
+                                                <connections>
+                                                    <action selector="btnSpeedMinus:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="hSv-Ov-BA5"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-to-Khp">
                                                 <rect key="frame" x="236" y="8" width="76" height="24"/>
                                                 <state key="normal" image="share"/>
@@ -1159,9 +1263,11 @@
                     </view>
                     <connections>
                         <outlet property="btnAddBookmark" destination="sPE-vZ-44a" id="6Bm-ed-hTE"/>
+                        <outlet property="btnBookmarkO" destination="Eed-Wj-yQg" id="s4e-48-vP7"/>
                         <outlet property="btnPlay" destination="eR3-w9-Tb1" id="QZI-iy-HMt"/>
                         <outlet property="collectionViewPlaylist" destination="Bf2-hO-wGa" id="lKW-df-M2M"/>
                         <outlet property="imgMusicPlayer" destination="Jjn-AG-Yfy" id="AA5-ay-Mja"/>
+                        <outlet property="lblAudioTitle" destination="bI4-JM-hac" id="7wU-EK-FWM"/>
                         <outlet property="lblCurrentAudioTime" destination="yir-Gx-OBj" id="nFx-Cs-bg8"/>
                         <outlet property="lblNotes" destination="gVp-zH-Beq" id="bZ9-Jo-te9"/>
                         <outlet property="lblTotalTrackTime" destination="OcD-81-qZy" id="aec-7e-Fc1"/>
@@ -1227,7 +1333,7 @@
                                                                         <constraint firstAttribute="width" constant="16" id="IIa-2n-kOp"/>
                                                                         <constraint firstAttribute="height" constant="16" id="Y4v-9w-it7"/>
                                                                     </constraints>
-                                                                    <state key="normal" image="greenBookmark"/>
+                                                                    <state key="normal" image="Bookmark Green"/>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1265,6 +1371,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="btnBookmark" destination="c8l-lz-Gge" id="yad-XG-L39"/>
                                                     <outlet property="imgSong" destination="9aY-WI-mFr" id="jfg-ma-cHD"/>
                                                     <outlet property="lblDescSong" destination="hHY-pH-C8k" id="qX6-tM-VbH"/>
                                                     <outlet property="lblNameSong" destination="BLg-9n-kap" id="d2u-zA-0NM"/>
@@ -1317,6 +1424,56 @@
             </objects>
             <point key="canvasLocation" x="2224" y="4592"/>
         </scene>
+        <!--Recording TestVC-->
+        <scene sceneID="AVT-15-6th">
+            <objects>
+                <viewController storyboardIdentifier="RecordingTestVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="haH-nU-Zen" customClass="RecordingTestVC" customModule="ScribbleSoundRecording" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g1f-5f-F48">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfl-L3-qbn">
+                                <rect key="frame" x="135.5" y="50" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="btnRecordPauseAct:" destination="haH-nU-Zen" eventType="touchUpInside" id="7HI-Pe-xfp"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ImR-7u-fpR">
+                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="65" id="jON-J9-2Uq">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jON-J9-2Uq" id="c3I-02-hdT">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mfl-L3-qbn" firstAttribute="centerX" secondItem="JPE-lO-b0R" secondAttribute="centerX" id="BOf-uT-P8z"/>
+                            <constraint firstItem="JPE-lO-b0R" firstAttribute="bottom" secondItem="ImR-7u-fpR" secondAttribute="bottom" id="DZZ-Ad-bam"/>
+                            <constraint firstItem="ImR-7u-fpR" firstAttribute="top" secondItem="mfl-L3-qbn" secondAttribute="bottom" constant="26" id="HaC-X0-7EU"/>
+                            <constraint firstItem="mfl-L3-qbn" firstAttribute="top" secondItem="JPE-lO-b0R" secondAttribute="top" constant="30" id="JDz-7P-qoF"/>
+                            <constraint firstItem="ImR-7u-fpR" firstAttribute="leading" secondItem="JPE-lO-b0R" secondAttribute="leading" id="NaM-dc-T1a"/>
+                            <constraint firstItem="JPE-lO-b0R" firstAttribute="trailing" secondItem="ImR-7u-fpR" secondAttribute="trailing" id="ayY-Ks-kEJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JPE-lO-b0R"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnRecordPause" destination="mfl-L3-qbn" id="wSN-7r-sXu"/>
+                        <outlet property="recordingTableView" destination="ImR-7u-fpR" id="YMI-eW-Le0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUe-NJ-Ze2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3262.5" y="4591.9014084507044"/>
+        </scene>
         <!--HelpVC-->
         <scene sceneID="jcN-ss-VBe">
             <objects>
@@ -1329,51 +1486,51 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsu-9X-o7n">
-                                        <rect key="frame" x="18.5" y="258" width="183" height="33"/>
+                                        <rect key="frame" x="18.5" y="257.5" width="183" height="33"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="33"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max MagX," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBP-hR-QcE">
-                                        <rect key="frame" x="18.5" y="307" width="90.5" height="18"/>
+                                        <rect key="frame" x="18.5" y="306.5" width="90.5" height="18"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMP-0i-9jS">
-                                        <rect key="frame" x="18.5" y="333" width="122.5" height="18"/>
+                                        <rect key="frame" x="18.5" y="332.5" width="122.5" height="18"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikM-6H-Lpl">
-                                        <rect key="frame" x="18.5" y="359" width="122.5" height="18"/>
+                                        <rect key="frame" x="18.5" y="358.5" width="122.5" height="18"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-symbol-of-an-auricular-inside-a-circle" translatesAutoresizingMaskIntoConstraints="NO" id="FTA-Nz-jk3">
-                                        <rect key="frame" x="18.5" y="389" width="30" height="30"/>
+                                        <rect key="frame" x="18.5" y="388.5" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="Lwj-zZ-fhJ"/>
                                             <constraint firstAttribute="height" constant="30" id="lf4-mL-2PT"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1800 600 900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIV-wF-HZE">
-                                        <rect key="frame" x="60.5" y="396" width="123" height="17"/>
+                                        <rect key="frame" x="60.5" y="395" width="123" height="17"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gmail" translatesAutoresizingMaskIntoConstraints="NO" id="GYr-Uw-43M">
-                                        <rect key="frame" x="18.5" y="437" width="30" height="30"/>
+                                        <rect key="frame" x="18.5" y="436.5" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="CPD-LQ-MT2"/>
                                             <constraint firstAttribute="height" constant="30" id="N6T-JK-byE"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scribble@scribble.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTc-Al-Zfn">
-                                        <rect key="frame" x="60.5" y="443.5" width="176" height="17"/>
+                                        <rect key="frame" x="60.5" y="443" width="176" height="17"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1412,7 +1569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esx-pb-HoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3266" y="3828"/>
+            <point key="canvasLocation" x="3264.375" y="3827.1126760563379"/>
         </scene>
         <!--AboutVC-->
         <scene sceneID="q49-7x-lRP">
@@ -1650,16 +1807,53 @@
             </objects>
             <point key="canvasLocation" x="4155" y="3829"/>
         </scene>
-        <!--View Controller-->
+        <!--Audio TrimVC-->
         <scene sceneID="ee7-ik-7Lu">
             <objects>
-                <viewController id="fhW-rP-rzg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AudioTrimVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fhW-rP-rzg" customClass="AudioTrimVC" customModule="ScribbleSoundRecording" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RMC-QU-ylt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hba-R5-zCC" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                <rect key="frame" x="32" y="290" width="256" height="8"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="eGT-br-4aQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
+                                        <color key="value" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="maxLabelColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="minLabelColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0p-IR-wlL">
+                                <rect key="frame" x="145" y="314" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="btnPlayAudio:" destination="fhW-rP-rzg" eventType="touchUpInside" id="apf-29-7CE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hba-R5-zCC" firstAttribute="width" secondItem="RMC-QU-ylt" secondAttribute="width" multiplier="0.8" id="2i9-Vh-d4L"/>
+                            <constraint firstItem="s0p-IR-wlL" firstAttribute="top" secondItem="hba-R5-zCC" secondAttribute="bottom" constant="16" id="5jc-bV-b7i"/>
+                            <constraint firstItem="s0p-IR-wlL" firstAttribute="centerX" secondItem="hba-R5-zCC" secondAttribute="centerX" id="jqT-8V-0K9"/>
+                            <constraint firstItem="hba-R5-zCC" firstAttribute="centerY" secondItem="pPD-bR-DjO" secondAttribute="centerY" id="lVy-Fr-yex"/>
+                            <constraint firstItem="hba-R5-zCC" firstAttribute="centerX" secondItem="pPD-bR-DjO" secondAttribute="centerX" id="y3V-ea-qOd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pPD-bR-DjO"/>
                     </view>
+                    <connections>
+                        <outlet property="audioRangeSlider" destination="hba-R5-zCC" id="cm4-Ch-30d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikE-dQ-3yo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1741,14 +1935,14 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-cV-TMi">
-                                                            <rect key="frame" x="64" y="27" width="31" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-cV-TMi">
+                                                            <rect key="frame" x="64" y="27" width="33" height="21"/>
                                                             <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="20-sept-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaF-oB-3SG">
-                                                            <rect key="frame" x="207.5" y="31.5" width="80.5" height="12"/>
+                                                            <rect key="frame" x="207.5" y="32" width="80.5" height="12"/>
                                                             <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1832,17 +2026,17 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="185" height="182"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttk-Kd-1C6">
-                                                            <rect key="frame" x="-0.5" y="143" width="185" height="13"/>
+                                                            <rect key="frame" x="0.0" y="144" width="185" height="12"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:40:20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYd-xT-jrf">
-                                                                    <rect key="frame" x="6" y="0.0" width="43.5" height="13"/>
-                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="13"/>
+                                                                    <rect key="frame" x="6" y="0.0" width="40" height="12"/>
+                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13/01" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAQ-V1-a4Y">
-                                                                    <rect key="frame" x="147.5" y="0.0" width="31.5" height="13"/>
-                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="13"/>
+                                                                    <rect key="frame" x="150" y="0.0" width="29" height="12"/>
+                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1917,6 +2111,7 @@
                                         <connections>
                                             <outlet property="imageViewAlbumArt" destination="uE8-Cu-UN9" id="qAc-CE-der"/>
                                             <outlet property="lblAlbumTrackTitle" destination="Qx0-Jx-fnj" id="XTJ-Mo-Ocl"/>
+                                            <outlet property="lblDate" destination="KAQ-V1-a4Y" id="pKG-MM-nWO"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -2025,6 +2220,7 @@
                         <outlet property="filterView" destination="nKo-5o-dJT" id="QaX-lA-NYm"/>
                         <outlet property="recordingCollectionView" destination="rY3-d7-8we" id="UQ8-mU-YWX"/>
                         <outlet property="recordingTableView" destination="wNl-w5-bzL" id="ZFd-EO-zTg"/>
+                        <outlet property="searchRecording" destination="9RD-nw-GDP" id="Jps-ad-2gb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcA-xk-GvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2112,63 +2308,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UGS-vV-YnV">
-                                        <rect key="frame" x="32" y="60" width="256" height="227"/>
+                                        <rect key="frame" x="32" y="70" width="256" height="227"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-zT-Iv8">
-                                        <rect key="frame" x="32" y="317" width="256" height="18"/>
+                                        <rect key="frame" x="32" y="327" width="256" height="18"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8O-zy-BMi" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="80.5" y="365" width="160" height="30"/>
-                                        <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="Hi0-0x-IbO"/>
-                                        </constraints>
-                                        <state key="normal" title="Capture/Pick Image">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="btnCapturePick:" destination="xde-CU-7OH" eventType="touchUpInside" id="MvG-nH-yHd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pm-jV-xhb" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="423" width="160" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="Rm6-Bp-cu7"/>
-                                        </constraints>
-                                        <state key="normal" title="Identify Image">
-                                            <color key="titleColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="btnIdentifyImage:" destination="xde-CU-7OH" eventType="touchUpInside" id="DOy-ED-9h0"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="UGS-vV-YnV" firstAttribute="width" secondItem="3fB-Ds-gnC" secondAttribute="width" multiplier="0.8" id="DKL-F5-q0Z"/>
                                     <constraint firstItem="UGS-vV-YnV" firstAttribute="height" secondItem="3fB-Ds-gnC" secondAttribute="height" multiplier="0.4" id="HxV-I6-wof"/>
-                                    <constraint firstItem="UGS-vV-YnV" firstAttribute="top" secondItem="3fB-Ds-gnC" secondAttribute="top" constant="60" id="L7J-Np-uG4"/>
-                                    <constraint firstItem="8Pm-jV-xhb" firstAttribute="top" secondItem="A8O-zy-BMi" secondAttribute="bottom" constant="28" id="OmZ-EA-cIF"/>
-                                    <constraint firstItem="A8O-zy-BMi" firstAttribute="centerX" secondItem="7GI-zT-Iv8" secondAttribute="centerX" id="UoT-g2-MQI"/>
+                                    <constraint firstItem="UGS-vV-YnV" firstAttribute="top" secondItem="3fB-Ds-gnC" secondAttribute="top" constant="70" id="L7J-Np-uG4"/>
                                     <constraint firstItem="UGS-vV-YnV" firstAttribute="centerX" secondItem="3fB-Ds-gnC" secondAttribute="centerX" id="Xjc-Ne-yek"/>
-                                    <constraint firstItem="8Pm-jV-xhb" firstAttribute="centerX" secondItem="A8O-zy-BMi" secondAttribute="centerX" id="Z8Q-oC-OAE"/>
                                     <constraint firstItem="7GI-zT-Iv8" firstAttribute="top" secondItem="UGS-vV-YnV" secondAttribute="bottom" constant="30" id="dS1-hm-aOj"/>
-                                    <constraint firstItem="A8O-zy-BMi" firstAttribute="top" secondItem="7GI-zT-Iv8" secondAttribute="bottom" constant="30" id="fEw-75-1Fl"/>
                                     <constraint firstItem="7GI-zT-Iv8" firstAttribute="trailing" secondItem="UGS-vV-YnV" secondAttribute="trailing" id="s8w-8T-Opq"/>
                                     <constraint firstItem="7GI-zT-Iv8" firstAttribute="leading" secondItem="UGS-vV-YnV" secondAttribute="leading" id="wnC-gR-JQO"/>
                                 </constraints>
@@ -2287,7 +2443,7 @@
                                 <rect key="frame" x="17" y="169.5" width="288" height="249"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1BW-OO-4Bn">
-                                        <rect key="frame" x="23" y="103.5" width="242" height="30"/>
+                                        <rect key="frame" x="23" y="104" width="242" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Q1t-AV-jvt"/>
@@ -2314,6 +2470,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnTrim:" destination="g6q-xy-sjt" eventType="touchUpInside" id="9e6-sY-vRr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F6-DV-Ln6" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                         <rect key="frame" x="38" y="198" width="90" height="30"/>
@@ -2370,7 +2529,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-img" translatesAutoresizingMaskIntoConstraints="NO" id="Tp4-jM-YrR" customClass="UIImageViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                <rect key="frame" x="80.5" y="89.5" width="160" height="160"/>
+                                <rect key="frame" x="81" y="89.5" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="WQh-fC-d6E"/>
                                     <constraint firstAttribute="height" constant="160" id="hoI-72-Pgv"/>
@@ -2394,7 +2553,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="An9-z6-URZ" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                <rect key="frame" x="80.5" y="89.5" width="160" height="160"/>
+                                <rect key="frame" x="81" y="89.5" width="160" height="160"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="60"/>
@@ -2487,6 +2646,8 @@
     </scenes>
     <resources>
         <image name="2" width="168" height="300"/>
+        <image name="Bookmark Green" width="24" height="24"/>
+        <image name="Bookmark Grey" width="24" height="24"/>
         <image name="background" width="2018" height="1135"/>
         <image name="bookmark" width="24" height="24"/>
         <image name="browse" width="24" height="24"/>
@@ -2496,7 +2657,6 @@
         <image name="gird-nav" width="24" height="24"/>
         <image name="gmail" width="64" height="64"/>
         <image name="graph" width="348" height="140"/>
-        <image name="greenBookmark" width="32" height="32"/>
         <image name="keyboard-right-arrow-button" width="64" height="64"/>
         <image name="leftarrow1" width="24" height="24"/>
         <image name="nav" width="24" height="24"/>

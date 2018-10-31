@@ -17,14 +17,21 @@ class RecordingTVC: UITableViewCell {
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var btnBookmark: UIButton!
     
+    var dateStr:String = ""
+    var modelRecording: RecodingData!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    
+    func setRecordingData(modelObj: RecodingData){
+        imageViewAlbumArt.image = UIImage(data: modelObj.image!)
+        lblTrackTitle.text = modelObj.name
+        
+       // lblTime.text = dateString(date: modelObj.date!)
+        lblTrackLength.text = "00:00"
     }
 
 }

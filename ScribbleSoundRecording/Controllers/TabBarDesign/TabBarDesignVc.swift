@@ -9,16 +9,27 @@
 import UIKit
 
 class TabBarDesignVc: UITabBarController, UITabBarControllerDelegate {
+    
+    var isFromSearch:Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+        if isFromSearch{
+          //  openPlayer()
+        }
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         let selectedItem = tabBar.subviews[item.tag + 1]
         let subImageView = selectedItem.subviews.first as? UIImageView
         playBounceAnimation(subImageView!)
+    }
+    
+    func openPlayer(){
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "PlayerVC") as! PlayerVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func playBounceAnimation(_ icon: UIImageView) {
@@ -37,6 +48,7 @@ class TabBarDesignVc: UITabBarController, UITabBarControllerDelegate {
             
         }
     }
+    
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         guard let fromView = selectedViewController?.view, let toView = viewController.view else{

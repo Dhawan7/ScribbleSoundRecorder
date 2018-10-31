@@ -11,12 +11,70 @@ import UIKit
 class BaseVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var imagerPicker: UIImagePickerController!
+    let context = CoreDataStack.sharedInstance.getContext()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.imagerPicker = UIImagePickerController()
         self.imagerPicker.delegate = self
+    }
+    
+    func dateString(date:Date){
+        let date = date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MMM-yyyy"
+       // dateStr = dateFormatter.string(from: date)
+        
+    }
+    
+    func getDirectory() -> URL{
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDiretory = paths[0]
+        return documentDiretory
+    }
+    
+    //Mark: Get File Size
+    func getSize(fileSize:Int64){
+        
+        var floatSize = Float(fileSize / 1024)
+        
+        if fileSize < 1023 {
+            print("\(floatSize).bytes")
+        }
+        
+        if floatSize < 1023 {
+            print("\(floatSize) KB")
+        }
+        // MB
+        floatSize = floatSize / 1024
+        if floatSize < 1023 {
+            print("\(floatSize) MB")
+        }
+        // GB
+        floatSize = floatSize / 1024
+        print("\(floatSize) GB")
+    }
+    
+    //Mark: Split int in hours, min, sec
+    func hmsFrom(seconds: Int, completion: @escaping (_ hours: Int, _ minutes: Int, _ seconds: Int)->()) {
+        
+        completion(seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
+        
+    }
+    
+    func getStringFrom(seconds: Int) -> String {
+        
+        return seconds < 10 ? "0\(seconds)" : "\(seconds)"
+    }
+    
+    //func that displays alert
+    func displayAlert(title:String, message:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "dismiss", style: .default, handler: nil))
+        
+        present(alert, animated: true, completion: nil)
     }
 
     func showAlert(){
@@ -29,7 +87,10 @@ class BaseVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
         alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { (action) in
             self.openGallery()
         }))
-        alert.addAction(UIAlertAction(title: "Cancle", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
 
         
         self.present(alert, animated: true, completion: nil)
@@ -52,10 +113,30 @@ class BaseVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
         }
     }
     
+    
     @objc func openGallery(){
         imagerPicker.sourceType = .photoLibrary
         imagerPicker.isEditing = true
         self.present(imagerPicker, animated: true, completion: nil)
     }
 
+}
+
+extension URL {
+    var attributes: [FileAttributeKey : Any]? {
+        do {
+            return try FileManager.default.attributesOfItem(atPath: path)
+        } catch let error as NSError {
+            print("FileAttribute error: \(error)")
+        }
+        return nil
+    }
+    
+    var fileSize: UInt64 {
+        return attributes?[.size] as? UInt64 ?? UInt64(0)
+    }
+    
+    var creationDate: Date? {
+        return attributes?[.creationDate] as? Date
+    }
 }

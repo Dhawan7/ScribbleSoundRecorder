@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SettingsVC: UIViewController {
     
@@ -18,13 +19,15 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var btnMic: UIButtonX!
     
-    let soundQualityList:[String] = ["Low (Mono)","Medium","High (Stereo)"]
-    let soundFormatList:[String] = ["Aiff","Mp3"]
+    let soundQualityList:[String:Int] = ["Low (Mono)":AVAudioQuality.low.rawValue,"Medium":AVAudioQuality.medium.rawValue,"High (Stereo)":AVAudioQuality.high.rawValue]
+    let soundFormatList:[String:AudioFileTypeID] = ["Aiff":kAudioFileAIFFType,"Mp3":kAudioFileMP3Type]
     let startRecordList:[String] = ["Off (Default)","On"]
     
     var isSoundQuality:Bool! = false
     var isSoundFormat:Bool! = false
     var isOnStart:Bool! = false
+    let defaults = UserDefaults.standard
+    let audioRecorder: AVAudioRecorder! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,10 +119,10 @@ extension SettingsVC:UIPickerViewDelegate,UIPickerViewDataSource{
             return startRecordList[row]
         }
         if isSoundFormat{
-           return soundFormatList[row]
+            return soundFormatList.map{$0.key}[row]
         }
         if isSoundQuality{
-           return soundQualityList[row]
+            return soundQualityList.map{$0.key}[row]
         }
         else{
             return ""
@@ -128,12 +131,19 @@ extension SettingsVC:UIPickerViewDelegate,UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if isOnStart{
             btnRecordOnStart.setTitle(startRecordList[row], for: .normal)
+            defaults.set(startRecordList[row], forKey: "recordOnStart")
+           
         }
         if isSoundFormat{
-            btnSoundFormat.setTitle(soundFormatList[row], for: .normal)
+            btnSoundFormat.setTitle(soundFormatList.map{$0.key}[row], for: .normal)
+           // defaults.set(soundFormatList.map{$0.value}[row], forKey: "soundFormat")
+            
+            
+            
         }
         if isSoundQuality{
-            btnSoundQuality.setTitle(soundQualityList[row], for: .normal)
+            btnSoundQuality.setTitle(soundQualityList.map{$0.key}[row], for: .normal)
+            defaults.set(soundQualityList.map{$0.value}[row], forKey: "soundQuality")
         }
     }
     

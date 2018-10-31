@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PlayerVC: UIViewController, AVAudioPlayerDelegate {
+class PlayerVC: BaseVC, AVAudioPlayerDelegate {
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var collectionViewPlaylist: UICollectionView!
@@ -19,6 +19,8 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var lblNotes: UILabel!
     @IBOutlet weak var btnAddBookmark: UIButton!
     @IBOutlet weak var imgMusicPlayer: UIImageView!
+    @IBOutlet weak var lblAudioTitle: UILabel!
+    @IBOutlet weak var btnBookmarkO: UIButtonX!
     
     
     
@@ -26,36 +28,66 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     var audioPlayer: AVAudioPlayer!
     var currentTrackIndex = 0
     var track:[String] = ["test2.mp3", "test1.mp3", "test2.mp3", "test1.mp3"]
-    var updater : CADisplayLink! = nil
+    var progressDisplayLink : CADisplayLink! = nil
     var audioLength:Float = 0.0
     var messagePlaybackTimer: CADisplayLink?
     var isBookmark:Bool = false
-    var imgFromSearch:UIImage = #imageLiteral(resourceName: "background")
     var isFromSearch:Bool = false
+    var recordingData:[RecodingData] = [RecodingData]()
+    var recordingAudioURlString:[String] = [String]()
+    var isPlaying:Bool = false
+    var audioIndex:Int = 0
+    var currentRecordingData:RecodingData!
+    var recordingIndex:[Int]!
+    var currentAudioIndex:Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !isFromSearch{
-        navigationItem.setHidesBackButton(false, animated: true)
-        } else{
-            navigationItem.setHidesBackButton(true, animated: true)
-        }
-     // navigationController?.setNavigationBarHidden(false, animated: true)
+        //audioIndex = Int(currentRecordingData.audioIndex)
+      
+     
         collectionViewPlaylist.delegate = self
         collectionViewPlaylist.dataSource = self
-        audioPlayer(songIndex: track[currentTrackIndex])
-        audioPlayer.delegate = self
+        
+        //audioPlayer.delegate = self
+        lblAudioTitle.text = currentRecordingData.name ?? "Recording"
+        lblNotes.text = currentRecordingData.note ?? "Notes"
+      //  audioPlayerRecord()
     }
+    
+   
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
         progressBar.progress = 0.0
         
+        if  isFromSearch{
+            self.btnBookmarkO.isHidden = true
+       
+        } else{
+            recordingData = RecodingData.share.getData()
+            self.btnBookmarkO.isHidden = false
+        }
+        track = recordingData.map{$0.name!}
+        player(songIndex: track[currentAudioIndex ?? 1])
+        
+        messagePlaybackTimer?.isPaused = true
+        if currentRecordingData.bookmarkAudio == true{
+            btnAddBookmark.setImage(#imageLiteral(resourceName: "Bookmark Green"), for: .normal)
+        } else{
+            btnAddBookmark.setImage(#imageLiteral(resourceName: "Bookmark Grey"), for: .normal)
+        }
+        
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        audioPlayer.stop()
+        messagePlaybackTimer?.isPaused = true
+        if audioPlayer != nil{
+            audioPlayer.stop()
+        }
         self.messagePlaybackTimer?.isPaused = true
     }
     
@@ -64,41 +96,60 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         updateCellsLayout()
     }
     
+   
     
-    func audioPlayer(songIndex: String){
-    self.messagePlaybackTimer?.isPaused = true
-    let path = Bundle.main.path(forResource: songIndex, ofType: nil)
-    let url = URL(fileURLWithPath: path!)
+    
+    func audioPlayerRecord(){
+
+        let paths = getDirectory().appendingPathComponent("\(currentRecordingData.audioIndex).m4a")
         do{
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            
+            audioPlayer = try AVAudioPlayer(contentsOf: paths)
+            audioPlayer.prepareToPlay()
+            showTotalAudioTime()
+            showTimeProgress()
+            marqueLabel()
+            showProgress()
+            
+            
+        } catch{
+            print(error)
+        }
+
+    }
+    
+    func player(songIndex: String){
+        self.messagePlaybackTimer?.isPaused = true
+         let paths = getDirectory().appendingPathComponent("\(songIndex).m4a")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: paths)
             audioLength = Float(audioPlayer.duration)
             self.lblTotalTrackTime.text = String(audioLength.rounded())
             messagePlaybackTimer = CADisplayLink(target: self, selector: #selector(PlayerVC.messagePlaybackTimerFired))
             messagePlaybackTimer?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
             audioPlayer.enableRate = true
+            showTotalAudioTime()
+            showProgress()
         } catch{
             
         }
         
     }
     
+    
     @objc func messagePlaybackTimerFired(){
         print(audioPlayer.currentTime)
-        lblCurrentAudioTime.text = " \(String(audioPlayer.currentTime.rounded())) /"
+        hmsFrom(seconds: Int(audioPlayer.currentTime.rounded())) { (hours, mins, secs) in
+          //  let hour = self.getStringFrom(seconds: hours)
+            let min = self.getStringFrom(seconds: mins)
+            let sec = self.getStringFrom(seconds: secs)
+            self.lblCurrentAudioTime.text = "\(min):\(sec)/"
+        }
+        
         
     }
     
-    @IBAction func btnPreviousAudio(_ sender: UIButton) {
-        if currentTrackIndex > 0  {
-            currentTrackIndex = (currentTrackIndex - 1)
-            audioPlayer(songIndex: track[currentTrackIndex])
-            scrollToNextCell(isNext: false)
-            self.btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
-            audioPlayer.play()
-        } else{
-            
-        }
-    }
+  
     
     @IBAction func btnSpeedMinus(_ sender: UIButton) {
         if audioPlayer.rate < 2.0{
@@ -112,19 +163,73 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
+    func showTimeProgress(){
+        messagePlaybackTimer = CADisplayLink(target: self, selector: #selector(PlayerVC.messagePlaybackTimerFired))
+        messagePlaybackTimer?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+        audioPlayer.enableRate = true
+    }
+    
+    func showTotalAudioTime(){
+        hmsFrom(seconds: Int(audioPlayer.duration.rounded())) { (hour, min, sec) in
+            //let hours = self.getStringFrom(seconds: hour)
+            let mins = self.getStringFrom(seconds: min)
+            let secs = self.getStringFrom(seconds: sec)
+            self.lblTotalTrackTime.text = "\(mins):\(secs)"
+        }
+    }
+    
+    func showProgress(){
+        progressDisplayLink = CADisplayLink(target: self, selector: #selector(PlayerVC.trackAudio))
+        progressDisplayLink.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+    }
+    
+    func marqueLabel(){
+        UIView.animate(withDuration: 12.0, delay: 1, options: ([.curveLinear, .repeat]), animations: {() -> Void in
+            self.lblNotes.center = CGPoint(x: 0 - self.lblNotes.bounds.size.width / 2, y: self.lblNotes.center.y)
+        }, completion:  { _ in })
+    }
+    
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         print("Did finish play")
-        btnPlay.setImage(#imageLiteral(resourceName: "paly-right"), for: .normal)
+         messagePlaybackTimer = nil
+        btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
         audioPlayer.stop()
         
     }
     
+    @IBAction func btnPreviousAudio(_ sender: UIButton) {
+        if currentAudioIndex > 0 {
+            currentAudioIndex = (currentAudioIndex - 1)
+            player(songIndex: track[currentAudioIndex])
+            
+            scrollToNextCell(isNext: false)
+            self.btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
+            audioPlayer.play()
+        } else{
+            
+        }
+    }
+    
+    @IBAction func btnPlayAudio(_ sender: UIButton) {
+        if audioPlayer.isPlaying{
+            messagePlaybackTimer?.isPaused = true
+            audioPlayer.pause()
+            btnPlay.setImage(#imageLiteral(resourceName: "paly-right-color"), for: .normal)
+            
+        } else{
+            messagePlaybackTimer?.isPaused = false
+            audioPlayer.play()
+            btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
+        }
+        
+        
+    }
     
     @IBAction func btnNextAudio(_ sender: UIButton) {
-        if (currentTrackIndex < track.count - 1) {
-            currentTrackIndex = (currentTrackIndex + 1)
-            audioPlayer(songIndex: track[currentTrackIndex])
+        if (currentAudioIndex < track.count - 1) {
+            currentAudioIndex = (currentAudioIndex + 1)
+            player(songIndex: track[currentAudioIndex])
             scrollToNextCell(isNext: true)
             self.btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
             audioPlayer.enableRate = true
@@ -133,6 +238,8 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         }
      
     }
+    
+   
     
     func scrollToNextCell(isNext:Bool){
         
@@ -172,30 +279,7 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
         updateCellsLayout()
     }
     
-    @IBAction func btnPlayAudio(_ sender: UIButton) {
-        if audioPlayer.isPlaying == false{
-            
-            btnPlay.setImage(#imageLiteral(resourceName: "pause-icon-color"), for: .normal)
-            audioPlayer?.play()
-            UIView.animate(withDuration: 12.0, delay: 1, options: ([.curveLinear, .repeat]), animations: {() -> Void in
-                self.lblNotes.center = CGPoint(x: 0 - self.lblNotes.bounds.size.width / 2, y: self.lblNotes.center.y)
-            }, completion:  { _ in })
-            
-        //    self.messagePlaybackTimer?.isPaused = true
-            print("play")
-            updater = CADisplayLink(target: self, selector: #selector(trackAudio))
-            updater.frameInterval = 1
-            updater.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
-            
-           
-            
-        } else{
-            print("pause")
-            self.messagePlaybackTimer?.isPaused = false
-            btnPlay.setImage(#imageLiteral(resourceName: "paly-right-color"), for: .normal)
-            audioPlayer?.stop()
-        }
-    }
+
     
     @IBAction func btnShare(_ sender: UIButton) {
         let shareText = ["This is the test popup string"]
@@ -205,7 +289,6 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func btnBookmarks(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
-            
             let vc =  UINavigationController.init(rootViewController: self.storyboard?.instantiateViewController(withIdentifier: "BookmarkVC") as! BookmarkVC)
             vc.modalPresentationStyle = .overCurrentContext
             self.present(vc, animated: true, completion: nil)
@@ -214,18 +297,20 @@ class PlayerVC: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func btnAddBookmark(_ sender: UIButton) {
         if isBookmark{
-            btnAddBookmark.setImage(#imageLiteral(resourceName: "bookmark"), for: .normal)
+            btnAddBookmark.setImage(#imageLiteral(resourceName: "Bookmark Grey"), for: .normal)
+            currentRecordingData.bookmarkAudio = false
             isBookmark = false
         } else{
-            btnAddBookmark.setImage(#imageLiteral(resourceName: "26bookmark"), for: .normal)
+            btnAddBookmark.setImage(#imageLiteral(resourceName: "Bookmark Green"), for: .normal)
             isBookmark = true
+            currentRecordingData.bookmarkAudio = true
         }
     }
     
     
     
     @objc func trackAudio() {
-        var normalizedTime = Float(audioPlayer.currentTime / audioPlayer.duration)
+        let normalizedTime = Float(audioPlayer.currentTime / audioPlayer.duration)
         progressBar.progress = normalizedTime
     }
 
@@ -238,7 +323,7 @@ extension PlayerVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewPlaylist.dequeueReusableCell(withReuseIdentifier: "playerCell", for: indexPath) as! PlayerCVC
-            cell.imgPlay.image = imgFromSearch
+        cell.imgPlay.image = UIImage(data: currentRecordingData.image!)
         return cell
     }
     

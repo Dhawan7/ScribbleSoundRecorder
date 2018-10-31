@@ -1,4 +1,4 @@
-// file:///var/mobile/Containers/Data/Application/9984E569-37C4-4A13-AB84-45EC36EA074C/Documents/
+//
 //  RecorderVC.swift
 //  ScribbleSoundRecording
 //
@@ -23,6 +23,7 @@ class RecorderVC: UIViewController {
     @IBOutlet weak var waveAudioView: SwiftSiriWaveformView!
     @IBOutlet weak var viewPopUP: UIView!
     @IBOutlet weak var btnDelete: UIButtonX!
+    @IBOutlet weak var lblRecordTimer: UILabel!
     
     
     //Mark: let, var
@@ -33,7 +34,6 @@ class RecorderVC: UIViewController {
     var change: CGFloat = 0.01
     var popUpView: CustomPopUp!
     var dateStr = ""
-    var totalAudioDuration = 3600
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioUrl: URL!
@@ -41,13 +41,22 @@ class RecorderVC: UIViewController {
     var handleLable: LabelHandler!
     var redColor = UIColor(displayP3Red: 148/255, green: 23/255, blue: 81/255, alpha: 1.0)
     var grayColor = UIColor(displayP3Red: 170/255, green: 170/255, blue: 170/255, alpha: 1.0)
+    var context = CoreDataStack.sharedInstance.getContext()
+    var clock:Timer!
+    var numberOfRecording = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.waveAudioView.density = 1.0
         dateString()
         viewPopUP.alpha = 0.0
-        
+        seUpAudioRecorder()
+        let entity = RecodingData.share.getData()
+        print(entity)
+        if let number:Int = UserDefaults.standard.object(forKey: "Recording") as? Int{
+            numberOfRecording = number
+        }
+
     }
     
     func dateString(){
@@ -59,23 +68,29 @@ class RecorderVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         self.grayRecordButton()
         isRecording = false
         lblSave.alpha = 0.0
         lblPause.alpha = 0.0
+        self.viewPopUP.alpha = 0.0
+        self.lblRecordTimer.text = "00:00"
         self.tabBarController?.tabBar.isHidden = false
         navigationController?.setNavigationBarHidden(true, animated: true)
 
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        stopWave()
         btnPause.alpha = 0.0
         btnStopSave.alpha = 0.0
         lblSave.alpha = 0.0
         lblPause.alpha = 0.0
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    @objc func showRecording(){
+//        audioDuration += 1
+//        lblRecordTimer.text = String(audioDuration)
+        
     }
     
     @objc internal func refreshAudioView(_:Timer) {
@@ -147,7 +162,7 @@ class RecorderVC: UIViewController {
     func showWave(){
         self.timer = Timer.scheduledTimer(timeInterval: 0.06, target: self, selector: #selector(RecorderVC.refreshAudioView(_:)), userInfo: nil, repeats: true)
     }
-
+    
     
     
     @IBAction func btnStartRecord(_ sender: UIButton) {
@@ -166,8 +181,11 @@ class RecorderVC: UIViewController {
             self.grayStopButton()
             self.grayPauseButton()
             self.redRecordButton()
-            self.startRecording()
+            self.recordAudio()
+           // self.startRecording()
             self.isRecording = true
+            self.clock = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.showRecording), userInfo: nil, repeats: true)
+            self.clock.fire()
         }
         }
     }
@@ -176,25 +194,28 @@ class RecorderVC: UIViewController {
     
     @IBAction func btnSaveStop(_ sender: UIButton) {
         isPause = false
-         UIView.animate(withDuration: 0.2) {
+        UIView.animate(withDuration: 0.2) {
             if self.isSave{
-          
-               self.redRecordButton()
-               self.grayPauseButton()
+                self.redRecordButton()
+                self.grayPauseButton()
                 self.grayStopButton()
                 self.showWave()
                 self.isSave = false
                 self.isRecording = true
-        } else{
+                self.clock.fire()
+            } else{
                 self.btnDelete.isHidden = false
                 self.redSaveButton()
                 self.grayRecordButton()
                 self.grayPauseButton()
-                self.audioRecorder.pause()
-                self.stopWave()
+                
                 self.isSave = true
+                self.audioRecorder.stop()
+                self.audioRecorder = nil
+                UserDefaults.setValue(self.numberOfRecording, forKey: "Recording")
                 UIView.animate(withDuration: 0.3, animations: {
                     self.viewPopUP.alpha = 1.0
+                    self.clock.invalidate()
                 })
             }
         }
@@ -215,6 +236,7 @@ class RecorderVC: UIViewController {
                 self.audioRecorder.record()
                 self.showWave()
                 self.isPause = false
+                self.clock.fire()
             } else{
                 self.redPauseButton()
                 self.grayRecordButton()
@@ -222,6 +244,7 @@ class RecorderVC: UIViewController {
                 self.audioRecorder.pause()
                 self.stopWave()
                 self.isPause = true
+                self.clock.invalidate()
             }
         }
     }
@@ -242,12 +265,15 @@ class RecorderVC: UIViewController {
     @IBAction func btnYesPopUP(_ sender: UIButton) {
         self.audioRecorder.stop()
         let vc = storyboard?.instantiateViewController(withIdentifier: "NoImageTrimVC") as! NoImageTrimVC
-      vc.audioURL = audioUrl
+        vc.audioURL = getDirectory().appendingPathComponent("\(numberOfRecording + 1).m4a")
+        vc.isFromBrowse = true
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnDelete(_ sender: UIButton) {
-        self.btnDelete.isHidden = true
+        let popUP = UIStoryboard(name: "Main", bundle: nil)
+        let vc = popUP.instantiateViewController(withIdentifier: "CustomPopUp") as! CustomPopUp
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -257,69 +283,132 @@ class RecorderVC: UIViewController {
 
 extension RecorderVC: AVAudioRecorderDelegate {
     
-    func userPermission(){
+    
+    //setting up session
+    func seUpAudioRecorder(){
         recordingSession = AVAudioSession.sharedInstance()
-        do {
-            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
-            try recordingSession.setActive(true)
-            recordingSession.requestRecordPermission(){ [unowned self] allowed in
-                DispatchQueue.main.async {
-                    if allowed {
-                        self.btnStartRecord(self.btnRecord)
-                    } else {
-                        print("Failed To Record")
-                    }
-                    
-                }
+        
+        AVAudioSession.sharedInstance().requestRecordPermission { (hasPermission) in
+            if hasPermission{
+                print("Accepted")
             }
-        } catch {
+        }
+    }
+    
+    //function that gets path to directory
+    
+    func getDirectory() -> URL{
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectory = paths[0]
+        return documentDirectory
+    }
+    
+    //Display the alert
+    func displayAlert(title:String, message:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    //record function
+    //check active recording
+    
+    func recordAudio(){
+        if audioRecorder == nil{
+            numberOfRecording += 1
+            let filename = getDirectory().appendingPathComponent("Recording\(numberOfRecording).m4a")
+            let settings = [AVFormatIDKey:Int(kAudioFormatMPEG4AAC), AVSampleRateKey: 12000, AVNumberOfChannelsKey: 1, AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue]
             
-        }
-        
-    }
-    
-    func startRecording(){
-        let audioFileName = getDocumentsDirectory().appendingPathComponent("Recording.m4a")
-        let setting = [
-            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 12000,
-            AVNumberOfChannelsKey: 1,
-            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-        ]
-        do {
-            audioRecorder = try AVAudioRecorder(url: audioFileName, settings: setting)
-            audioRecorder.delegate = self
-            audioRecorder.record()
-            self.showWave()
-        } catch {
-            finishRecording(success: false)
+            //start recording
+            do{
+                audioRecorder = try AVAudioRecorder(url: filename, settings: settings)
+                audioRecorder.delegate = self
+                audioRecorder.record()
+                
+                //start the waves
+            } catch{
+                displayAlert(title: "Error", message: "Recording failed")
+            }
+            
+        } else{
+            // stop audio recording
+            audioRecorder.stop()
+            audioRecorder = nil
+            UserDefaults.setValue(numberOfRecording, forKey: "Recording")
+            // stop the waves
         }
     }
     
-    func getDocumentsDirectory() -> URL {
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask) 
-        let documentsDirectory = path[0]
-        return documentsDirectory
-    }
     
-    func finishRecording(success: Bool){
-        audioRecorder.stop()
-        audioRecorder = nil
-        
-        if success {
-           self.stopWave()
-          
-        } else {
     
-        }
-    }
-    
-
-    
-    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if !flag {
-            finishRecording(success: true)
-        }
-    }
-
 }
+
+//extension RecorderVC: AVAudioRecorderDelegate {
+//
+//    func userPermission(){
+//        recordingSession = AVAudioSession.sharedInstance()
+//        do {
+//            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+//            try recordingSession.setActive(true)
+//            recordingSession.requestRecordPermission(){ [unowned self] allowed in
+//                DispatchQueue.main.async {
+//                    if allowed {
+//                        self.btnStartRecord(self.btnRecord)
+//                    } else {
+//                        print("Failed To Record")
+//                    }
+//
+//                }
+//            }
+//        } catch {
+//
+//        }
+//
+//    }
+//
+//    func startRecording(){
+//        let audioFileName = getDocumentsDirectory().appendingPathComponent("Recording.m4a")
+//        let setting = [
+//            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+//            AVSampleRateKey: 12000,
+//            AVNumberOfChannelsKey: 1,
+//            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+//        ]
+//        do {
+//            audioRecorder = try AVAudioRecorder(url: audioFileName, settings: setting)
+//            audioRecorder.delegate = self
+//            audioRecorder.record()
+//            self.showWave()
+//        } catch {
+//            finishRecording(success: false)
+//        }
+//    }
+//
+//    func getDocumentsDirectory() -> URL {
+//        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+//        let documentsDirectory = path[0]
+//        return documentsDirectory
+//    }
+//
+//    func finishRecording(success: Bool){
+//        audioRecorder.stop()
+//        audioRecorder = nil
+//
+//        if success {
+//           self.stopWave()
+//
+//        } else {
+//
+//        }
+//    }
+//
+//
+//
+//    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+//        if !flag {
+//            finishRecording(success: true)
+//        }
+//    }
+//
+//}
+

@@ -6,7 +6,9 @@ target 'ScribbleSoundRecording' do
   use_frameworks!
 
   # Pods for ScribbleSoundRecording
-	pod 'IQKeyboardManagerSwift', '~> 6.1'
+	pod 'IQKeyboardManagerSwift'
     pod 'SpeechRecognizerButton'
     pod 'SCSiriWaveformView', '~> 1.1'
+    pod 'RETrimControl'
+    pod 'RangeSeekSlider'
 end

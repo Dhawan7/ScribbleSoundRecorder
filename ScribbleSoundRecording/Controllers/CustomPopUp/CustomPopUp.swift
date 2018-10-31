@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol showConfirmPopupDelegate {
+    func conformPopUpDelegate(isFromDelete:Bool)
+}
+
 class CustomPopUp: UIViewController {
     
     
@@ -18,6 +22,7 @@ class CustomPopUp: UIViewController {
     var isFromHome:Bool = false
     var isBtnDelete:Bool = false
     var audioURLFromHome:URL!
+    var showPopUpDelegate:showConfirmPopupDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,22 +42,21 @@ class CustomPopUp: UIViewController {
     }
     
     @IBAction func btnNoDismiss(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+       // showPopUpDelegate.conformPopUpDelegate(isFromDelete: true)
+      
+    
+             self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func btnYes(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "NoImageTrimVC") as! NoImageTrimVC
-     //   vc.urlFromCustomPopUP = audioURLFromHome
-        navigationController?.pushViewController(vc, animated: true)
+        self.dismiss(animated: true, completion: nil)
+      
     }
+    
+    
     
  
-    @IBAction func btnDelete(_ sender: UIButton) {
-        lblTitlePopup.text = "ARE YOU SURE?"
-        btnDeletetOutlet.isHidden = true
-        isBtnDelete = true
-    }
-    
+   
     
 
 }

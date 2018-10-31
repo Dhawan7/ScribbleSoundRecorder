@@ -13,6 +13,7 @@ class BookmarkTVC: UITableViewCell {
     @IBOutlet weak var imgSong: UIImageViewX!
     @IBOutlet weak var lblNameSong: UILabel!
     @IBOutlet weak var lblDescSong: UILabel!
+    @IBOutlet weak var btnBookmark: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +22,12 @@ class BookmarkTVC: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func setData(modelObj:RecodingData){
+        imgSong.image = UIImage(data: modelObj.image!)
+        lblNameSong.text = modelObj.name
+        lblDescSong.text = modelObj.note
     }
 
 }

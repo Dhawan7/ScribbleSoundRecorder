@@ -14,8 +14,7 @@ class BookmarkVC: UIViewController {
     @IBOutlet weak var bookmarkTableView: UITableView!
     
     //Mark: let, var
-    var arrNameSong = ["Record 5", "Record 1", "Record 3", "Record 7", "Record 3"]
-    var arrImageSong = [#imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "2"),]
+    var bookmarkedData:[RecodingData]!
     
     
     //Mark: Control flow
@@ -23,6 +22,8 @@ class BookmarkVC: UIViewController {
         super.viewDidLoad()
         bookmarkTableView.delegate = self
         bookmarkTableView.dataSource = self
+        bookmarkedData = RecodingData.share.getData()
+        bookmarkedData = bookmarkedData.filter{$0.bookmarkAudio == true}
         swipe()
     }
     
@@ -60,12 +61,26 @@ class BookmarkVC: UIViewController {
 extension BookmarkVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrImageSong.count
+        if !bookmarkedData.isEmpty{
+            return bookmarkedData.count
+        } else{
+            return 0
+        }
+    }
+    
+    @objc func unCheckBookMark(sender: UIButton){
+        let btnTag = sender.tag
+        bookmarkedData[btnTag].bookmarkAudio = false
+        bookmarkedData = RecodingData.share.getData()
+        bookmarkedData = bookmarkedData.filter{$0.bookmarkAudio == true}
+        bookmarkTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = bookmarkTableView.dequeueReusableCell(withIdentifier: "bookmarkCells") as! BookmarkTVC
-        cell.imgSong.image = arrImageSong[indexPath.row]
+        cell.setData(modelObj: bookmarkedData[indexPath.row])
+        cell.btnBookmark.tag = indexPath.row
+        cell.btnBookmark.addTarget(self, action: #selector(unCheckBookMark(sender:)), for: .touchUpInside)
         return cell
     }
 }

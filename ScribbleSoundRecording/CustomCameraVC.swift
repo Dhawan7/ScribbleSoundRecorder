@@ -20,15 +20,19 @@ class CustomCameraVC: BaseVC {
     
     //Mark: let, var
    // let customCamera = CameraController()
-    var imageForData: UIImage = UIImage()
-    let mlImageProcessing = MLkitImageProcessing()
+    var imageToIdentify:UIImage = UIImage()
+    var mlObjName:String = ""
+    var recordingData:[RecodingData] = [RecodingData]()
+    let imageObservationData = MLkitImageProcessing()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-     
+        showAlert()
+        recordingData = RecodingData.share.getData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -36,13 +40,14 @@ class CustomCameraVC: BaseVC {
     }
     
     @IBAction func btnCapturePick(_ sender: UIButton) {
-        showAlert()
+       // showAlert()
     }
     
     @IBAction func btnIdentifyImage(_ sender: UIButton) {
-       mlImageProcessing.classifyImage(image: imageForData)
-        lblItemNamee.text = mlImageProcessing.observationData
+      
     }
+    
+   
 
 }
 
@@ -52,16 +57,45 @@ extension CustomCameraVC {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        imageForData = image ?? #imageLiteral(resourceName: "stop-button")
-        imagerPicker.dismiss(animated: true, completion: nil)
-        takeImage.image = image
+        self.imageObservationData.classifyImage(image: image!)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.checkDataAvailable(objData: self.imageObservationData.observationData, imgPicker: image ?? #imageLiteral(resourceName: "background"))
+            self.imageToIdentify = image ?? #imageLiteral(resourceName: "stop-button")
+            self.lblItemNamee.text = self.imageObservationData.observationData
+            self.imagerPicker.dismiss(animated: true, completion: nil)
+        }
+        
+       
+        
         
     }
     
+    func checkDataAvailable(objData:String, imgPicker:UIImage){
+
+        recordingData = recordingData.filter{$0.objectName == objData}
+        if recordingData.isEmpty{
+            let alert = UIAlertController(title: "Warning", message: "No match found", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        } else{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "PlayerVC") as! PlayerVC
+            vc.isFromSearch = true
+            vc.currentRecordingData = recordingData[0]
+           vc.recordingData = recordingData
+           
+          //  vc.audioIndex = Int(recordingData[0].audioIndex)
+          //  vc.audioIndex = recordingData
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        lblItemNamee.text = imageObservationData.observationData
         self.dismiss(animated: true, completion: nil)
     }
+    
+   
     
 }
 

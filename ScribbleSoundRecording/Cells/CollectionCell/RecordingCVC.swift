@@ -14,5 +14,15 @@ class RecordingCVC: UICollectionViewCell {
     @IBOutlet weak var blurEffectView: UIVisualEffectViewX!
     @IBOutlet weak var lblAlbumTrackTitle: UILabel!
     @IBOutlet weak var lblTrackLength: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
     
+    func setData(modelObject:RecordingListModel){
+        imageViewAlbumArt.image = modelObject.recordImage
+        lblAlbumTrackTitle.text = modelObject.recordName
+        lblDate.text = modelObject.recordDate
+    }
+
 }
+
+
+
