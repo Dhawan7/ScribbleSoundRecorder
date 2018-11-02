@@ -25,29 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ScribbleSoundRecording/CustomCameraVC.swift"
-            timestampString = "562511392.615291"
+            filePath = "ScribbleSoundRecording/Controllers/New GroupioTrimVC/AudioTrimVC.swift"
+            timestampString = "562853177.843266"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "checkDataAvailable(objData:imgPicker:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScribbleSoundRecording/CustomCameraVC.swift"
-            timestampString = "562511392.615412"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "checkDataAvailable(objData:imgPicker:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "newAudioTrim()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScribbleSoundRecording/Controllers/New GroupioTrimVC/AudioTrimVC.swift"
-            timestampString = "562598065.372593"
+            timestampString = "562853177.84639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "btnPlayAudio(_:)"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "cropAudio()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScribbleSoundRecording/Controllers/New GroupioTrimVC/AudioTrimVC.swift"
+            timestampString = "562853177.846969"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "exportAsset(_:fileName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -9,6 +9,5 @@ target 'ScribbleSoundRecording' do
 	pod 'IQKeyboardManagerSwift'
     pod 'SpeechRecognizerButton'
     pod 'SCSiriWaveformView', '~> 1.1'
-    pod 'RETrimControl'
     pod 'RangeSeekSlider'
 end

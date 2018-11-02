@@ -56,6 +56,17 @@ class BaseVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
         print("\(floatSize) GB")
     }
     
+    //Mark: Delete recording from File Manager
+    func deleteRecordingFile(audioName:String){
+        do{
+            try FileManager.default.removeItem(at: getDirectory().appendingPathComponent(audioName))
+        } catch let error as NSError{
+            print("Error: \(error.domain)")
+            
+        }
+    }
+    
+    
     //Mark: Split int in hours, min, sec
     func hmsFrom(seconds: Int, completion: @escaping (_ hours: Int, _ minutes: Int, _ seconds: Int)->()) {
         

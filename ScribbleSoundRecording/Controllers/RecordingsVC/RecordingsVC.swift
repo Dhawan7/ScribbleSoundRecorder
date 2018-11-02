@@ -368,9 +368,10 @@ extension RecordingsVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, handler) in
-            print("Delete clicked")
+            let audioName = self.recordingData[indexPath.row].name!
             let context = CoreDataStack.sharedInstance.getContext()
             context.delete(self.recordingData[indexPath.row])
+            self.deleteRecordingFile(audioName: "\(audioName).m4a")
             do {
                 try context.save()
                 self.recordingData = RecodingData.share.getData()
@@ -409,6 +410,22 @@ extension RecordingsVC:UICollectionViewDelegate,UICollectionViewDataSource,UICol
             cell.imageViewAlbumArt.image = UIImage(data: recordingData[indexPath.row].image!)
             cell.lblDate.text = dateStringArr[indexPath.row]
             cell.lblAlbumTrackTitle.text = recordingData[indexPath.row].name
+            let path = getDirectory().appendingPathComponent("\(recordingData[indexPath.row].name!).m4a")
+            do{
+                let stringUrl = "\(path)"
+                getSize(fileSize: Int64(path.fileSize))
+                audioPlayer = try AVAudioPlayer(contentsOf: path)
+                hmsFrom(seconds: Int(audioPlayer.duration.rounded())) { (hours, min, sec) in
+                    // let hours = self.getStringFrom(seconds: hours)
+                    let min = self.getStringFrom(seconds: min)
+                    let sec = self.getStringFrom(seconds: sec)
+                    cell.lblTrackLength.text = "\(min): \(sec)"
+                    self.trackTotalTime = Float(sec) ?? 5.0
+                    
+                }
+            } catch{
+                
+            }
         }
        
       //  cell.lblTrackLength.text = "00:00"

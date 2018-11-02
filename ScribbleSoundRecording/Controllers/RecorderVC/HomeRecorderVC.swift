@@ -254,6 +254,7 @@ class HomeRecorderVC: BaseVC, AVAudioRecorderDelegate{
     }
     
     @IBAction func btnDelete(_ sender: UIButton) {
+        
         self.viewDeletePopUp.alpha = 1.0
         
 //        let popUP = UIStoryboard(name: "Main", bundle: nil)
@@ -268,6 +269,8 @@ class HomeRecorderVC: BaseVC, AVAudioRecorderDelegate{
     }
     
     @IBAction func btnDeleteYes(_ sender: UIButton) {
+        deleteRecordingFile(audioName: "\(numberOfRecord).m4a")
+        numberOfRecord -= 1
         timer.invalidate()
         waveTimer.invalidate()
         fractions = 0

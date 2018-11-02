@@ -1,14 +1,12 @@
 PODS:
   - IQKeyboardManagerSwift (6.1.1)
   - RangeSeekSlider (1.7.0)
-  - RETrimControl (1.2)
   - SCSiriWaveformView (1.1.1)
   - SpeechRecognizerButton (0.1.7)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - RangeSeekSlider
-  - RETrimControl
   - SCSiriWaveformView (~> 1.1)
   - SpeechRecognizerButton
 
@@ -16,17 +14,15 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManagerSwift
     - RangeSeekSlider
-    - RETrimControl
     - SCSiriWaveformView
     - SpeechRecognizerButton
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
   RangeSeekSlider: 0386c5a9aa5ebcb2fa5238e8a627280cf46c7c0a
-  RETrimControl: f415424c530469b116065d63661e3547d6377bf4
   SCSiriWaveformView: 15b9dd6f94c7536e2032b34a35c6ff74d38c7411
   SpeechRecognizerButton: e5062b9d464c1a633a897b8b60a556f2ac9cb336
 
-PODFILE CHECKSUM: 5d808e697793ff976b5be6dceabfb55c2a54ea20
+PODFILE CHECKSUM: df1c68e47da8885b89bb539a1bb64e455d57a890
 
 COCOAPODS: 1.5.3

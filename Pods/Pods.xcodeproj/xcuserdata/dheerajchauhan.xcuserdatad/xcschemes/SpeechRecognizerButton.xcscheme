@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C47A7DA2E50F8BCF56586B0ED1EDB17"
+               BlueprintIdentifier = "16901D14D10CFFF8E436C2DC56F229E3"
                BlueprintName = "SpeechRecognizerButton"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SpeechRecognizerButton.framework">

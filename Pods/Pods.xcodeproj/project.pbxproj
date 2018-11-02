@@ -7,202 +7,167 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030167DF3303BA8EF19A22F4CA6FA612 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
-		05A1980BA8B78DDD7371E71A88315C0D /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97A156E018DE5458BD1A80F24E008D /* IQUITextFieldView+Additions.swift */; };
-		0E1CB7A2542F6E83780F18B854587167 /* RETrimControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE7B12EE7FBAC06128D29BCD6DE65EC /* RETrimControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FA624D288C30970C2D2E0E623F58502 /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C03FC345E18EABF273A3330EC8F481 /* RangeSeekSliderDelegate.swift */; };
-		1362F65F0D2484FE3AFEBBA4A348B147 /* Pods-ScribbleSoundRecording-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9801DBF8DA68B48DBA98CB7D20D0 /* Pods-ScribbleSoundRecording-dummy.m */; };
-		184E2A30A46ACBA45C4299914BFE64CD /* RETrimControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A75F1B9A23E516A10A1E169D6FF1546 /* RETrimControl-dummy.m */; };
-		1E5AF6CC512F48FC06EADDBAEFE7C833 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E84EE16223E3B029A689F72861F38 /* IQToolbar.swift */; };
-		1F258C1FF1376D30996A1529CFB726B2 /* RETrimPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E0CA27682447BDE17B98C61B4C00F7 /* RETrimPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FB1DE431DD113FD18BC71DD7E65421E /* SFWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE1D21537A687EAAD1343A3592C83B /* SFWaveformView.swift */; };
-		1FB59EF11B973746D41DBC4503D4ACF1 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041480706D29EC126EE608FBFEC7062 /* IQUIView+Hierarchy.swift */; };
-		26B6554B5EFB423EBABF6C39215F4D1C /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF2969DC85A31846886806602992C4 /* SFButton.swift */; };
-		2DED14911CB0BC25B82F3080A57E7C13 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6CC836256CB2676D2943A1DCB950F /* IQKeyboardReturnKeyHandler.swift */; };
-		311DE906CA18F7C35A360ED67F830214 /* SpeechRecognizerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DE9206ABDCFF2F16A54985B66EDBF5 /* SpeechRecognizerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38718BBBD30FD406D1A2415E833D8A55 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D360CF6A57917177E72A9860DD2AF7 /* IQUIScrollView+Additions.swift */; };
+		01F7D8EA5040A4CE8D7A6234653B36CD /* SCSiriWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A40E7523F091539149B7B08123D4778 /* SCSiriWaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0370C74ECE1BF88536C408D24169AF1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
+		05A1980BA8B78DDD7371E71A88315C0D /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D473AC0AF2C2A6ADEA282280C7BF10 /* IQUITextFieldView+Additions.swift */; };
+		13C445753BBC18D78B4109E7DBF25862 /* SCSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 045E4F755BDCB7B6543E1C96FB861563 /* SCSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E5AF6CC512F48FC06EADDBAEFE7C833 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE64CC749BBA04BDDDF742C89847CD /* IQToolbar.swift */; };
+		1FB59EF11B973746D41DBC4503D4ACF1 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8440321E9A1F23FB845F31B1F40C68 /* IQUIView+Hierarchy.swift */; };
+		201A0B54B664EFB4640D7CCE853E1C7C /* Pods-ScribbleSoundRecording-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC9801DBF8DA68B48DBA98CB7D20D0 /* Pods-ScribbleSoundRecording-dummy.m */; };
+		2D0A8D3219D18D1213B8FD287DD038E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
+		2DED14911CB0BC25B82F3080A57E7C13 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A60FF7F090D4734EBDE560A4A0EB56 /* IQKeyboardReturnKeyHandler.swift */; };
+		2FD432D4724519032A05BC339A6C329C /* RangeSeekSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E474CFCCCEF1C2C7D517EC3EA9570C1 /* RangeSeekSlider-dummy.m */; };
+		2FDB4285D8CFBCADB55FFB9CD20A67AD /* SpeechRecognizerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F51C8133FE76648965204B2E492FE4F3 /* SpeechRecognizerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38718BBBD30FD406D1A2415E833D8A55 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB1E15F5E4D9AFEC160E002D824594 /* IQUIScrollView+Additions.swift */; };
+		39C645010C234BB1D220830C694724C6 /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3186F6D6295930F1CC2A14D6C6148 /* RangeSeekSlider.swift */; };
 		3A93D137EB62F001CBC275BD8B19CD51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974062B373CDA61A26C4C9D9C6F7ACF /* CoreGraphics.framework */; };
-		41BF0C888D194DA117CF31BC200EB143 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA091EAE0B141B938537BC82D3728BC2 /* IQUIViewController+Additions.swift */; };
-		4478CF37AF213656D6BC69DD4A2A2C6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
-		4A77403242195A5418DDD90640D03022 /* RangeSeekSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA5005D0040A1ABD53E4A85A453D52 /* RangeSeekSlider-dummy.m */; };
-		4B14C303E55FC2265C079F45980DA6A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
-		4B58471E87D1956D6368786B1CA28082 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2B818788D1A8A5BF3DBA48B4D42C1E /* UIKit.framework */; };
-		506002E7530F6F757CFDC07AE09D6918 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FD4922078543FEA0159AD297612DB /* IQKeyboardManagerSwift-dummy.m */; };
-		511BAC46AEDDB82BD154462CB72012F6 /* Pods-ScribbleSoundRecording-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85480485786ABD8A1037ACFD3F322A16 /* Pods-ScribbleSoundRecording-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59FAB7E6BCEBA05A8FBECFA30606324B /* SpeechRecognizerButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1842A70246477B28495668735151097F /* SpeechRecognizerButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B99B8B5438991917C9A56C9C8A50EAA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F8F55DD45C7F022B078382134FBAE /* IQUIView+IQKeyboardToolbar.swift */; };
-		5E8BEF4A5BFF9F4FCC2B756427FB8BA7 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1C6866927CE0A4B110A0DD959152E /* IQBarButtonItem.swift */; };
-		5F37BFEBD66E851CC6BB3755DC082B37 /* SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D4C96E05E2C23EBE5F244559C5DEA /* SCSiriWaveformView.m */; };
-		608CF9BDDDBD56D3D75D5AD297A124F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974062B373CDA61A26C4C9D9C6F7ACF /* CoreGraphics.framework */; };
+		3F0D33C961DDF7FB41DC0F120EC3ECF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62594FB86FBB82CDF05D60B59D5284BF /* QuartzCore.framework */; };
+		40785085580F7BB89BD6788EF573B589 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
+		41BF0C888D194DA117CF31BC200EB143 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405D678D07F4EB47B7B8DF7CF6E7588 /* IQUIViewController+Additions.swift */; };
+		43D0A9880D65E6C2790E36ED07DEB33E /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E4EEB41DEEC1E4B071FB2FCAA24E8 /* TapticEngine.swift */; };
+		506002E7530F6F757CFDC07AE09D6918 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29412C36637610EF59FC7E8A85529AE /* IQKeyboardManagerSwift-dummy.m */; };
+		5B99B8B5438991917C9A56C9C8A50EAA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40300D8270676A78768288CE47789897 /* IQUIView+IQKeyboardToolbar.swift */; };
+		5E8BEF4A5BFF9F4FCC2B756427FB8BA7 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00051A230B4C6A59DE891A98D6BB68AE /* IQBarButtonItem.swift */; };
+		5F35D9D33A484B37673153E002969D1B /* SpeechRecognizerButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6F2BB29CEE5E2CAE2C3549EEF94788 /* SpeechRecognizerButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60AC14B5788F6246B77EF7B4F23ED72E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62594FB86FBB82CDF05D60B59D5284BF /* QuartzCore.framework */; };
-		63D346D095CC123BEF67C763C48261EE /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2630FE623BB4F4C31230D538D693256 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		661A17BEA16AC74DB4EB6BAF21BC1FEC /* RETrimControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A8FF2A6FF3B899706EA47C02FF18F5 /* RETrimControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A7E47216B0F0E336C5644A38C4995A0 /* RETrimControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71B26F45CF78E0E8BA51005E1D96EB81 /* RETrimControl.bundle */; };
-		6C8B84B54A36AFA2235546E6C176D9F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62594FB86FBB82CDF05D60B59D5284BF /* QuartzCore.framework */; };
-		78E920980496C07B32EC6C9FCCCDB994 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC553CD1D99460436155BF716E5C8642 /* IQKeyboardManagerConstantsInternal.swift */; };
-		81D296FFC4FE77D78C8BD7AADB00B3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
-		842097FBA9B5B968DF2B9802F5006479 /* SCSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1ABDA7DCADB3AD49342753E0233B2F /* SCSiriWaveformView-dummy.m */; };
-		846B96192FAFFB69EA651D202589BDEC /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B7D7353B561185AC8D566FC45975F /* IQKeyboardManager.swift */; };
-		8565110EC39908F1DD099DABF5734E92 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F529B71CE703E8F6FE0732E2F4F006F3 /* IQKeyboardManager.bundle */; };
-		9C1EE9D572243363713123F2A4B951D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974062B373CDA61A26C4C9D9C6F7ACF /* CoreGraphics.framework */; };
-		A0D280CAA02E3921B01FF95EA44BB994 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B378DFB98B01DE7D981484D6019833 /* AVFoundation.framework */; };
-		ABF96B5E18BC51D81E2A74EA89B19854 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2B818788D1A8A5BF3DBA48B4D42C1E /* UIKit.framework */; };
-		B4F6F18721D000207706FB393A472018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
+		63D346D095CC123BEF67C763C48261EE /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5BCAD392647ED138A38AB5247507F4 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B3DCC47BFC30DDFFDB7A41DBF440164 /* SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6729FCADB4274B4F5316EFB486D55AF0 /* SCSiriWaveformView.m */; };
+		6D190668D34A8B64E9058B23082E2238 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C1DC96C2E85BF1A2D2C997DDCC511 /* SFButton.swift */; };
+		728B881A7DAFC9825674908DC272B726 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2B818788D1A8A5BF3DBA48B4D42C1E /* UIKit.framework */; };
+		78E920980496C07B32EC6C9FCCCDB994 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052471CCE55B036D16E3C9C7A522799 /* IQKeyboardManagerConstantsInternal.swift */; };
+		839B24CC97C1AC87F5A4EE54DB27DAD0 /* RangeSeekSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 634529BF2CDCD0E6F16A92806799E2CA /* RangeSeekSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		846B96192FAFFB69EA651D202589BDEC /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541BABB574252B433A5950C87F83BAE /* IQKeyboardManager.swift */; };
+		8565110EC39908F1DD099DABF5734E92 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C700EDC825894A5DD3E30713ACF931E /* IQKeyboardManager.bundle */; };
+		877ACAC82C360A8D4D40E3111D83B01D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974062B373CDA61A26C4C9D9C6F7ACF /* CoreGraphics.framework */; };
+		9E16AA58956D935144AFF533947C24B2 /* Pods-ScribbleSoundRecording-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85480485786ABD8A1037ACFD3F322A16 /* Pods-ScribbleSoundRecording-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75FEF012F9151DB28C7125200AD5E9F /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36A53CAB90A148FEAE1F7643DC3603 /* RangeSeekSliderDelegate.swift */; };
+		AE533509842BBA5B4AC8DFE9082B62F3 /* SpeechRecognizerButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A262449BF412AF109CAA0C234583D29 /* SpeechRecognizerButton-dummy.m */; };
 		BA2656E48077A6E2B12C48B29C80728E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2B818788D1A8A5BF3DBA48B4D42C1E /* UIKit.framework */; };
-		BDEA4AD470353C8E0B031181AD05173B /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BCA79456FDDCBE53024A33608BEC49 /* IQKeyboardManagerConstants.swift */; };
-		C029AE92F2C0FADFEA0F5B551F689D96 /* RETrimControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94445E231896DE12A6CE75D2C30E2D09 /* RETrimControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C02D506CC4A126096E88A8938869EA10 /* RangeSeekSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BFBC1A9B3A2567605EFF7FDEB96D62 /* RangeSeekSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2F38874CE55ED5601F9B65EBD8D1895 /* SpeechRecognizerButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE48EA3F0422D428C5D553518535DDE5 /* SpeechRecognizerButton-dummy.m */; };
-		C5D924C5F228DC46A2B0EE70212DAFFF /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152B4C04FE1320AA61D36CE13F18A3C /* IQInvocation.swift */; };
-		CD3367902CC4E282BC93D0DD4C513B50 /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77340EC341FE9F9B454D564A3C452A94 /* RangeSeekSlider.swift */; };
+		BDEA4AD470353C8E0B031181AD05173B /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569DCCE7AA3D1D3E0BB778BFF834B2B /* IQKeyboardManagerConstants.swift */; };
+		C5D924C5F228DC46A2B0EE70212DAFFF /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA0509853BCABB7E6638C78C039E4 /* IQInvocation.swift */; };
+		CA8DB25BDAB1714AC7B37DD8CBE34E70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
+		D4DB62DAA1301A983A21066E22F68E50 /* SCSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C24A12F222E353CA8A20486579065C76 /* SCSiriWaveformView-dummy.m */; };
 		DB1DFD55BB3B9267B04BBAAB8AF17829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */; };
-		E0D4CEC464C51393E1027A6747929512 /* SCSiriWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FFCC30A4DE04B568A539503A3EE916 /* SCSiriWaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E69EF79301DB9C247390D94A390182F7 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901B5C310A7091C8BAF776B2EF1686E /* IQPreviousNextView.swift */; };
-		F1743D51959D993CDCC382E365D263C0 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83C7686A8ECBCA7C1028C05411B5316 /* IQTitleBarButtonItem.swift */; };
-		F25857FB87A868AF4B2BAFB353E45BD1 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E79DCA258AE37F9A4565446D5D9A6 /* IQNSArray+Sort.swift */; };
-		FA4FD92EFEC13F45B5B1CB9E5471D2CA /* RETrimPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = D261ECFCB129DC5A0EC9B5665133E4C4 /* RETrimPopover.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FA9F17B785C41A120044411CBA368FB0 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF269B25620CD9703FF7811CDF4BD5C5 /* IQTextView.swift */; };
-		FE4966C73D2AED8D0CDDE96D4767957F /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9732BCB13BFE5760CD3C9EA238ACA15 /* TapticEngine.swift */; };
-		FFC9B4AB5E0C5DD22BC3B40EA9AA3A46 /* SCSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9914DC00C6E08C14C6FA83CDCB03B7EE /* SCSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69EF79301DB9C247390D94A390182F7 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8332ACA5AC56BAFE15F82070005830A /* IQPreviousNextView.swift */; };
+		EC7D8B6C24EA450C2CC09B75C076A272 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2B818788D1A8A5BF3DBA48B4D42C1E /* UIKit.framework */; };
+		ED2FFE6062044A8D67FE8F611B84D486 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B378DFB98B01DE7D981484D6019833 /* AVFoundation.framework */; };
+		F1743D51959D993CDCC382E365D263C0 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB95BA9D20D17F2DD799F928E68C6B3 /* IQTitleBarButtonItem.swift */; };
+		F25857FB87A868AF4B2BAFB353E45BD1 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB3FC1CAE4A14454391044C8F0F9DB /* IQNSArray+Sort.swift */; };
+		F92B7AE01C1E66DA993B450EAC546F8C /* SFWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A826D8013B1CDF325FC94B0AD7AC271D /* SFWaveformView.swift */; };
+		FA9F17B785C41A120044411CBA368FB0 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B446F51772A223FB56B620C411C9247 /* IQTextView.swift */; };
+		FE25017DE6A9B9BF9464B3D11929F7D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974062B373CDA61A26C4C9D9C6F7ACF /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00C310335A1A0F0B05270BD01BDBCA09 /* PBXContainerItemProxy */ = {
+		53E9F0490B4FBA312130CFE8B3268609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F388E5F87AD1C7FC3E9BAE84F8F12931;
+			remoteInfo = SCSiriWaveformView;
+		};
+		745022A904F4C1430C2681A2852157D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBC748717DB7BA0DF9A566427A46829A;
+			remoteInfo = RangeSeekSlider;
+		};
+		AB71CCF415F806942CBEFC5D8D5EC533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16901D14D10CFFF8E436C2DC56F229E3;
+			remoteInfo = SpeechRecognizerButton;
+		};
+		C237E1441DE424AD1311B13111B8C12F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C7A242603ED7333794F270586FA2B22D;
 			remoteInfo = IQKeyboardManagerSwift;
 		};
-		297B44BFF149916FF97F47842EE53879 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF3973821B64552C18F2BA3237E8FEAB;
-			remoteInfo = RETrimControl;
-		};
-		4D774365866DB7CD05CBFF1507087E04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FEBFDF9C58BA51F10BD9DA78089833D;
-			remoteInfo = SCSiriWaveformView;
-		};
-		5DFE7C2C24545E8B6D2FC895B97A206E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4D0015695D8A662A8C08C4714CA6728;
-			remoteInfo = RangeSeekSlider;
-		};
-		984252BD27C22EDE2960DFD0F59DD9E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C47A7DA2E50F8BCF56586B0ED1EDB17;
-			remoteInfo = SpeechRecognizerButton;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A740669A883060274E27287BA0D5B7 /* SpeechRecognizerButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpeechRecognizerButton.framework; path = SpeechRecognizerButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1152B4C04FE1320AA61D36CE13F18A3C /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
-		136E79DCA258AE37F9A4565446D5D9A6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
-		1842A70246477B28495668735151097F /* SpeechRecognizerButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognizerButton-umbrella.h"; sourceTree = "<group>"; };
-		20194AF37ED0DE482129B849D3DDC64F /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
-		22BCA79456FDDCBE53024A33608BEC49 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
-		25271E7AFB43849D0D36A343F6FAC367 /* Pods_ScribbleSoundRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScribbleSoundRecording.framework; path = "Pods-ScribbleSoundRecording.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		25BFBC1A9B3A2567605EFF7FDEB96D62 /* RangeSeekSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeSeekSlider-umbrella.h"; sourceTree = "<group>"; };
-		25E8FEE39029AB84E7494F234DCD9A1C /* RETrimControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RETrimControl-prefix.pch"; sourceTree = "<group>"; };
-		29C07CA965CF1C590E0B5126E22929E4 /* RETrimControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RETrimControl.xcconfig; sourceTree = "<group>"; };
-		383624C0B40F10C9B639C32DF08D58A4 /* RETrimControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RETrimControl.framework; path = RETrimControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38DE9206ABDCFF2F16A54985B66EDBF5 /* SpeechRecognizerButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpeechRecognizerButton.h; path = SpeechRecognizerButton/SpeechRecognizerButton.h; sourceTree = "<group>"; };
-		3A4E1AABDA76AD6070092B3ED996CF0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A75F1B9A23E516A10A1E169D6FF1546 /* RETrimControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RETrimControl-dummy.m"; sourceTree = "<group>"; };
-		4DC58CC09D1943F8C4DA44A09EBDFCAB /* RangeSeekSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeSeekSlider-prefix.pch"; sourceTree = "<group>"; };
-		4E1ABDA7DCADB3AD49342753E0233B2F /* SCSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
-		510659E3D82C18C7D099DF8EA55D3A13 /* RangeSeekSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RangeSeekSlider.modulemap; sourceTree = "<group>"; };
-		576CA8104BEC40D7FA926F7B29E57CB0 /* SCSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
-		5928AF06314E8674F875D37C29007E01 /* SCSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCSiriWaveformView.modulemap; sourceTree = "<group>"; };
-		5A62D8B5418F46F6DF792B9A317FB305 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00051A230B4C6A59DE891A98D6BB68AE /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		0052471CCE55B036D16E3C9C7A522799 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		0405D678D07F4EB47B7B8DF7CF6E7588 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		045E4F755BDCB7B6543E1C96FB861563 /* SCSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
+		0A9E8533764D3143688D43CEB8591B92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F8440321E9A1F23FB845F31B1F40C68 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		18A934AA4D34747E5333ED8B06129E57 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A25AEE035202A5F58788A7C57BA3D4C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A40E7523F091539149B7B08123D4778 /* SCSiriWaveformView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSiriWaveformView.h; path = SCSiriWaveformView/SCSiriWaveformView.h; sourceTree = "<group>"; };
+		1B6C1DC96C2E85BF1A2D2C997DDCC511 /* SFButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFButton.swift; path = SpeechRecognizerButton/SFButton.swift; sourceTree = "<group>"; };
+		298837E28509F09F3548132092CA9ADF /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		2C2E4EEB41DEEC1E4B071FB2FCAA24E8 /* TapticEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapticEngine.swift; path = Sources/TapticEngine.swift; sourceTree = "<group>"; };
+		40300D8270676A78768288CE47789897 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		47D473AC0AF2C2A6ADEA282280C7BF10 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		49A60FF7F090D4734EBDE560A4A0EB56 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		527E4A1EC6DA9C69D9D14B0D58F037EC /* SpeechRecognizerButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpeechRecognizerButton.xcconfig; sourceTree = "<group>"; };
+		52AB3FC1CAE4A14454391044C8F0F9DB /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		56434D5A81B03F4DCD648F5FD226391D /* RangeSeekSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RangeSeekSlider.modulemap; sourceTree = "<group>"; };
+		569EA6CDFF42A5019A3BA58C5CC6231F /* SpeechRecognizerButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognizerButton-prefix.pch"; sourceTree = "<group>"; };
 		5AFF311F10A2F127DBD1F2D72DF01051 /* Pods-ScribbleSoundRecording.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScribbleSoundRecording.modulemap"; sourceTree = "<group>"; };
+		5C700EDC825894A5DD3E30713ACF931E /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		5E474CFCCCEF1C2C7D517EC3EA9570C1 /* RangeSeekSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RangeSeekSlider-dummy.m"; sourceTree = "<group>"; };
 		62594FB86FBB82CDF05D60B59D5284BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		679391B7E0B447ED95AEAEC0988C005F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BFA5005D0040A1ABD53E4A85A453D52 /* RangeSeekSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RangeSeekSlider-dummy.m"; sourceTree = "<group>"; };
-		6D97A156E018DE5458BD1A80F24E008D /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		7041480706D29EC126EE608FBFEC7062 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		71B26F45CF78E0E8BA51005E1D96EB81 /* RETrimControl.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RETrimControl.bundle; path = RETrimControl/RETrimControl.bundle; sourceTree = "<group>"; };
-		74194006DBD4DC26E4FF24E5ACB39EF0 /* SCSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCSiriWaveformView.xcconfig; sourceTree = "<group>"; };
-		763F8F55DD45C7F022B078382134FBAE /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
-		77340EC341FE9F9B454D564A3C452A94 /* RangeSeekSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSeekSlider.swift; path = Sources/RangeSeekSlider.swift; sourceTree = "<group>"; };
+		634529BF2CDCD0E6F16A92806799E2CA /* RangeSeekSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeSeekSlider-umbrella.h"; sourceTree = "<group>"; };
+		63BEA048FC6E094E114F34AEE0EE390A /* SpeechRecognizerButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpeechRecognizerButton.framework; path = SpeechRecognizerButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66854CA0862C343AAF3E9B184376340D /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		6729FCADB4274B4F5316EFB486D55AF0 /* SCSiriWaveformView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSiriWaveformView.m; path = SCSiriWaveformView/SCSiriWaveformView.m; sourceTree = "<group>"; };
+		68AC5F374F6A4C30CCEE01E77083F9E3 /* RangeSeekSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RangeSeekSlider.xcconfig; sourceTree = "<group>"; };
+		6A19534815DBBA64D4F77957209C3E62 /* RangeSeekSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RangeSeekSlider.framework; path = RangeSeekSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A262449BF412AF109CAA0C234583D29 /* SpeechRecognizerButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpeechRecognizerButton-dummy.m"; sourceTree = "<group>"; };
+		6B446F51772A223FB56B620C411C9247 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		6CC5DC4236FE3FE2E587DF9F7192EF39 /* SCSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCSiriWaveformView.xcconfig; sourceTree = "<group>"; };
+		71D3186F6D6295930F1CC2A14D6C6148 /* RangeSeekSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSeekSlider.swift; path = Sources/RangeSeekSlider.swift; sourceTree = "<group>"; };
 		7974062B373CDA61A26C4C9D9C6F7ACF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		7A115519ED1350B710E4086C525DCFB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80869A748E45E9143F33A69AA7E489B3 /* Pods-ScribbleSoundRecording-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScribbleSoundRecording-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85480485786ABD8A1037ACFD3F322A16 /* Pods-ScribbleSoundRecording-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScribbleSoundRecording-umbrella.h"; sourceTree = "<group>"; };
-		8D1D4C96E05E2C23EBE5F244559C5DEA /* SCSiriWaveformView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSiriWaveformView.m; path = SCSiriWaveformView/SCSiriWaveformView.m; sourceTree = "<group>"; };
+		89CE64CC749BBA04BDDDF742C89847CD /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		8B6F2BB29CEE5E2CAE2C3549EEF94788 /* SpeechRecognizerButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognizerButton-umbrella.h"; sourceTree = "<group>"; };
 		91B378DFB98B01DE7D981484D6019833 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94445E231896DE12A6CE75D2C30E2D09 /* RETrimControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RETrimControl.m; path = RETrimControl/RETrimControl.m; sourceTree = "<group>"; };
 		9628DE3CC7B459F281E19B0B24056D75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		97A6CC836256CB2676D2943A1DCB950F /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
-		9901B5C310A7091C8BAF776B2EF1686E /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
-		9914DC00C6E08C14C6FA83CDCB03B7EE /* SCSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
 		9A039E2281113CF13DA3D059A90D87E7 /* Pods-ScribbleSoundRecording.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScribbleSoundRecording.debug.xcconfig"; sourceTree = "<group>"; };
-		9BE7B12EE7FBAC06128D29BCD6DE65EC /* RETrimControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RETrimControl-umbrella.h"; sourceTree = "<group>"; };
+		9B3ACAD72D683C316925230051E16A71 /* RangeSeekSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeSeekSlider-prefix.pch"; sourceTree = "<group>"; };
 		9E2B818788D1A8A5BF3DBA48B4D42C1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A02BE6EAAE29C5813DE8519438421D38 /* RangeSeekSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RangeSeekSlider.framework; path = RangeSeekSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA091EAE0B141B938537BC82D3728BC2 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
-		AF0FE14F43076D578B0B00423B27C1AF /* SpeechRecognizerButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpeechRecognizerButton.xcconfig; sourceTree = "<group>"; };
+		A569DCCE7AA3D1D3E0BB778BFF834B2B /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		A6AC90C91DED1D00BE89A7DD8C168655 /* SCSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCSiriWaveformView.framework; path = SCSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A826D8013B1CDF325FC94B0AD7AC271D /* SFWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFWaveformView.swift; path = SpeechRecognizerButton/SFWaveformView.swift; sourceTree = "<group>"; };
 		AF24EE4A9C44C78C447D0092052582FD /* Pods-ScribbleSoundRecording-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScribbleSoundRecording-frameworks.sh"; sourceTree = "<group>"; };
-		B1B1C6866927CE0A4B110A0DD959152E /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
 		B3DC9801DBF8DA68B48DBA98CB7D20D0 /* Pods-ScribbleSoundRecording-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScribbleSoundRecording-dummy.m"; sourceTree = "<group>"; };
-		B3E0CA27682447BDE17B98C61B4C00F7 /* RETrimPopover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RETrimPopover.h; path = RETrimControl/RETrimPopover.h; sourceTree = "<group>"; };
-		B8BE46DA1066D2F7DB0032A98121CA5C /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9732BCB13BFE5760CD3C9EA238ACA15 /* TapticEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapticEngine.swift; path = Sources/TapticEngine.swift; sourceTree = "<group>"; };
-		BC3FD4922078543FEA0159AD297612DB /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
-		BC553CD1D99460436155BF716E5C8642 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
-		BE461B63768E88EDBD0A438D99C106C7 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		B541BABB574252B433A5950C87F83BAE /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
 		C141C3019EEE40231BA85FF5C0BC7066 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2630FE623BB4F4C31230D538D693256 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		C24A12F222E353CA8A20486579065C76 /* SCSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
 		C60DD7C84C38B057650FC5AB7432E9C2 /* Pods-ScribbleSoundRecording-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScribbleSoundRecording-resources.sh"; sourceTree = "<group>"; };
-		C8FFCC30A4DE04B568A539503A3EE916 /* SCSiriWaveformView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSiriWaveformView.h; path = SCSiriWaveformView/SCSiriWaveformView.h; sourceTree = "<group>"; };
-		CF269B25620CD9703FF7811CDF4BD5C5 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
-		D05E84EE16223E3B029A689F72861F38 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
-		D261ECFCB129DC5A0EC9B5665133E4C4 /* RETrimPopover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RETrimPopover.m; path = RETrimControl/RETrimPopover.m; sourceTree = "<group>"; };
+		C83A1D46375C8D1AB5A6A6BDC1D26469 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8FA0509853BCABB7E6638C78C039E4 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
 		D2EF4053E35C70D827327926C5BEDEC5 /* Pods-ScribbleSoundRecording.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScribbleSoundRecording.release.xcconfig"; sourceTree = "<group>"; };
-		D4D360CF6A57917177E72A9860DD2AF7 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
-		D68070FD8F738F58AC38A610CD336109 /* SpeechRecognizerButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpeechRecognizerButton.modulemap; sourceTree = "<group>"; };
-		D7FE1D21537A687EAAD1343A3592C83B /* SFWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFWaveformView.swift; path = SpeechRecognizerButton/SFWaveformView.swift; sourceTree = "<group>"; };
-		DA080D6E516D353DD81F05073991C237 /* SCSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCSiriWaveformView.framework; path = SCSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA4088242B29B66BAB329F3074C5AF39 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
-		DC171EE9EFBF38BDAC1064B7068B307C /* RangeSeekSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RangeSeekSlider.xcconfig; sourceTree = "<group>"; };
-		DE011DC2AC404983843BE945B3F958B7 /* RETrimControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RETrimControl.modulemap; sourceTree = "<group>"; };
-		E22B7D7353B561185AC8D566FC45975F /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		E3A8FF2A6FF3B899706EA47C02FF18F5 /* RETrimControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RETrimControl.h; path = RETrimControl/RETrimControl.h; sourceTree = "<group>"; };
-		F1C03FC345E18EABF273A3330EC8F481 /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSeekSliderDelegate.swift; path = Sources/RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
-		F48ED43850E1669469D3AFFB9DA894AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F529B71CE703E8F6FE0732E2F4F006F3 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		F63150B07412DD079EEBFCD40CFE0684 /* SpeechRecognizerButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognizerButton-prefix.pch"; sourceTree = "<group>"; };
-		F83C7686A8ECBCA7C1028C05411B5316 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
-		FBAF2969DC85A31846886806602992C4 /* SFButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFButton.swift; path = SpeechRecognizerButton/SFButton.swift; sourceTree = "<group>"; };
-		FE48EA3F0422D428C5D553518535DDE5 /* SpeechRecognizerButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpeechRecognizerButton-dummy.m"; sourceTree = "<group>"; };
+		D7653E3A73DBE25C4EE164952DACC377 /* Pods_ScribbleSoundRecording.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScribbleSoundRecording.framework; path = "Pods-ScribbleSoundRecording.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BFBBC7C776229A97D5B6CE07BF5343 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E7836FD859551BE878B71F165FDE8A /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		E5D77C8DD767E7B356E36677E277A65B /* SCSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		E7DB1E15F5E4D9AFEC160E002D824594 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		EA5BCAD392647ED138A38AB5247507F4 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		EB36A53CAB90A148FEAE1F7643DC3603 /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSeekSliderDelegate.swift; path = Sources/RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
+		EB9CEBA968AE79A1501B4DD8CB0D9A48 /* SCSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCSiriWaveformView.modulemap; sourceTree = "<group>"; };
+		ECF8313F008C3ACB6C11D75ADAD46AE1 /* SpeechRecognizerButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpeechRecognizerButton.modulemap; sourceTree = "<group>"; };
+		F29412C36637610EF59FC7E8A85529AE /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		F51C8133FE76648965204B2E492FE4F3 /* SpeechRecognizerButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpeechRecognizerButton.h; path = SpeechRecognizerButton/SpeechRecognizerButton.h; sourceTree = "<group>"; };
+		F8332ACA5AC56BAFE15F82070005830A /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		FDB95BA9D20D17F2DD799F928E68C6B3 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
 		FF5804D792C0DF3FD115405E5D8F2906 /* Pods-ScribbleSoundRecording-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScribbleSoundRecording-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04E59E805465AACF0F0AA1E40D1F46D1 /* Frameworks */ = {
+		14F42E5DF2B196F61E5BF2A41B5D9F7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F6F18721D000207706FB393A472018 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C15DC8CCD1C3EBD6B1C5CC717DB601E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				030167DF3303BA8EF19A22F4CA6FA612 /* Foundation.framework in Frameworks */,
+				40785085580F7BB89BD6788EF573B589 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,65 +182,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A1A267AB14D769A000F34E810A48F72 /* Frameworks */ = {
+		9ECF50AE833D6F3617FF35100476E385 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4478CF37AF213656D6BC69DD4A2A2C6D /* Foundation.framework in Frameworks */,
+				0370C74ECE1BF88536C408D24169AF1E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A348B5E966CE1DD37C8386D4E496F60 /* Frameworks */ = {
+		D6B13DE76D6094EB81AE46895A5330B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D280CAA02E3921B01FF95EA44BB994 /* AVFoundation.framework in Frameworks */,
-				9C1EE9D572243363713123F2A4B951D5 /* CoreGraphics.framework in Frameworks */,
-				4B14C303E55FC2265C079F45980DA6A2 /* Foundation.framework in Frameworks */,
-				6C8B84B54A36AFA2235546E6C176D9F6 /* QuartzCore.framework in Frameworks */,
-				4B58471E87D1956D6368786B1CA28082 /* UIKit.framework in Frameworks */,
+				ED2FFE6062044A8D67FE8F611B84D486 /* AVFoundation.framework in Frameworks */,
+				FE25017DE6A9B9BF9464B3D11929F7D1 /* CoreGraphics.framework in Frameworks */,
+				2D0A8D3219D18D1213B8FD287DD038E3 /* Foundation.framework in Frameworks */,
+				3F0D33C961DDF7FB41DC0F120EC3ECF1 /* QuartzCore.framework in Frameworks */,
+				EC7D8B6C24EA450C2CC09B75C076A272 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0601C7BE8A6ABC45D12E5BFA3C5AF5E /* Frameworks */ = {
+		F48A504A3E37F09CA80BD3A8D66B5545 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608CF9BDDDBD56D3D75D5AD297A124F8 /* CoreGraphics.framework in Frameworks */,
-				81D296FFC4FE77D78C8BD7AADB00B3ED /* Foundation.framework in Frameworks */,
-				ABF96B5E18BC51D81E2A74EA89B19854 /* UIKit.framework in Frameworks */,
+				877ACAC82C360A8D4D40E3111D83B01D /* CoreGraphics.framework in Frameworks */,
+				CA8DB25BDAB1714AC7B37DD8CBE34E70 /* Foundation.framework in Frameworks */,
+				728B881A7DAFC9825674908DC272B726 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03E165E434EBD969086998558471111B /* Support Files */ = {
+		00E779B8303F385067439B87A8BBC901 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A4E1AABDA76AD6070092B3ED996CF0B /* Info.plist */,
-				510659E3D82C18C7D099DF8EA55D3A13 /* RangeSeekSlider.modulemap */,
-				DC171EE9EFBF38BDAC1064B7068B307C /* RangeSeekSlider.xcconfig */,
-				6BFA5005D0040A1ABD53E4A85A453D52 /* RangeSeekSlider-dummy.m */,
-				4DC58CC09D1943F8C4DA44A09EBDFCAB /* RangeSeekSlider-prefix.pch */,
-				25BFBC1A9B3A2567605EFF7FDEB96D62 /* RangeSeekSlider-umbrella.h */,
+				0A9E8533764D3143688D43CEB8591B92 /* Info.plist */,
+				EB9CEBA968AE79A1501B4DD8CB0D9A48 /* SCSiriWaveformView.modulemap */,
+				6CC5DC4236FE3FE2E587DF9F7192EF39 /* SCSiriWaveformView.xcconfig */,
+				C24A12F222E353CA8A20486579065C76 /* SCSiriWaveformView-dummy.m */,
+				E5D77C8DD767E7B356E36677E277A65B /* SCSiriWaveformView-prefix.pch */,
+				045E4F755BDCB7B6543E1C96FB861563 /* SCSiriWaveformView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCSiriWaveformView";
+			sourceTree = "<group>";
+		};
+		0460570FCE51A4BB7C2BC1E62862BE70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9BFBBC7C776229A97D5B6CE07BF5343 /* Info.plist */,
+				56434D5A81B03F4DCD648F5FD226391D /* RangeSeekSlider.modulemap */,
+				68AC5F374F6A4C30CCEE01E77083F9E3 /* RangeSeekSlider.xcconfig */,
+				5E474CFCCCEF1C2C7D517EC3EA9570C1 /* RangeSeekSlider-dummy.m */,
+				9B3ACAD72D683C316925230051E16A71 /* RangeSeekSlider-prefix.pch */,
+				634529BF2CDCD0E6F16A92806799E2CA /* RangeSeekSlider-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RangeSeekSlider";
-			sourceTree = "<group>";
-		};
-		077C962DF012B861D20301ED754E6F6E /* RETrimControl */ = {
-			isa = PBXGroup;
-			children = (
-				E3A8FF2A6FF3B899706EA47C02FF18F5 /* RETrimControl.h */,
-				94445E231896DE12A6CE75D2C30E2D09 /* RETrimControl.m */,
-				B3E0CA27682447BDE17B98C61B4C00F7 /* RETrimPopover.h */,
-				D261ECFCB129DC5A0EC9B5665133E4C4 /* RETrimPopover.m */,
-				2EA0E9626B3C920ABF40D28CDC64DFB4 /* Resources */,
-				56B12A9C6D72C0D2E6A0171C0F8537F1 /* Support Files */,
-			);
-			name = RETrimControl;
-			path = RETrimControl;
 			sourceTree = "<group>";
 		};
 		0DB2EEBACBFCD8E6418EF12874E18C2C /* Pods-ScribbleSoundRecording */ = {
@@ -296,31 +261,6 @@
 			path = "Target Support Files/Pods-ScribbleSoundRecording";
 			sourceTree = "<group>";
 		};
-		0F6987F674D4AAAA627000E098614B4A /* SCSiriWaveformView */ = {
-			isa = PBXGroup;
-			children = (
-				C8FFCC30A4DE04B568A539503A3EE916 /* SCSiriWaveformView.h */,
-				8D1D4C96E05E2C23EBE5F244559C5DEA /* SCSiriWaveformView.m */,
-				819A7E06D649F8EA814B34D2D2B87644 /* Support Files */,
-			);
-			name = SCSiriWaveformView;
-			path = SCSiriWaveformView;
-			sourceTree = "<group>";
-		};
-		1C3A7978D93512C5E035A50EBD868F74 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5A62D8B5418F46F6DF792B9A317FB305 /* Info.plist */,
-				D68070FD8F738F58AC38A610CD336109 /* SpeechRecognizerButton.modulemap */,
-				AF0FE14F43076D578B0B00423B27C1AF /* SpeechRecognizerButton.xcconfig */,
-				FE48EA3F0422D428C5D553518535DDE5 /* SpeechRecognizerButton-dummy.m */,
-				F63150B07412DD079EEBFCD40CFE0684 /* SpeechRecognizerButton-prefix.pch */,
-				1842A70246477B28495668735151097F /* SpeechRecognizerButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SpeechRecognizerButton";
-			sourceTree = "<group>";
-		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,94 +269,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2EA0E9626B3C920ABF40D28CDC64DFB4 /* Resources */ = {
+		237997260C7C3CBD90FE798837E972E0 /* RangeSeekSlider */ = {
 			isa = PBXGroup;
 			children = (
-				71B26F45CF78E0E8BA51005E1D96EB81 /* RETrimControl.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		3C2E7A99A760A2430CD798B03D9DDEEE /* IQKeyboardManagerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				B1B1C6866927CE0A4B110A0DD959152E /* IQBarButtonItem.swift */,
-				1152B4C04FE1320AA61D36CE13F18A3C /* IQInvocation.swift */,
-				E22B7D7353B561185AC8D566FC45975F /* IQKeyboardManager.swift */,
-				22BCA79456FDDCBE53024A33608BEC49 /* IQKeyboardManagerConstants.swift */,
-				BC553CD1D99460436155BF716E5C8642 /* IQKeyboardManagerConstantsInternal.swift */,
-				97A6CC836256CB2676D2943A1DCB950F /* IQKeyboardReturnKeyHandler.swift */,
-				136E79DCA258AE37F9A4565446D5D9A6 /* IQNSArray+Sort.swift */,
-				9901B5C310A7091C8BAF776B2EF1686E /* IQPreviousNextView.swift */,
-				CF269B25620CD9703FF7811CDF4BD5C5 /* IQTextView.swift */,
-				F83C7686A8ECBCA7C1028C05411B5316 /* IQTitleBarButtonItem.swift */,
-				D05E84EE16223E3B029A689F72861F38 /* IQToolbar.swift */,
-				D4D360CF6A57917177E72A9860DD2AF7 /* IQUIScrollView+Additions.swift */,
-				6D97A156E018DE5458BD1A80F24E008D /* IQUITextFieldView+Additions.swift */,
-				7041480706D29EC126EE608FBFEC7062 /* IQUIView+Hierarchy.swift */,
-				763F8F55DD45C7F022B078382134FBAE /* IQUIView+IQKeyboardToolbar.swift */,
-				AA091EAE0B141B938537BC82D3728BC2 /* IQUIViewController+Additions.swift */,
-				63613413F0E26D87C3F0EE18C86A32D1 /* Resources */,
-				FAFD1697BF2A56907418C1E64087098B /* Support Files */,
-			);
-			name = IQKeyboardManagerSwift;
-			path = IQKeyboardManagerSwift;
-			sourceTree = "<group>";
-		};
-		421F47128F4CB97C62F6C84514CF557E /* RangeSeekSlider */ = {
-			isa = PBXGroup;
-			children = (
-				77340EC341FE9F9B454D564A3C452A94 /* RangeSeekSlider.swift */,
-				F1C03FC345E18EABF273A3330EC8F481 /* RangeSeekSliderDelegate.swift */,
-				B9732BCB13BFE5760CD3C9EA238ACA15 /* TapticEngine.swift */,
-				03E165E434EBD969086998558471111B /* Support Files */,
+				71D3186F6D6295930F1CC2A14D6C6148 /* RangeSeekSlider.swift */,
+				EB36A53CAB90A148FEAE1F7643DC3603 /* RangeSeekSliderDelegate.swift */,
+				2C2E4EEB41DEEC1E4B071FB2FCAA24E8 /* TapticEngine.swift */,
+				0460570FCE51A4BB7C2BC1E62862BE70 /* Support Files */,
 			);
 			name = RangeSeekSlider;
 			path = RangeSeekSlider;
 			sourceTree = "<group>";
 		};
-		4904C05445D88AB9FDF40B5FDA56E449 /* Products */ = {
+		563EF8FF8A756814F7E638A5E80A51A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B8BE46DA1066D2F7DB0032A98121CA5C /* IQKeyboardManagerSwift.framework */,
-				25271E7AFB43849D0D36A343F6FAC367 /* Pods_ScribbleSoundRecording.framework */,
-				A02BE6EAAE29C5813DE8519438421D38 /* RangeSeekSlider.framework */,
-				383624C0B40F10C9B639C32DF08D58A4 /* RETrimControl.framework */,
-				DA080D6E516D353DD81F05073991C237 /* SCSiriWaveformView.framework */,
-				01A740669A883060274E27287BA0D5B7 /* SpeechRecognizerButton.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		56B12A9C6D72C0D2E6A0171C0F8537F1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A115519ED1350B710E4086C525DCFB7 /* Info.plist */,
-				DE011DC2AC404983843BE945B3F958B7 /* RETrimControl.modulemap */,
-				29C07CA965CF1C590E0B5126E22929E4 /* RETrimControl.xcconfig */,
-				4A75F1B9A23E516A10A1E169D6FF1546 /* RETrimControl-dummy.m */,
-				25E8FEE39029AB84E7494F234DCD9A1C /* RETrimControl-prefix.pch */,
-				9BE7B12EE7FBAC06128D29BCD6DE65EC /* RETrimControl-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RETrimControl";
-			sourceTree = "<group>";
-		};
-		63613413F0E26D87C3F0EE18C86A32D1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F529B71CE703E8F6FE0732E2F4F006F3 /* IQKeyboardManager.bundle */,
+				5C700EDC825894A5DD3E30713ACF931E /* IQKeyboardManager.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		69D49F55748CD83C8586CEB95E142058 /* SpeechRecognizerButton */ = {
+		60E31DBFD3AA741FFFA8F5FF33C7196A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FBAF2969DC85A31846886806602992C4 /* SFButton.swift */,
-				D7FE1D21537A687EAAD1343A3592C83B /* SFWaveformView.swift */,
-				38DE9206ABDCFF2F16A54985B66EDBF5 /* SpeechRecognizerButton.h */,
-				1C3A7978D93512C5E035A50EBD868F74 /* Support Files */,
+				C6BC49B3F9108E88C15AD16248DA701B /* IQKeyboardManagerSwift */,
+				237997260C7C3CBD90FE798837E972E0 /* RangeSeekSlider */,
+				8E46EEC25D75BA6AB8B915A929CF1632 /* SCSiriWaveformView */,
+				7D19EF31E7F42AFEB95D397EA24528C6 /* SpeechRecognizerButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76F718AF2694368B15DD982D00006C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A934AA4D34747E5333ED8B06129E57 /* IQKeyboardManagerSwift.framework */,
+				D7653E3A73DBE25C4EE164952DACC377 /* Pods_ScribbleSoundRecording.framework */,
+				6A19534815DBBA64D4F77957209C3E62 /* RangeSeekSlider.framework */,
+				A6AC90C91DED1D00BE89A7DD8C168655 /* SCSiriWaveformView.framework */,
+				63BEA048FC6E094E114F34AEE0EE390A /* SpeechRecognizerButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D19EF31E7F42AFEB95D397EA24528C6 /* SpeechRecognizerButton */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C1DC96C2E85BF1A2D2C997DDCC511 /* SFButton.swift */,
+				A826D8013B1CDF325FC94B0AD7AC271D /* SFWaveformView.swift */,
+				F51C8133FE76648965204B2E492FE4F3 /* SpeechRecognizerButton.h */,
+				EE1863707300D063835109E727A2F62B /* Support Files */,
 			);
 			name = SpeechRecognizerButton;
 			path = SpeechRecognizerButton;
@@ -427,24 +329,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				BE439D066492E1DC51C2B9BF9C669D40 /* Pods */,
-				4904C05445D88AB9FDF40B5FDA56E449 /* Products */,
+				60E31DBFD3AA741FFFA8F5FF33C7196A /* Pods */,
+				76F718AF2694368B15DD982D00006C8C /* Products */,
 				AC6D9354720293A084E21E2B46B6D175 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		819A7E06D649F8EA814B34D2D2B87644 /* Support Files */ = {
+		8E46EEC25D75BA6AB8B915A929CF1632 /* SCSiriWaveformView */ = {
 			isa = PBXGroup;
 			children = (
-				679391B7E0B447ED95AEAEC0988C005F /* Info.plist */,
-				5928AF06314E8674F875D37C29007E01 /* SCSiriWaveformView.modulemap */,
-				74194006DBD4DC26E4FF24E5ACB39EF0 /* SCSiriWaveformView.xcconfig */,
-				4E1ABDA7DCADB3AD49342753E0233B2F /* SCSiriWaveformView-dummy.m */,
-				576CA8104BEC40D7FA926F7B29E57CB0 /* SCSiriWaveformView-prefix.pch */,
-				9914DC00C6E08C14C6FA83CDCB03B7EE /* SCSiriWaveformView-umbrella.h */,
+				1A40E7523F091539149B7B08123D4778 /* SCSiriWaveformView.h */,
+				6729FCADB4274B4F5316EFB486D55AF0 /* SCSiriWaveformView.m */,
+				00E779B8303F385067439B87A8BBC901 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SCSiriWaveformView";
+			name = SCSiriWaveformView;
+			path = SCSiriWaveformView;
 			sourceTree = "<group>";
 		};
 		AC6D9354720293A084E21E2B46B6D175 /* Targets Support Files */ = {
@@ -455,16 +354,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BE439D066492E1DC51C2B9BF9C669D40 /* Pods */ = {
+		C026CF0B0D4ACDAE47E3F8FF39054274 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C2E7A99A760A2430CD798B03D9DDEEE /* IQKeyboardManagerSwift */,
-				421F47128F4CB97C62F6C84514CF557E /* RangeSeekSlider */,
-				077C962DF012B861D20301ED754E6F6E /* RETrimControl */,
-				0F6987F674D4AAAA627000E098614B4A /* SCSiriWaveformView */,
-				69D49F55748CD83C8586CEB95E142058 /* SpeechRecognizerButton */,
+				C83A1D46375C8D1AB5A6A6BDC1D26469 /* Info.plist */,
+				E4E7836FD859551BE878B71F165FDE8A /* IQKeyboardManagerSwift.modulemap */,
+				298837E28509F09F3548132092CA9ADF /* IQKeyboardManagerSwift.xcconfig */,
+				F29412C36637610EF59FC7E8A85529AE /* IQKeyboardManagerSwift-dummy.m */,
+				66854CA0862C343AAF3E9B184376340D /* IQKeyboardManagerSwift-prefix.pch */,
+				EA5BCAD392647ED138A38AB5247507F4 /* IQKeyboardManagerSwift-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		C6BC49B3F9108E88C15AD16248DA701B /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				00051A230B4C6A59DE891A98D6BB68AE /* IQBarButtonItem.swift */,
+				CE8FA0509853BCABB7E6638C78C039E4 /* IQInvocation.swift */,
+				B541BABB574252B433A5950C87F83BAE /* IQKeyboardManager.swift */,
+				A569DCCE7AA3D1D3E0BB778BFF834B2B /* IQKeyboardManagerConstants.swift */,
+				0052471CCE55B036D16E3C9C7A522799 /* IQKeyboardManagerConstantsInternal.swift */,
+				49A60FF7F090D4734EBDE560A4A0EB56 /* IQKeyboardReturnKeyHandler.swift */,
+				52AB3FC1CAE4A14454391044C8F0F9DB /* IQNSArray+Sort.swift */,
+				F8332ACA5AC56BAFE15F82070005830A /* IQPreviousNextView.swift */,
+				6B446F51772A223FB56B620C411C9247 /* IQTextView.swift */,
+				FDB95BA9D20D17F2DD799F928E68C6B3 /* IQTitleBarButtonItem.swift */,
+				89CE64CC749BBA04BDDDF742C89847CD /* IQToolbar.swift */,
+				E7DB1E15F5E4D9AFEC160E002D824594 /* IQUIScrollView+Additions.swift */,
+				47D473AC0AF2C2A6ADEA282280C7BF10 /* IQUITextFieldView+Additions.swift */,
+				0F8440321E9A1F23FB845F31B1F40C68 /* IQUIView+Hierarchy.swift */,
+				40300D8270676A78768288CE47789897 /* IQUIView+IQKeyboardToolbar.swift */,
+				0405D678D07F4EB47B7B8DF7CF6E7588 /* IQUIViewController+Additions.swift */,
+				563EF8FF8A756814F7E638A5E80A51A5 /* Resources */,
+				C026CF0B0D4ACDAE47E3F8FF39054274 /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
 		C88148F8A560A10CF9E57ED628D541FD /* iOS */ = {
@@ -479,40 +406,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FAFD1697BF2A56907418C1E64087098B /* Support Files */ = {
+		EE1863707300D063835109E727A2F62B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F48ED43850E1669469D3AFFB9DA894AF /* Info.plist */,
-				20194AF37ED0DE482129B849D3DDC64F /* IQKeyboardManagerSwift.modulemap */,
-				BE461B63768E88EDBD0A438D99C106C7 /* IQKeyboardManagerSwift.xcconfig */,
-				BC3FD4922078543FEA0159AD297612DB /* IQKeyboardManagerSwift-dummy.m */,
-				DA4088242B29B66BAB329F3074C5AF39 /* IQKeyboardManagerSwift-prefix.pch */,
-				C2630FE623BB4F4C31230D538D693256 /* IQKeyboardManagerSwift-umbrella.h */,
+				1A25AEE035202A5F58788A7C57BA3D4C /* Info.plist */,
+				ECF8313F008C3ACB6C11D75ADAD46AE1 /* SpeechRecognizerButton.modulemap */,
+				527E4A1EC6DA9C69D9D14B0D58F037EC /* SpeechRecognizerButton.xcconfig */,
+				6A262449BF412AF109CAA0C234583D29 /* SpeechRecognizerButton-dummy.m */,
+				569EA6CDFF42A5019A3BA58C5CC6231F /* SpeechRecognizerButton-prefix.pch */,
+				8B6F2BB29CEE5E2CAE2C3549EEF94788 /* SpeechRecognizerButton-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/IQKeyboardManagerSwift";
+			path = "../Target Support Files/SpeechRecognizerButton";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		211360BA4543936F12BDF8B8675527B9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C02D506CC4A126096E88A8938869EA10 /* RangeSeekSlider-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46DB3D5E36794C3B57CB6C83B7F110AA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59FAB7E6BCEBA05A8FBECFA30606324B /* SpeechRecognizerButton-umbrella.h in Headers */,
-				311DE906CA18F7C35A360ED67F830214 /* SpeechRecognizerButton.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		97436C0F539C1101021EF13686C812F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,62 +431,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6B1705485FD604EB944A34D83D8BE47 /* Headers */ = {
+		C3DF57845CAD7DDE51BD2A0A3DFAFC1A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511BAC46AEDDB82BD154462CB72012F6 /* Pods-ScribbleSoundRecording-umbrella.h in Headers */,
+				5F35D9D33A484B37673153E002969D1B /* SpeechRecognizerButton-umbrella.h in Headers */,
+				2FDB4285D8CFBCADB55FFB9CD20A67AD /* SpeechRecognizerButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F88D92B439BAF2D9A572730EE38F629F /* Headers */ = {
+		CD96B4C51E12262BB1C86A6386DE7BE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1CB7A2542F6E83780F18B854587167 /* RETrimControl-umbrella.h in Headers */,
-				661A17BEA16AC74DB4EB6BAF21BC1FEC /* RETrimControl.h in Headers */,
-				1F258C1FF1376D30996A1529CFB726B2 /* RETrimPopover.h in Headers */,
+				839B24CC97C1AC87F5A4EE54DB27DAD0 /* RangeSeekSlider-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC8A821AE796917F93A072D7B25AB35 /* Headers */ = {
+		F8CEBA9820A514C605832EC3932F10BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC9B4AB5E0C5DD22BC3B40EA9AA3A46 /* SCSiriWaveformView-umbrella.h in Headers */,
-				E0D4CEC464C51393E1027A6747929512 /* SCSiriWaveformView.h in Headers */,
+				9E16AA58956D935144AFF533947C24B2 /* Pods-ScribbleSoundRecording-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8EF3B547D4F394209A6E491CD94F837 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C445753BBC18D78B4109E7DBF25862 /* SCSiriWaveformView-umbrella.h in Headers */,
+				01F7D8EA5040A4CE8D7A6234653B36CD /* SCSiriWaveformView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1FEBFDF9C58BA51F10BD9DA78089833D /* SCSiriWaveformView */ = {
+		16901D14D10CFFF8E436C2DC56F229E3 /* SpeechRecognizerButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB911F9321E10C41B79DE89FE9111272 /* Build configuration list for PBXNativeTarget "SCSiriWaveformView" */;
+			buildConfigurationList = 4FD4D20A41E7EA2A0A15A39537DA2074 /* Build configuration list for PBXNativeTarget "SpeechRecognizerButton" */;
 			buildPhases = (
-				FFC8A821AE796917F93A072D7B25AB35 /* Headers */,
-				9D9DB5C2CA820974644373B6311A412D /* Sources */,
-				5A348B5E966CE1DD37C8386D4E496F60 /* Frameworks */,
-				2F5EE7231309CC6B5E2E5CF505069DDC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCSiriWaveformView;
-			productName = SCSiriWaveformView;
-			productReference = DA080D6E516D353DD81F05073991C237 /* SCSiriWaveformView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9C47A7DA2E50F8BCF56586B0ED1EDB17 /* SpeechRecognizerButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADBF48AED525939319EFFFFF65121A49 /* Build configuration list for PBXNativeTarget "SpeechRecognizerButton" */;
-			buildPhases = (
-				46DB3D5E36794C3B57CB6C83B7F110AA /* Headers */,
-				2B15F50F8CB21782FFD6C73D33439145 /* Sources */,
-				3C15DC8CCD1C3EBD6B1C5CC717DB601E /* Frameworks */,
-				4E924ED83A78180231CDA94AC1A08068 /* Resources */,
+				C3DF57845CAD7DDE51BD2A0A3DFAFC1A /* Headers */,
+				052DFEDE220455238C534D6546337B93 /* Sources */,
+				14F42E5DF2B196F61E5BF2A41B5D9F7D /* Frameworks */,
+				F54D8DEC5D9BA49E10D4B8BF5E38CC77 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -584,7 +483,29 @@
 			);
 			name = SpeechRecognizerButton;
 			productName = SpeechRecognizerButton;
-			productReference = 01A740669A883060274E27287BA0D5B7 /* SpeechRecognizerButton.framework */;
+			productReference = 63BEA048FC6E094E114F34AEE0EE390A /* SpeechRecognizerButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C00576C4DD99223DDA92E3CE3C574BB2 /* Pods-ScribbleSoundRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DEAD27168CD4F6F2E68389EFE96D2D /* Build configuration list for PBXNativeTarget "Pods-ScribbleSoundRecording" */;
+			buildPhases = (
+				F8CEBA9820A514C605832EC3932F10BD /* Headers */,
+				1B51E18B4644910A15A2671E3278305B /* Sources */,
+				9ECF50AE833D6F3617FF35100476E385 /* Frameworks */,
+				E93FD47913EE3E4C0D26B96C2F0ABDCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57408AAEAB10BB585A7853EEA3B14658 /* PBXTargetDependency */,
+				EDC7F8F561C7F0BBAFE0FB3396C38318 /* PBXTargetDependency */,
+				0EFCF4ED774A81A5C494BE4219DA7F10 /* PBXTargetDependency */,
+				DB83EE9C67E36F62DC5054538E72E1B2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ScribbleSoundRecording";
+			productName = "Pods-ScribbleSoundRecording";
+			productReference = D7653E3A73DBE25C4EE164952DACC377 /* Pods_ScribbleSoundRecording.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7A242603ED7333794F270586FA2B22D /* IQKeyboardManagerSwift */ = {
@@ -602,17 +523,17 @@
 			);
 			name = IQKeyboardManagerSwift;
 			productName = IQKeyboardManagerSwift;
-			productReference = B8BE46DA1066D2F7DB0032A98121CA5C /* IQKeyboardManagerSwift.framework */;
+			productReference = 18A934AA4D34747E5333ED8B06129E57 /* IQKeyboardManagerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E4D0015695D8A662A8C08C4714CA6728 /* RangeSeekSlider */ = {
+		DBC748717DB7BA0DF9A566427A46829A /* RangeSeekSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE7F1680128CA556E5F7A8593090EC1D /* Build configuration list for PBXNativeTarget "RangeSeekSlider" */;
+			buildConfigurationList = 4665C410B4CED2604F74F8E950B6D1FB /* Build configuration list for PBXNativeTarget "RangeSeekSlider" */;
 			buildPhases = (
-				211360BA4543936F12BDF8B8675527B9 /* Headers */,
-				E45310F51DBE29E3A555FF60F382D4AF /* Sources */,
-				A0601C7BE8A6ABC45D12E5BFA3C5AF5E /* Frameworks */,
-				DF26B845AC34E1B73AF63BF3DD815F26 /* Resources */,
+				CD96B4C51E12262BB1C86A6386DE7BE3 /* Headers */,
+				4B1BFE322A588DB6049FECA7A4DBEA87 /* Sources */,
+				F48A504A3E37F09CA80BD3A8D66B5545 /* Frameworks */,
+				45A4383F7CF414364BE62C45C80D48C9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -620,48 +541,25 @@
 			);
 			name = RangeSeekSlider;
 			productName = RangeSeekSlider;
-			productReference = A02BE6EAAE29C5813DE8519438421D38 /* RangeSeekSlider.framework */;
+			productReference = 6A19534815DBBA64D4F77957209C3E62 /* RangeSeekSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FC63D27D236825CD3FB56D969C28B69C /* Pods-ScribbleSoundRecording */ = {
+		F388E5F87AD1C7FC3E9BAE84F8F12931 /* SCSiriWaveformView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6ABCDB40A5158652A72C94C7673F2231 /* Build configuration list for PBXNativeTarget "Pods-ScribbleSoundRecording" */;
+			buildConfigurationList = B0DC73446A32346D7096780649AE3646 /* Build configuration list for PBXNativeTarget "SCSiriWaveformView" */;
 			buildPhases = (
-				C6B1705485FD604EB944A34D83D8BE47 /* Headers */,
-				D2D1D95817504676483DFCAA1C25DE62 /* Sources */,
-				5A1A267AB14D769A000F34E810A48F72 /* Frameworks */,
-				3C5A6F18BA790F65DFEA81E65648BA40 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5CB79C658ED588894C2D7B1A9D23CE9 /* PBXTargetDependency */,
-				B6FF7AE2356395ABD3866AF592BE3249 /* PBXTargetDependency */,
-				5360442D561774EF0FFED573487F1B56 /* PBXTargetDependency */,
-				46936D8309ACF2FAA3A15E7FB8E80DE9 /* PBXTargetDependency */,
-				1DC364C7F58EE2B63FB3991024227D7A /* PBXTargetDependency */,
-			);
-			name = "Pods-ScribbleSoundRecording";
-			productName = "Pods-ScribbleSoundRecording";
-			productReference = 25271E7AFB43849D0D36A343F6FAC367 /* Pods_ScribbleSoundRecording.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FF3973821B64552C18F2BA3237E8FEAB /* RETrimControl */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BEBDBCCF1369081052A45C165DCC706 /* Build configuration list for PBXNativeTarget "RETrimControl" */;
-			buildPhases = (
-				F88D92B439BAF2D9A572730EE38F629F /* Headers */,
-				06A2F2617A580D660E03551AEF795094 /* Sources */,
-				04E59E805465AACF0F0AA1E40D1F46D1 /* Frameworks */,
-				8944C2FAE5E17A66658BF4E2A45F4B14 /* Resources */,
+				F8EF3B547D4F394209A6E491CD94F837 /* Headers */,
+				DEF78598A72E139E32547BD42C054EB9 /* Sources */,
+				D6B13DE76D6094EB81AE46895A5330B2 /* Frameworks */,
+				7C2A1E29B36A1C0083664FF877B0C238 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RETrimControl;
-			productName = RETrimControl;
-			productReference = 383624C0B40F10C9B639C32DF08D58A4 /* RETrimControl.framework */;
+			name = SCSiriWaveformView;
+			productName = SCSiriWaveformView;
+			productReference = A6AC90C91DED1D00BE89A7DD8C168655 /* SCSiriWaveformView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -681,47 +579,31 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4904C05445D88AB9FDF40B5FDA56E449 /* Products */;
+			productRefGroup = 76F718AF2694368B15DD982D00006C8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C7A242603ED7333794F270586FA2B22D /* IQKeyboardManagerSwift */,
-				FC63D27D236825CD3FB56D969C28B69C /* Pods-ScribbleSoundRecording */,
-				E4D0015695D8A662A8C08C4714CA6728 /* RangeSeekSlider */,
-				FF3973821B64552C18F2BA3237E8FEAB /* RETrimControl */,
-				1FEBFDF9C58BA51F10BD9DA78089833D /* SCSiriWaveformView */,
-				9C47A7DA2E50F8BCF56586B0ED1EDB17 /* SpeechRecognizerButton */,
+				C00576C4DD99223DDA92E3CE3C574BB2 /* Pods-ScribbleSoundRecording */,
+				DBC748717DB7BA0DF9A566427A46829A /* RangeSeekSlider */,
+				F388E5F87AD1C7FC3E9BAE84F8F12931 /* SCSiriWaveformView */,
+				16901D14D10CFFF8E436C2DC56F229E3 /* SpeechRecognizerButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F5EE7231309CC6B5E2E5CF505069DDC /* Resources */ = {
+		45A4383F7CF414364BE62C45C80D48C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C5A6F18BA790F65DFEA81E65648BA40 /* Resources */ = {
+		7C2A1E29B36A1C0083664FF877B0C238 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E924ED83A78180231CDA94AC1A08068 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8944C2FAE5E17A66658BF4E2A45F4B14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A7E47216B0F0E336C5644A38C4995A0 /* RETrimControl.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,7 +615,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF26B845AC34E1B73AF63BF3DD815F26 /* Resources */ = {
+		E93FD47913EE3E4C0D26B96C2F0ABDCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54D8DEC5D9BA49E10D4B8BF5E38CC77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -743,32 +632,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06A2F2617A580D660E03551AEF795094 /* Sources */ = {
+		052DFEDE220455238C534D6546337B93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184E2A30A46ACBA45C4299914BFE64CD /* RETrimControl-dummy.m in Sources */,
-				C029AE92F2C0FADFEA0F5B551F689D96 /* RETrimControl.m in Sources */,
-				FA4FD92EFEC13F45B5B1CB9E5471D2CA /* RETrimPopover.m in Sources */,
+				6D190668D34A8B64E9058B23082E2238 /* SFButton.swift in Sources */,
+				F92B7AE01C1E66DA993B450EAC546F8C /* SFWaveformView.swift in Sources */,
+				AE533509842BBA5B4AC8DFE9082B62F3 /* SpeechRecognizerButton-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B15F50F8CB21782FFD6C73D33439145 /* Sources */ = {
+		1B51E18B4644910A15A2671E3278305B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B6554B5EFB423EBABF6C39215F4D1C /* SFButton.swift in Sources */,
-				1FB1DE431DD113FD18BC71DD7E65421E /* SFWaveformView.swift in Sources */,
-				C2F38874CE55ED5601F9B65EBD8D1895 /* SpeechRecognizerButton-dummy.m in Sources */,
+				201A0B54B664EFB4640D7CCE853E1C7C /* Pods-ScribbleSoundRecording-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D9DB5C2CA820974644373B6311A412D /* Sources */ = {
+		4B1BFE322A588DB6049FECA7A4DBEA87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842097FBA9B5B968DF2B9802F5006479 /* SCSiriWaveformView-dummy.m in Sources */,
-				5F37BFEBD66E851CC6BB3755DC082B37 /* SCSiriWaveformView.m in Sources */,
+				2FD432D4724519032A05BC339A6C329C /* RangeSeekSlider-dummy.m in Sources */,
+				39C645010C234BB1D220830C694724C6 /* RangeSeekSlider.swift in Sources */,
+				A75FEF012F9151DB28C7125200AD5E9F /* RangeSeekSliderDelegate.swift in Sources */,
+				43D0A9880D65E6C2790E36ED07DEB33E /* TapticEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,101 +685,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2D1D95817504676483DFCAA1C25DE62 /* Sources */ = {
+		DEF78598A72E139E32547BD42C054EB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1362F65F0D2484FE3AFEBBA4A348B147 /* Pods-ScribbleSoundRecording-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E45310F51DBE29E3A555FF60F382D4AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A77403242195A5418DDD90640D03022 /* RangeSeekSlider-dummy.m in Sources */,
-				CD3367902CC4E282BC93D0DD4C513B50 /* RangeSeekSlider.swift in Sources */,
-				0FA624D288C30970C2D2E0E623F58502 /* RangeSeekSliderDelegate.swift in Sources */,
-				FE4966C73D2AED8D0CDDE96D4767957F /* TapticEngine.swift in Sources */,
+				D4DB62DAA1301A983A21066E22F68E50 /* SCSiriWaveformView-dummy.m in Sources */,
+				6B3DCC47BFC30DDFFDB7A41DBF440164 /* SCSiriWaveformView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1DC364C7F58EE2B63FB3991024227D7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SpeechRecognizerButton;
-			target = 9C47A7DA2E50F8BCF56586B0ED1EDB17 /* SpeechRecognizerButton */;
-			targetProxy = 984252BD27C22EDE2960DFD0F59DD9E4 /* PBXContainerItemProxy */;
-		};
-		46936D8309ACF2FAA3A15E7FB8E80DE9 /* PBXTargetDependency */ = {
+		0EFCF4ED774A81A5C494BE4219DA7F10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCSiriWaveformView;
-			target = 1FEBFDF9C58BA51F10BD9DA78089833D /* SCSiriWaveformView */;
-			targetProxy = 4D774365866DB7CD05CBFF1507087E04 /* PBXContainerItemProxy */;
+			target = F388E5F87AD1C7FC3E9BAE84F8F12931 /* SCSiriWaveformView */;
+			targetProxy = 53E9F0490B4FBA312130CFE8B3268609 /* PBXContainerItemProxy */;
 		};
-		5360442D561774EF0FFED573487F1B56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RangeSeekSlider;
-			target = E4D0015695D8A662A8C08C4714CA6728 /* RangeSeekSlider */;
-			targetProxy = 5DFE7C2C24545E8B6D2FC895B97A206E /* PBXContainerItemProxy */;
-		};
-		B5CB79C658ED588894C2D7B1A9D23CE9 /* PBXTargetDependency */ = {
+		57408AAEAB10BB585A7853EEA3B14658 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
 			target = C7A242603ED7333794F270586FA2B22D /* IQKeyboardManagerSwift */;
-			targetProxy = 00C310335A1A0F0B05270BD01BDBCA09 /* PBXContainerItemProxy */;
+			targetProxy = C237E1441DE424AD1311B13111B8C12F /* PBXContainerItemProxy */;
 		};
-		B6FF7AE2356395ABD3866AF592BE3249 /* PBXTargetDependency */ = {
+		DB83EE9C67E36F62DC5054538E72E1B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RETrimControl;
-			target = FF3973821B64552C18F2BA3237E8FEAB /* RETrimControl */;
-			targetProxy = 297B44BFF149916FF97F47842EE53879 /* PBXContainerItemProxy */;
+			name = SpeechRecognizerButton;
+			target = 16901D14D10CFFF8E436C2DC56F229E3 /* SpeechRecognizerButton */;
+			targetProxy = AB71CCF415F806942CBEFC5D8D5EC533 /* PBXContainerItemProxy */;
+		};
+		EDC7F8F561C7F0BBAFE0FB3396C38318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RangeSeekSlider;
+			target = DBC748717DB7BA0DF9A566427A46829A /* RangeSeekSlider */;
+			targetProxy = 745022A904F4C1430C2681A2852157D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01C1BF0698067900A00C89582EEC09CC /* Release */ = {
+		1303F7A8D185962C7CE559727895ABB5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29C07CA965CF1C590E0B5126E22929E4 /* RETrimControl.xcconfig */;
+			baseConfigurationReference = D2EF4053E35C70D827327926C5BEDEC5 /* Pods-ScribbleSoundRecording.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RETrimControl/RETrimControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RETrimControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RETrimControl/RETrimControl.modulemap";
-				PRODUCT_MODULE_NAME = RETrimControl;
-				PRODUCT_NAME = RETrimControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		20AE6906D69C876B6427AF1EF06877B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF0FE14F43076D578B0B00423B27C1AF /* SpeechRecognizerButton.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -901,24 +739,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SpeechRecognizerButton/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScribbleSoundRecording/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton.modulemap";
-				PRODUCT_MODULE_NAME = SpeechRecognizerButton;
-				PRODUCT_NAME = SpeechRecognizerButton;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScribbleSoundRecording/Pods-ScribbleSoundRecording.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -926,224 +765,7 @@
 			};
 			name = Release;
 		};
-		21356FDBBAD34578C536DE7016506BA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74194006DBD4DC26E4FF24E5ACB39EF0 /* SCSiriWaveformView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCSiriWaveformView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView.modulemap";
-				PRODUCT_MODULE_NAME = SCSiriWaveformView;
-				PRODUCT_NAME = SCSiriWaveformView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3117268E6E1425FACB73965A6B869AED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC171EE9EFBF38BDAC1064B7068B307C /* RangeSeekSlider.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RangeSeekSlider/RangeSeekSlider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RangeSeekSlider/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RangeSeekSlider/RangeSeekSlider.modulemap";
-				PRODUCT_MODULE_NAME = RangeSeekSlider;
-				PRODUCT_NAME = RangeSeekSlider;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3BD1267ECC945E48872EC54C5E859B05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF0FE14F43076D578B0B00423B27C1AF /* SpeechRecognizerButton.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SpeechRecognizerButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton.modulemap";
-				PRODUCT_MODULE_NAME = SpeechRecognizerButton;
-				PRODUCT_NAME = SpeechRecognizerButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3F74B14D0FF898152A4DC2A6E584E266 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC171EE9EFBF38BDAC1064B7068B307C /* RangeSeekSlider.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RangeSeekSlider/RangeSeekSlider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RangeSeekSlider/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RangeSeekSlider/RangeSeekSlider.modulemap";
-				PRODUCT_MODULE_NAME = RangeSeekSlider;
-				PRODUCT_NAME = RangeSeekSlider;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4B69977AE700BD982B2D65D8505CC33D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29C07CA965CF1C590E0B5126E22929E4 /* RETrimControl.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RETrimControl/RETrimControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RETrimControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RETrimControl/RETrimControl.modulemap";
-				PRODUCT_MODULE_NAME = RETrimControl;
-				PRODUCT_NAME = RETrimControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		67442468244F0D962E75B1D3D0BDCDE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74194006DBD4DC26E4FF24E5ACB39EF0 /* SCSiriWaveformView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCSiriWaveformView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView.modulemap";
-				PRODUCT_MODULE_NAME = SCSiriWaveformView;
-				PRODUCT_NAME = SCSiriWaveformView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		721287FEFEB20F47560E114273072F7A /* Debug */ = {
+		5006202998FC36B51606E9A288BF248C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A039E2281113CF13DA3D059A90D87E7 /* Pods-ScribbleSoundRecording.debug.xcconfig */;
 			buildSettings = {
@@ -1183,9 +805,84 @@
 			};
 			name = Debug;
 		};
+		72FBB5F535A193904E7A95E0D129DCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC5DC4236FE3FE2E587DF9F7192EF39 /* SCSiriWaveformView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCSiriWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView.modulemap";
+				PRODUCT_MODULE_NAME = SCSiriWaveformView;
+				PRODUCT_NAME = SCSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7776CBED7730D6795E07A96DC55780F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527E4A1EC6DA9C69D9D14B0D58F037EC /* SpeechRecognizerButton.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpeechRecognizerButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton.modulemap";
+				PRODUCT_MODULE_NAME = SpeechRecognizerButton;
+				PRODUCT_NAME = SpeechRecognizerButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8378C71D9585E08B04358B7F456C5711 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE461B63768E88EDBD0A438D99C106C7 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 298837E28509F09F3548132092CA9ADF /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1285,47 +982,6 @@
 			};
 			name = Debug;
 		};
-		914ED58368F380C6A9FC9E60F931FC6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2EF4053E35C70D827327926C5BEDEC5 /* Pods-ScribbleSoundRecording.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ScribbleSoundRecording/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ScribbleSoundRecording/Pods-ScribbleSoundRecording.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1385,9 +1041,80 @@
 			};
 			name = Release;
 		};
+		BA332347AB73448F7FE119E9F9D9056F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AC5F374F6A4C30CCEE01E77083F9E3 /* RangeSeekSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RangeSeekSlider/RangeSeekSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RangeSeekSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RangeSeekSlider/RangeSeekSlider.modulemap";
+				PRODUCT_MODULE_NAME = RangeSeekSlider;
+				PRODUCT_NAME = RangeSeekSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9B87EFA55C6F965DC6344342C477644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC5DC4236FE3FE2E587DF9F7192EF39 /* SCSiriWaveformView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCSiriWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCSiriWaveformView/SCSiriWaveformView.modulemap";
+				PRODUCT_MODULE_NAME = SCSiriWaveformView;
+				PRODUCT_NAME = SCSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DBEC9A3EEC50C27A5428CA1E9D8458BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE461B63768E88EDBD0A438D99C106C7 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 298837E28509F09F3548132092CA9ADF /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1421,6 +1148,81 @@
 			};
 			name = Debug;
 		};
+		E9A093D732271321B674938C0024E7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527E4A1EC6DA9C69D9D14B0D58F037EC /* SpeechRecognizerButton.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpeechRecognizerButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SpeechRecognizerButton/SpeechRecognizerButton.modulemap";
+				PRODUCT_MODULE_NAME = SpeechRecognizerButton;
+				PRODUCT_NAME = SpeechRecognizerButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4F76CBAA5720FEAF34768E3707E989E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AC5F374F6A4C30CCEE01E77083F9E3 /* RangeSeekSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RangeSeekSlider/RangeSeekSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RangeSeekSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RangeSeekSlider/RangeSeekSlider.modulemap";
+				PRODUCT_MODULE_NAME = RangeSeekSlider;
+				PRODUCT_NAME = RangeSeekSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1433,38 +1235,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6ABCDB40A5158652A72C94C7673F2231 /* Build configuration list for PBXNativeTarget "Pods-ScribbleSoundRecording" */ = {
+		4665C410B4CED2604F74F8E950B6D1FB /* Build configuration list for PBXNativeTarget "RangeSeekSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				721287FEFEB20F47560E114273072F7A /* Debug */,
-				914ED58368F380C6A9FC9E60F931FC6E /* Release */,
+				BA332347AB73448F7FE119E9F9D9056F /* Debug */,
+				F4F76CBAA5720FEAF34768E3707E989E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BEBDBCCF1369081052A45C165DCC706 /* Build configuration list for PBXNativeTarget "RETrimControl" */ = {
+		4FD4D20A41E7EA2A0A15A39537DA2074 /* Build configuration list for PBXNativeTarget "SpeechRecognizerButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B69977AE700BD982B2D65D8505CC33D /* Debug */,
-				01C1BF0698067900A00C89582EEC09CC /* Release */,
+				E9A093D732271321B674938C0024E7CC /* Debug */,
+				7776CBED7730D6795E07A96DC55780F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADBF48AED525939319EFFFFF65121A49 /* Build configuration list for PBXNativeTarget "SpeechRecognizerButton" */ = {
+		B0DC73446A32346D7096780649AE3646 /* Build configuration list for PBXNativeTarget "SCSiriWaveformView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BD1267ECC945E48872EC54C5E859B05 /* Debug */,
-				20AE6906D69C876B6427AF1EF06877B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DE7F1680128CA556E5F7A8593090EC1D /* Build configuration list for PBXNativeTarget "RangeSeekSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3117268E6E1425FACB73965A6B869AED /* Debug */,
-				3F74B14D0FF898152A4DC2A6E584E266 /* Release */,
+				C9B87EFA55C6F965DC6344342C477644 /* Debug */,
+				72FBB5F535A193904E7A95E0D129DCDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1478,11 +1271,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB911F9321E10C41B79DE89FE9111272 /* Build configuration list for PBXNativeTarget "SCSiriWaveformView" */ = {
+		F5DEAD27168CD4F6F2E68389EFE96D2D /* Build configuration list for PBXNativeTarget "Pods-ScribbleSoundRecording" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67442468244F0D962E75B1D3D0BDCDE9 /* Debug */,
-				21356FDBBAD34578C536DE7016506BA0 /* Release */,
+				5006202998FC36B51606E9A288BF248C /* Debug */,
+				1303F7A8D185962C7CE559727895ABB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U1v-Ap-hXJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U1v-Ap-hXJ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -142,19 +141,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXo-I7-WYx">
-                                <rect key="frame" x="131" y="447" width="58" height="14"/>
+                                <rect key="frame" x="131" y="447" width="58.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAUSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee3-2o-hBV">
-                                <rect key="frame" x="44.5" y="445.5" width="32.5" height="10"/>
+                                <rect key="frame" x="44.5" y="445.5" width="32.5" height="12"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="10"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOP/SAVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mJ-ge-pss">
-                                <rect key="frame" x="231.5" y="445.5" width="56.5" height="10"/>
+                                <rect key="frame" x="232.5" y="445.5" width="54.5" height="12"/>
                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="10"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -163,19 +162,19 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-ak-8Zl" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="19.5" y="142.5" width="281" height="170"/>
+                                        <rect key="frame" x="19.5" y="141" width="281" height="173.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-K0-z5y">
-                                                <rect key="frame" x="0.0" y="0.0" width="281" height="170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="173.5"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO SAVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-EV-IUo">
-                                                <rect key="frame" x="16" y="20" width="249" height="20"/>
+                                                <rect key="frame" x="16" y="20" width="249" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-nF-0aq">
-                                                <rect key="frame" x="20" y="70" width="241" height="32"/>
+                                                <rect key="frame" x="20" y="73.5" width="241" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-Of-i7v" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -239,7 +238,7 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jU2-dm-aOQ">
-                                                <rect key="frame" x="100.5" y="122" width="80" height="32"/>
+                                                <rect key="frame" x="100.5" y="125.5" width="80" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-Gk-Qkx" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -311,19 +310,19 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em9-kl-3XZ" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="19.5" y="167.5" width="281" height="120"/>
+                                        <rect key="frame" x="19.5" y="166" width="281" height="123"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEr-re-Fds">
                                                 <rect key="frame" x="0.0" y="0.0" width="281" height="30"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO DELETE?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wM-8a-Qwf">
-                                                <rect key="frame" x="16" y="20" width="249" height="18"/>
+                                                <rect key="frame" x="16" y="20" width="249" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-id-gcW">
-                                                <rect key="frame" x="20" y="68" width="241" height="32"/>
+                                                <rect key="frame" x="20" y="71" width="241" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xM-b5-OKS" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -490,19 +489,19 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJS-bU-jTK" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="19.5" y="213" width="281" height="122"/>
+                                        <rect key="frame" x="19.5" y="211.5" width="281" height="125.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-0G-XG8">
                                                 <rect key="frame" x="0.0" y="0.0" width="281" height="30"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DO YOU WANT TO SAVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcT-kA-h64">
-                                                <rect key="frame" x="16" y="20" width="249" height="20"/>
+                                                <rect key="frame" x="16" y="20" width="249" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orE-PZ-8N0">
-                                                <rect key="frame" x="20" y="70" width="241" height="32"/>
+                                                <rect key="frame" x="20" y="73.5" width="241" height="32"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wz-VV-xw5" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -969,13 +968,13 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI4-JM-hac">
-                                        <rect key="frame" x="142.5" y="16" width="35" height="17"/>
+                                        <rect key="frame" x="144" y="16" width="32" height="20"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
                                         <color key="textColor" red="0.58039215686274503" green="0.090196078431372548" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bf2-hO-wGa">
-                                        <rect key="frame" x="0.0" y="49" width="320" height="140.5"/>
+                                        <rect key="frame" x="0.0" y="52" width="320" height="140.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140.5" id="1Ll-h1-Lw6"/>
@@ -1031,30 +1030,30 @@
                                         </cells>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-zH-Beq">
-                                        <rect key="frame" x="140.5" y="205.5" width="39" height="17"/>
+                                        <rect key="frame" x="141.5" y="208.5" width="37" height="20"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
                                         <color key="textColor" red="0.58039215686274503" green="0.090196078431372548" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yir-Gx-OBj">
-                                        <rect key="frame" x="212.5" y="230.5" width="38.5" height="12"/>
+                                        <rect key="frame" x="219" y="236.5" width="34.5" height="14"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                         <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-81-qZy">
-                                        <rect key="frame" x="255" y="230.5" width="33" height="12"/>
+                                        <rect key="frame" x="257.5" y="236.5" width="30.5" height="14"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                         <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ffF-aM-i8i">
-                                        <rect key="frame" x="32" y="249.5" width="256" height="2"/>
+                                        <rect key="frame" x="32" y="257.5" width="256" height="2"/>
                                         <color key="progressTintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="trackTintColor" red="1" green="0.70379629225745843" blue="0.84226852351745618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OE-tt-ZGG">
-                                        <rect key="frame" x="0.0" y="267.5" width="320" height="67"/>
+                                        <rect key="frame" x="0.0" y="275.5" width="320" height="67"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR3-w9-Tb1" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
                                                 <rect key="frame" x="132.5" y="6" width="55" height="55"/>
@@ -1157,31 +1156,31 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-Ua-2Pn">
-                                        <rect key="frame" x="0.0" y="346" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="354" width="320" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPE-vZ-44a">
-                                                <rect key="frame" x="8" y="8" width="76" height="24"/>
+                                                <rect key="frame" x="8" y="32" width="76" height="24"/>
                                                 <state key="normal" image="Bookmark Grey"/>
                                                 <connections>
                                                     <action selector="btnAddBookmark:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="YRs-rm-NYG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-E5-1CX">
-                                                <rect key="frame" x="84" y="8" width="76" height="24"/>
+                                                <rect key="frame" x="84" y="8" width="76" height="72"/>
                                                 <state key="normal" image="leftarrow1"/>
                                                 <connections>
                                                     <action selector="btnSpeedPlus:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="90q-vc-l1k"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLz-aI-sxN">
-                                                <rect key="frame" x="160" y="8" width="76" height="24"/>
+                                                <rect key="frame" x="160" y="32" width="76" height="24"/>
                                                 <state key="normal" image="rightarrow1"/>
                                                 <connections>
                                                     <action selector="btnSpeedMinus:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="hSv-Ov-BA5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-to-Khp">
-                                                <rect key="frame" x="236" y="8" width="76" height="24"/>
+                                                <rect key="frame" x="236" y="32" width="76" height="24"/>
                                                 <state key="normal" image="share"/>
                                                 <connections>
                                                     <action selector="btnShare:" destination="Dnk-X9-9Jf" eventType="touchUpInside" id="xD8-ng-Lkg"/>
@@ -1191,13 +1190,13 @@
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="Jjn-AG-Yfy">
-                                        <rect key="frame" x="0.0" y="386" width="340" height="140"/>
+                                        <rect key="frame" x="0.0" y="442" width="340" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="HJs-wE-2c4"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eed-Wj-yQg" customClass="UIButtonX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="224" y="12" width="80" height="25"/>
+                                        <rect key="frame" x="224" y="12" width="80" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="VIJ-mg-S7g"/>
                                         </constraints>
@@ -1393,7 +1392,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookmark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-3e-kPG">
-                                <rect key="frame" x="119" y="103" width="82" height="17"/>
+                                <rect key="frame" x="121" y="100" width="78.5" height="20"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1583,22 +1582,22 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aV-IC-g8N" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="0.0" width="312" height="81"/>
+                                        <rect key="frame" x="8" y="0.0" width="312" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp6-Dw-JO7">
-                                                <rect key="frame" x="40" y="20" width="102" height="18"/>
+                                                <rect key="frame" x="40" y="20" width="97.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59m-rd-tO9">
-                                                <rect key="frame" x="40" y="46" width="21" height="18"/>
+                                                <rect key="frame" x="40" y="49" width="25.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elz-y2-6xo">
-                                                <rect key="frame" x="20" y="80" width="272" height="1"/>
+                                                <rect key="frame" x="20" y="86" width="272" height="1"/>
                                                 <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="yVB-Jr-5NM"/>
@@ -1632,21 +1631,21 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkr-3k-eX0" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="81" width="312" height="81"/>
+                                        <rect key="frame" x="8" y="87" width="312" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HttpComponens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-uo-LX5">
-                                                <rect key="frame" x="40" y="20" width="140" height="18"/>
+                                                <rect key="frame" x="40" y="20" width="133.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apache license 2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7P-9w-xv1">
-                                                <rect key="frame" x="40" y="46" width="158.5" height="18"/>
+                                                <rect key="frame" x="40" y="49" width="152.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hU-Np-2mS">
-                                                <rect key="frame" x="20" y="80" width="272" height="1"/>
+                                                <rect key="frame" x="20" y="86" width="272" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="HJt-UU-AzQ"/>
@@ -1680,21 +1679,21 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahK-to-Ti1" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="162" width="312" height="81"/>
+                                        <rect key="frame" x="8" y="174" width="312" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="json-simple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-Lr-GaL">
-                                                <rect key="frame" x="40" y="20" width="96.5" height="18"/>
+                                                <rect key="frame" x="40" y="20" width="93.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apache license 2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leM-SU-eI8">
-                                                <rect key="frame" x="40" y="46" width="158.5" height="18"/>
+                                                <rect key="frame" x="40" y="49" width="152.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gc0-wL-G6A">
-                                                <rect key="frame" x="20" y="80" width="272" height="1"/>
+                                                <rect key="frame" x="20" y="86" width="272" height="1"/>
                                                 <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="grQ-D7-SJC"/>
@@ -1728,21 +1727,21 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4S-3c-N4x" customClass="UIViewX" customModule="ScribbleSoundRecording" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="243" width="312" height="81"/>
+                                        <rect key="frame" x="8" y="261" width="312" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bcprov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJi-SM-83K">
-                                                <rect key="frame" x="40" y="20" width="58.5" height="18"/>
+                                                <rect key="frame" x="40" y="20" width="56.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bcprov-license" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG9-Pt-Ubb">
-                                                <rect key="frame" x="40" y="46" width="124" height="18"/>
+                                                <rect key="frame" x="40" y="49" width="119.5" height="21"/>
                                                 <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLn-qo-TJK">
-                                                <rect key="frame" x="20" y="80" width="272" height="1"/>
+                                                <rect key="frame" x="20" y="86" width="272" height="1"/>
                                                 <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="DNy-Jf-v2B"/>
@@ -1814,46 +1813,9 @@
                     <view key="view" contentMode="scaleToFill" id="RMC-QU-ylt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hba-R5-zCC" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
-                                <rect key="frame" x="32" y="290" width="256" height="8"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="8" id="eGT-br-4aQ"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
-                                        <color key="value" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="maxLabelColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="minLabelColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0p-IR-wlL">
-                                <rect key="frame" x="145" y="314" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <action selector="btnPlayAudio:" destination="fhW-rP-rzg" eventType="touchUpInside" id="apf-29-7CE"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hba-R5-zCC" firstAttribute="width" secondItem="RMC-QU-ylt" secondAttribute="width" multiplier="0.8" id="2i9-Vh-d4L"/>
-                            <constraint firstItem="s0p-IR-wlL" firstAttribute="top" secondItem="hba-R5-zCC" secondAttribute="bottom" constant="16" id="5jc-bV-b7i"/>
-                            <constraint firstItem="s0p-IR-wlL" firstAttribute="centerX" secondItem="hba-R5-zCC" secondAttribute="centerX" id="jqT-8V-0K9"/>
-                            <constraint firstItem="hba-R5-zCC" firstAttribute="centerY" secondItem="pPD-bR-DjO" secondAttribute="centerY" id="lVy-Fr-yex"/>
-                            <constraint firstItem="hba-R5-zCC" firstAttribute="centerX" secondItem="pPD-bR-DjO" secondAttribute="centerX" id="y3V-ea-qOd"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pPD-bR-DjO"/>
                     </view>
-                    <connections>
-                        <outlet property="audioRangeSlider" destination="hba-R5-zCC" id="cm4-Ch-30d"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikE-dQ-3yo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1930,25 +1892,25 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ii1-Vf-n3c">
-                                                            <rect key="frame" x="64" y="8" width="224" height="15"/>
+                                                            <rect key="frame" x="64" y="8" width="224" height="17.5"/>
                                                             <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="15"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-cV-TMi">
-                                                            <rect key="frame" x="64" y="27" width="33" height="21"/>
+                                                            <rect key="frame" x="64" y="29.5" width="30.5" height="18.5"/>
                                                             <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="20-sept-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaF-oB-3SG">
-                                                            <rect key="frame" x="207.5" y="32" width="80.5" height="12"/>
+                                                            <rect key="frame" x="215" y="32" width="73" height="14"/>
                                                             <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U33-Ao-Gsa">
-                                                            <rect key="frame" x="270" y="7" width="18" height="18"/>
+                                                            <rect key="frame" x="270" y="8" width="18" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="WfF-k6-Of9"/>
                                                                 <constraint firstAttribute="width" constant="18" id="w6D-eD-FSz"/>
@@ -2026,47 +1988,47 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="185" height="182"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttk-Kd-1C6">
-                                                            <rect key="frame" x="0.0" y="144" width="185" height="12"/>
+                                                            <rect key="frame" x="0.0" y="142.5" width="185" height="18.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:40:20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYd-xT-jrf">
-                                                                    <rect key="frame" x="6" y="0.0" width="40" height="12"/>
-                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
+                                                                    <rect key="frame" x="6" y="1" width="47" height="16.5"/>
+                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13/01" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAQ-V1-a4Y">
-                                                                    <rect key="frame" x="150" y="0.0" width="29" height="12"/>
-                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="12"/>
+                                                                    <rect key="frame" x="143" y="1" width="36" height="16.5"/>
+                                                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="fYd-xT-jrf" secondAttribute="bottom" id="4ZJ-il-jor"/>
-                                                                <constraint firstAttribute="bottom" secondItem="KAQ-V1-a4Y" secondAttribute="bottom" id="4bv-f1-Afs"/>
+                                                                <constraint firstAttribute="bottom" secondItem="fYd-xT-jrf" secondAttribute="bottom" constant="1" id="4ZJ-il-jor"/>
+                                                                <constraint firstAttribute="bottom" secondItem="KAQ-V1-a4Y" secondAttribute="bottom" constant="1" id="4bv-f1-Afs"/>
                                                                 <constraint firstItem="fYd-xT-jrf" firstAttribute="leading" secondItem="Ttk-Kd-1C6" secondAttribute="leading" constant="6" id="NGm-9M-Ffc"/>
-                                                                <constraint firstItem="KAQ-V1-a4Y" firstAttribute="top" secondItem="Ttk-Kd-1C6" secondAttribute="top" id="Wc6-1m-X75"/>
+                                                                <constraint firstItem="KAQ-V1-a4Y" firstAttribute="top" secondItem="Ttk-Kd-1C6" secondAttribute="top" constant="1" id="Wc6-1m-X75"/>
                                                                 <constraint firstAttribute="trailing" secondItem="KAQ-V1-a4Y" secondAttribute="trailing" constant="6" id="Wf9-Jk-Zwd"/>
-                                                                <constraint firstItem="fYd-xT-jrf" firstAttribute="top" secondItem="Ttk-Kd-1C6" secondAttribute="top" id="WnV-ow-kg2"/>
+                                                                <constraint firstItem="fYd-xT-jrf" firstAttribute="top" secondItem="Ttk-Kd-1C6" secondAttribute="top" constant="1" id="WnV-ow-kg2"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4W-DD-p20">
-                                                            <rect key="frame" x="0.0" y="156" width="185" height="26"/>
+                                                            <rect key="frame" x="0.0" y="161" width="185" height="21"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album/Track Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx0-Jx-fnj">
-                                                                    <rect key="frame" x="4" y="4" width="177" height="18"/>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                                    <rect key="frame" x="2" y="2" width="181" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="Qx0-Jx-fnj" secondAttribute="bottom" constant="4" id="Oxr-7S-IVP"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Qx0-Jx-fnj" secondAttribute="trailing" constant="4" id="WTW-o2-8GL"/>
-                                                                <constraint firstItem="Qx0-Jx-fnj" firstAttribute="top" secondItem="P4W-DD-p20" secondAttribute="top" constant="4" id="ZQP-j6-VRV"/>
-                                                                <constraint firstItem="Qx0-Jx-fnj" firstAttribute="leading" secondItem="P4W-DD-p20" secondAttribute="leading" constant="4" id="oqv-gO-mgJ"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Qx0-Jx-fnj" secondAttribute="bottom" constant="2" id="Oxr-7S-IVP"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Qx0-Jx-fnj" secondAttribute="trailing" constant="2" id="WTW-o2-8GL"/>
+                                                                <constraint firstItem="Qx0-Jx-fnj" firstAttribute="top" secondItem="P4W-DD-p20" secondAttribute="top" constant="2" id="ZQP-j6-VRV"/>
+                                                                <constraint firstItem="Qx0-Jx-fnj" firstAttribute="leading" secondItem="P4W-DD-p20" secondAttribute="leading" constant="2" id="oqv-gO-mgJ"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -2112,6 +2074,7 @@
                                             <outlet property="imageViewAlbumArt" destination="uE8-Cu-UN9" id="qAc-CE-der"/>
                                             <outlet property="lblAlbumTrackTitle" destination="Qx0-Jx-fnj" id="XTJ-Mo-Ocl"/>
                                             <outlet property="lblDate" destination="KAQ-V1-a4Y" id="pKG-MM-nWO"/>
+                                            <outlet property="lblTrackLength" destination="fYd-xT-jrf" id="eAn-xO-Ru6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -2311,7 +2274,7 @@
                                         <rect key="frame" x="32" y="70" width="256" height="227"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-zT-Iv8">
-                                        <rect key="frame" x="32" y="327" width="256" height="18"/>
+                                        <rect key="frame" x="32" y="327" width="256" height="21"/>
                                         <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="18"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2563,15 +2526,49 @@
                                     <action selector="btnPickImage:" destination="g6q-xy-sjt" eventType="touchUpInside" id="9Vz-Zt-114"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jei-KP-jgW">
+                                <rect key="frame" x="0.0" y="10" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huV-HC-Owx" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                        <rect key="frame" x="32" y="270" width="256" height="8"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="pVs-H3-eUd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
+                                                <color key="value" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="maxLabelColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="minLabelColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="huV-HC-Owx" firstAttribute="centerX" secondItem="Jei-KP-jgW" secondAttribute="centerX" id="8CO-o7-Meq"/>
+                                    <constraint firstItem="huV-HC-Owx" firstAttribute="width" secondItem="Jei-KP-jgW" secondAttribute="width" multiplier="0.8" id="HYj-Wt-6Wm"/>
+                                    <constraint firstItem="huV-HC-Owx" firstAttribute="centerY" secondItem="Jei-KP-jgW" secondAttribute="centerY" id="jiV-e8-kPn"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="WUw-Hj-eOZ"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EBj-Q1-cx3" firstAttribute="trailing" secondItem="dz2-IF-Gk7" secondAttribute="trailing" id="DdO-oh-hJU"/>
                             <constraint firstItem="5Ex-br-1FH" firstAttribute="trailing" secondItem="dz2-IF-Gk7" secondAttribute="trailing" id="HQx-cc-ovh"/>
+                            <constraint firstItem="5Ex-br-1FH" firstAttribute="top" secondItem="Jei-KP-jgW" secondAttribute="top" constant="10" id="KTZ-bh-0pV"/>
                             <constraint firstItem="EBj-Q1-cx3" firstAttribute="bottom" secondItem="dz2-IF-Gk7" secondAttribute="bottom" id="Kia-la-wYB"/>
+                            <constraint firstItem="Jei-KP-jgW" firstAttribute="leading" secondItem="5Ex-br-1FH" secondAttribute="leading" id="TZa-IQ-RMN"/>
                             <constraint firstItem="Tp4-jM-YrR" firstAttribute="centerX" secondItem="vpB-zb-wkS" secondAttribute="centerX" id="UGw-zm-IDi"/>
                             <constraint firstItem="vpB-zb-wkS" firstAttribute="centerX" secondItem="5Ex-br-1FH" secondAttribute="centerX" constant="1" id="Ued-4G-gmM"/>
                             <constraint firstItem="An9-z6-URZ" firstAttribute="leading" secondItem="Tp4-jM-YrR" secondAttribute="leading" id="Vek-Js-tHc"/>
+                            <constraint firstItem="5Ex-br-1FH" firstAttribute="trailing" secondItem="Jei-KP-jgW" secondAttribute="trailing" id="WMu-fD-5b1"/>
+                            <constraint firstItem="5Ex-br-1FH" firstAttribute="bottom" secondItem="Jei-KP-jgW" secondAttribute="bottom" constant="10" id="WMx-fg-aFM"/>
                             <constraint firstItem="vpB-zb-wkS" firstAttribute="width" secondItem="TKa-WQ-trz" secondAttribute="width" multiplier="0.9" id="X3y-d7-jKP"/>
                             <constraint firstItem="5Ex-br-1FH" firstAttribute="top" secondItem="dz2-IF-Gk7" secondAttribute="top" constant="20" id="bXA-gO-I4X"/>
                             <constraint firstItem="EBj-Q1-cx3" firstAttribute="leading" secondItem="dz2-IF-Gk7" secondAttribute="leading" id="cSW-AR-YkH"/>
@@ -2590,8 +2587,10 @@
                     <connections>
                         <outlet property="imgBackground" destination="dz2-IF-Gk7" id="oRH-ZC-LCt"/>
                         <outlet property="imgToSave" destination="Tp4-jM-YrR" id="1Jz-JJ-Feg"/>
+                        <outlet property="selectAudioRange" destination="huV-HC-Owx" id="Y82-e1-hLc"/>
                         <outlet property="tfNotes" destination="GPn-f0-Eu6" id="Ect-3Y-cFf"/>
                         <outlet property="tfTitle" destination="1BW-OO-4Bn" id="8uC-CP-iqS"/>
+                        <outlet property="viewTrimAudio" destination="Jei-KP-jgW" id="GAD-ew-AGA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty4-BM-u0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2652,13 +2651,13 @@
         <image name="bookmark" width="24" height="24"/>
         <image name="browse" width="24" height="24"/>
         <image name="calendar" width="20" height="20"/>
-        <image name="cloud-storage-download-2" width="24" height="24"/>
-        <image name="compact-disc-2" width="24" height="24"/>
+        <image name="cloud-storage-download-2" width="19.200000762939453" height="19.200000762939453"/>
+        <image name="compact-disc-2" width="19.200000762939453" height="19.200000762939453"/>
         <image name="gird-nav" width="24" height="24"/>
-        <image name="gmail" width="64" height="64"/>
+        <image name="gmail" width="51.200000762939453" height="51.200000762939453"/>
         <image name="graph" width="348" height="140"/>
-        <image name="keyboard-right-arrow-button" width="64" height="64"/>
-        <image name="leftarrow1" width="24" height="24"/>
+        <image name="keyboard-right-arrow-button" width="51.200000762939453" height="51.200000762939453"/>
+        <image name="leftarrow1" width="72" height="72"/>
         <image name="nav" width="24" height="24"/>
         <image name="newpause" width="24" height="24"/>
         <image name="newrecord" width="24" height="24"/>
@@ -2666,13 +2665,13 @@
         <image name="no-img" width="170" height="170"/>
         <image name="paly-left" width="24" height="24"/>
         <image name="paly-right" width="24" height="24"/>
-        <image name="phone-symbol-of-an-auricular-inside-a-circle" width="64" height="64"/>
-        <image name="price-cut-2" width="24" height="24"/>
+        <image name="phone-symbol-of-an-auricular-inside-a-circle" width="51.200000762939453" height="51.200000762939453"/>
+        <image name="price-cut-2" width="19.200000762939453" height="19.200000762939453"/>
         <image name="rightarrow1" width="24" height="24"/>
         <image name="search" width="24" height="24"/>
         <image name="settings-gears" width="24" height="24"/>
         <image name="share" width="24" height="24"/>
-        <image name="sort-alphabetically" width="24" height="24"/>
-        <image name="voice" width="24" height="24"/>
+        <image name="sort-alphabetically" width="19.200000762939453" height="19.200000762939453"/>
+        <image name="voice" width="19.200000762939453" height="19.200000762939453"/>
     </resources>
 </document>

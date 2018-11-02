@@ -58,8 +58,9 @@ extension CustomCameraVC {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         self.imageObservationData.classifyImage(image: image!)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.checkDataAvailable(objData: self.imageObservationData.observationData, imgPicker: image ?? #imageLiteral(resourceName: "background"))
+         self.checkDataAvailable(objData: self.imageObservationData.observationData, imgPicker: image ?? #imageLiteral(resourceName: "background"))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+           
             self.imageToIdentify = image ?? #imageLiteral(resourceName: "stop-button")
             self.lblItemNamee.text = self.imageObservationData.observationData
             self.imagerPicker.dismiss(animated: true, completion: nil)
